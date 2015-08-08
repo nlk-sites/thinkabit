@@ -1,0 +1,9 @@
+name = Drupagram Type
+description = Add a views field for the type of Instagram post for Drupagram
+dependencies[] = drupagram
+dependencies[] = views
+package = drupagram
+core = 7.x
+
+; Views Handlers
+files[] = views/drupagram_type_views_field_handlers.inc

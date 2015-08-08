@@ -1,0 +1,4 @@
+name = Thinkabit
+description = Custom module for Thinkabit
+package = Thinkabit
+core = 7.x
