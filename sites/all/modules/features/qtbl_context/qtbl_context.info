@@ -1,0 +1,8 @@
+name = QTBL Context
+core = 7.x
+package = Features
+dependencies[] = context
+dependencies[] = ctools
+features[context][] = global
+features[ctools][] = context:context:3
+features[features_api][] = api:2
