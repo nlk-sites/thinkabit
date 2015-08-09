@@ -11,7 +11,4 @@ features[fe_block_settings][] = disqus-disqus_popular_threads
 features[fe_block_settings][] = disqus-disqus_recent_comments
 features[fe_block_settings][] = disqus-disqus_top_commenters
 features[fe_block_settings][] = sharethis-sharethis_block
-features[fe_block_settings][] = views-instagram-block
-features[fe_block_settings][] = views-instagrams-block
-features[fe_block_settings][] = views-tweets-block
 features[features_api][] = api:2
