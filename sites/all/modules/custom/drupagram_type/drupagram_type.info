@@ -1,5 +1,5 @@
 name = Drupagram Type
-description = Add a views field for the type of Instagram post for Drupagram
+description = Add a views field for the type of Instagram post for Drupagram module
 dependencies[] = drupagram
 dependencies[] = views
 package = drupagram
