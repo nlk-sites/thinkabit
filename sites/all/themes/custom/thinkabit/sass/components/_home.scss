@@ -1,0 +1,21 @@
+body.front {
+
+	.landing-header {
+		height: 552px;
+		
+	  @include breakpoint($bp-desk) {
+			height: 802px;
+		}
+		
+		.field--pretitle {
+			color: $color-green;
+		}
+
+		.field--title-field {
+
+			h1 {
+				color: $color-green;
+			}
+		}
+	}
+}

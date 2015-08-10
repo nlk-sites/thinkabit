@@ -1,0 +1,90 @@
+header {
+	height: 42px;
+
+  @include breakpoint($bp-desk) {
+		position: absolute;
+    height: auto;
+		width: 84px;
+  }
+}
+
+.site-logo {
+	position: absolute;
+	left: 30px;
+	top: 62px;
+	@include get-sprite($icons-sprites, logo-small-black);
+
+	img {
+		display: none;
+		
+		@include breakpoint($bp-desk) {
+			img {
+				max-width: inherit;
+				display: block;
+			}
+		}
+	}
+	
+  @include breakpoint($bp-desk) {
+		left: 100px;
+		top: 20px;
+		height: auto;
+		width: auto;
+		content: none;
+  }	
+}
+
+.header-social {
+	position: absolute;
+	top: 12px;
+	right: 25px;
+	z-index: 1000;
+
+  @include breakpoint($bp-desk) {
+		top: 680px;
+		right: auto;
+		left: 30px;
+  }
+	
+	ul {
+		@extend .no-list;
+		
+		li {
+			float: left;
+			margin-left: 20px;
+
+		  @include breakpoint($bp-desk) {
+				clear: both;
+				margin-left: 0;
+				margin-bottom: 25px;
+		  }
+		
+			&.icon-twitter {
+				a {
+					position: relative;
+					display: block;
+					@include hide-text;
+					font-size: 0px;
+					text-decoration: none;
+					color: $color-light-gray;
+					margin-top: -2px;
+
+					&:before {
+						display: block;
+						font-family: $fa;
+						content: "\f099";
+						text-indent: 0;
+						font-size: 25px;
+					}
+				}
+			}
+		
+			&.icon-instagram {
+				a {
+					@include get-sprite($icons-sprites, icon-instagram);
+					@include hide-text;
+				}
+			}
+		}
+	}
+}

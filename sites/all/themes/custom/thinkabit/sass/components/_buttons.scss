@@ -1,0 +1,37 @@
+.button {
+	a {
+		position: relative;
+		display: inline-block;
+		background: $color-green;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 10px 0 15px;
+		border-radius: 4px;
+		font-family: $QSemiB;
+		color: $color-white;
+		text-decoration: none;
+		@include rem(font-size, 15px);
+		
+	  @include breakpoint($bp-desk) {
+			height: 52px;
+			line-height: 52px;
+			padding: 0 20px 0 25px;
+			@include rem(font-size, 20px);
+			font-family: $QReg;
+	  }
+		
+		&:after {
+			@include get-sprite($icons-sprites, icon-arrow-small-white);
+			margin-left: 15px;
+
+		  @include breakpoint($bp-desk) {
+				@include get-sprite($icons-sprites, icon-arrow-white);
+				margin-left: 25px;
+		  }
+		}
+		
+		&:hover {
+			background: $color-purple;
+		}
+	}
+}

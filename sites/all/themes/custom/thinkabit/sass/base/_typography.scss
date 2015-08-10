@@ -1,0 +1,57 @@
+body {
+	font-family: $QReg;
+	color: $color-default;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+	line-height: 1;
+}
+
+h1 {
+	font-family: $QSemiB;
+	@include font-size(70px);
+  @include rem(margin-bottom, 20px);
+
+  @include breakpoint($bp-desk) {
+		@include rem(font-size, 90px);
+  }
+}
+
+h2 {
+	font-family: $QBold;
+  @include rem(font-size, 55px);
+  @include rem(margin-bottom, 20px);
+}
+
+h3 {
+	font-family: $QReg;
+  @include rem(font-size, 42px);
+}
+
+h3 {
+	font-family: $QReg;
+  @include rem(font-size, 36px);
+}
+
+a {
+	color: $color-green;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+
+p {
+  @include rem(margin-bottom, 30px);
+}
+
+strong,
+b {
+  font-family: $QBold;
+	font-weight: normal;
+}

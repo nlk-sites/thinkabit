@@ -1,0 +1,43 @@
+footer {
+	clear: both;
+	background: $color-lighter-gray;
+	padding: 25px 30px;
+	@include rem(font-size, 17px);
+	color: $color-medium-gray;
+
+  @include breakpoint($bp-desk) {
+		padding: 45px 70px;
+		@include rem(font-size, 14px);
+  }
+}
+
+#block-menu-menu-footer-menu {
+
+	ul {
+		@extend .no-list;
+
+		li {
+			line-height: 22px;
+
+		  @include breakpoint($bp-desk) {
+				line-height: 1;
+				display: inline-block;
+				padding: 0 8px;
+				border-right: 1px solid $color-medium-gray;
+				
+				&:first-child {
+					padding-left: 0;
+				}
+				
+				&:last-child {
+					padding-right: 0;
+					border-right: 0;
+				}
+		  }
+
+			a {
+				color: $color-medium-gray;
+			}
+		}
+	}
+}

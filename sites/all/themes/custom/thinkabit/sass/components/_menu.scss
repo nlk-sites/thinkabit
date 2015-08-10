@@ -1,0 +1,160 @@
+.responsive-menus {
+	&.responsified {
+		
+		span.toggler {
+			position: relative;
+	    background: transparent;
+	    border-radius: 0;
+	    box-shadow: none;
+	    color: $color-black;
+			@include font-size(18px);
+			height: 42px;
+	    text-align: left;
+			line-height: 1;
+			@include hide-text;
+
+		  @include breakpoint($bp-desk) {
+				@include font-size(35px);
+				height: 84px;
+		  }
+			
+			&:before {
+				position: absolute;
+				top: 15px;
+				left: 15px;
+				@include get-sprite($icons-sprites, icon-menu-small);
+
+			  @include breakpoint($bp-desk) {
+					@include get-sprite($icons-sprites, icon-menu);
+					top: 30px;
+					left: 30px;
+			  }
+			}
+
+			&:after {
+				position: absolute;
+				top: 12px;
+				left: 50px;
+				content: "Menu";
+				text-indent: 0;
+
+			  @include breakpoint($bp-desk) {
+					top: 60px;
+					left: 0px;
+					@include font-size(15px);
+					width: 100%;
+					text-align: center;
+			  }
+			}
+		}
+		
+		&.responsive-toggled {
+			
+			span.toggler {
+				border: 0;
+			
+				&:before {
+					@include get-sprite($icons-sprites, icon-menu-close);
+					text-indent: 0;
+				}
+			
+				&:after {
+					content: "Close";
+					text-indent: 0;
+				}
+			}
+			
+			&:after {
+				content: "";
+				display: block;
+				position: fixed;
+				top: 42px;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: $color-darker-gray;
+				opacity: .86;
+
+			  @include breakpoint($bp-desk) {
+					top: 0;
+					left: 80px;
+			  }
+			}
+
+			.responsive-menus-simple {
+				background: $color-darker-gray;
+				border-radius: 0;
+				box-shadow: none;
+				@include font-size(18px);
+				line-height: 1;
+				position: absolute;
+				top: 42px;
+				left: 0;
+				z-index: 999;
+
+			  @include breakpoint($bp-desk) {
+					top: 0;
+					left: 80px;
+					width: 270px;
+					
+					&:after {
+						content: "";
+						display: block;
+						position: absolute;
+						top: 0px;
+						left: 0;
+						height: 2000%;
+						width: 100%;
+						background: $color-darker-gray;
+						z-index: -1;
+					}
+			  }
+			
+				ul {
+					padding: 20px 10px 80px 40px;
+
+				  @include breakpoint($bp-desk) {
+						padding: 100px 20px 20px;
+					}
+				}
+	
+				li {
+					a {
+						position: relative;
+						border-bottom:0;
+						color: #fff;
+						display: block;
+						padding: 6px 10px;
+					}
+
+				  @include breakpoint($bp-desk) {
+						
+						&:first-child {
+
+							a:before {
+								@include get-sprite($icons-sprites, logo-small-white);
+								position: absolute;
+								left: 0;
+								top: -80px;
+							}
+						}
+					}
+					
+					&:last-child  {
+						@extend .button;
+						padding-top: 60px;
+						margin-left: -10px;
+
+					  @include breakpoint($bp-desk) {
+							margin-left: 0px;
+					  }
+						
+						a {
+							text-transform: none;
+						}
+					}
+				}
+			}
+		}
+	}	
+}

@@ -1,0 +1,8 @@
+.l-page {
+	width: 100%;
+	
+  @include breakpoint($bp-desk) {
+		float: left;
+		padding-left: 80px;
+  }
+}
