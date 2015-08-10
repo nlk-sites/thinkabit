@@ -1,14 +1,7 @@
 name = QTBL Blocks
 core = 7.x
 package = Features
-dependencies[] = disqus
 dependencies[] = fe_block
-dependencies[] = sharethis
-dependencies[] = views
-features[fe_block_settings][] = disqus-disqus_combination_widget
-features[fe_block_settings][] = disqus-disqus_comments
-features[fe_block_settings][] = disqus-disqus_popular_threads
-features[fe_block_settings][] = disqus-disqus_recent_comments
-features[fe_block_settings][] = disqus-disqus_top_commenters
-features[fe_block_settings][] = sharethis-sharethis_block
+features[fe_block_boxes][] = qtbl_footer_info
+features[fe_block_boxes][] = qtbl_header_social
 features[features_api][] = api:2
