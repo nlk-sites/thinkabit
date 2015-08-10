@@ -26,17 +26,17 @@ function qtbl_context_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'block-1' => array(
+        'block-2' => array(
           'module' => 'block',
-          'delta' => '1',
+          'delta' => '2',
           'region' => 'header',
-          'weight' => '-16',
+          'weight' => '-9',
         ),
         'system-main-menu' => array(
           'module' => 'system',
           'delta' => 'main-menu',
           'region' => 'header',
-          'weight' => '-15',
+          'weight' => '-8',
         ),
         'menu-menu-footer-menu' => array(
           'module' => 'menu',
@@ -44,9 +44,9 @@ function qtbl_context_context_default_contexts() {
           'region' => 'footer',
           'weight' => '-10',
         ),
-        'block-2' => array(
+        'block-1' => array(
           'module' => 'block',
-          'delta' => '2',
+          'delta' => '1',
           'region' => 'footer',
           'weight' => '-9',
         ),
