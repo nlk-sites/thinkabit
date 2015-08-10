@@ -38,20 +38,15 @@ function qtbl_content_types_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_background_image',
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'file',
+    'module' => 'backgroundfield',
     'settings' => array(
-      'display_default' => 0,
-      'display_field' => 0,
+      'default_image' => 0,
       'uri_scheme' => 'public',
     ),
     'translatable' => 0,
-    'type' => 'file',
+    'type' => 'backgroundfield',
   );
 
   // Exported field_base: 'field_cta'

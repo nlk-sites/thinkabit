@@ -1,6 +1,7 @@
 name = QTBL Content Types
 core = 7.x
 package = Features
+dependencies[] = backgroundfield
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = field_group

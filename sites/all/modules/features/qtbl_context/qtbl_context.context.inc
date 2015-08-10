@@ -26,11 +26,29 @@ function qtbl_context_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'block-1' => array(
+          'module' => 'block',
+          'delta' => '1',
+          'region' => 'header',
+          'weight' => '-16',
+        ),
         'system-main-menu' => array(
           'module' => 'system',
           'delta' => 'main-menu',
           'region' => 'header',
+          'weight' => '-15',
+        ),
+        'menu-menu-footer-menu' => array(
+          'module' => 'menu',
+          'delta' => 'menu-footer-menu',
+          'region' => 'footer',
           'weight' => '-10',
+        ),
+        'block-2' => array(
+          'module' => 'block',
+          'delta' => '2',
+          'region' => 'footer',
+          'weight' => '-9',
         ),
       ),
     ),
@@ -38,7 +56,7 @@ function qtbl_context_context_default_contexts() {
       'responsive_menus_style' => 'responsive_menus_simple',
       'responsive_menus_style_settings' => array(
         'responsive_menus_simple_absolute' => array(
-          1 => '1',
+          1 => 0,
         ),
         'responsive_menus_disable_mouse_events' => array(
           1 => 0,
@@ -48,7 +66,7 @@ function qtbl_context_context_default_contexts() {
         ),
         'responsive_menus_css_selectors' => '#block-system-main-menu',
         'responsive_menus_simple_text' => 'Menu',
-        'responsive_menus_media_size' => '1800',
+        'responsive_menus_media_size' => '2000',
       ),
     ),
   );

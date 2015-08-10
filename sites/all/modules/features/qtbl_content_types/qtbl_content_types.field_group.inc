@@ -56,10 +56,13 @@ function qtbl_content_types_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Header',
-    'weight' => '1',
+    'weight' => '0',
     'children' => array(
-      0 => 'field_background_image',
-      1 => 'group_header_info',
+      0 => 'title_field',
+      1 => 'field_pretitle',
+      2 => 'field_subtitle',
+      3 => 'field_cta',
+      4 => 'field_background_image',
     ),
     'format_type' => 'div',
     'format_settings' => array(

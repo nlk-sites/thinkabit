@@ -372,13 +372,11 @@ function qtbl_content_types_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
-        'module' => 'file_entity',
-        'settings' => array(
-          'file_view_mode' => 'default',
-        ),
-        'type' => 'file_rendered',
-        'weight' => 8,
+        'label' => 'above',
+        'module' => 'backgroundfield',
+        'settings' => array(),
+        'type' => 'backgroundfield_formatter',
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -393,26 +391,31 @@ function qtbl_content_types_field_default_field_instances() {
     'label' => 'Background Image',
     'required' => 0,
     'settings' => array(
-      'description_field' => 0,
+      'alt_field' => '',
+      'css_attachment' => 'scroll',
+      'css_h_position' => 'left',
+      'css_important' => 0,
+      'css_repeat' => 'no-repeat',
+      'css_selector' => '.landing-header',
+      'css_v_position' => 'top',
+      'default_image' => 0,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
+      'image_style' => 'no_style',
       'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'media',
+      'module' => 'backgroundfield',
       'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
-        ),
-        'allowed_types' => array(
-          'image' => 'image',
-        ),
-        'browser_plugins' => array(),
-        'progress_indicator' => 'throbber',
+        'preview_image_style' => '',
+        'progress_indicator' => '',
       ),
-      'type' => 'media_generic',
+      'type' => 'backgroundfield_widget',
       'weight' => 4,
     ),
   );
@@ -429,7 +432,7 @@ function qtbl_content_types_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 13,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -487,7 +490,7 @@ function qtbl_content_types_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -528,7 +531,7 @@ function qtbl_content_types_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -573,7 +576,7 @@ function qtbl_content_types_field_default_field_instances() {
           'title_style' => 'h1',
         ),
         'type' => 'title_linked',
-        'weight' => 11,
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
