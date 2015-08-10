@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the QTBL Strongarm feature.
+ */
+
+include_once 'qtbl_strongarm.features.inc';
