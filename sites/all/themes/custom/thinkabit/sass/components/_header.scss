@@ -10,27 +10,18 @@ header {
 
 .site-logo {
 	position: absolute;
-	left: 30px;
-	top: 62px;
-	@include get-sprite($icons-sprites, logo-small-black);
+	left: 20px;
+	top: 50px;
+	@include get-sprite($icons-sprites, logo-large-white);
 
 	img {
 		display: none;
-		
-		@include breakpoint($bp-desk) {
-			img {
-				max-width: inherit;
-				display: block;
-			}
-		}
 	}
 	
   @include breakpoint($bp-desk) {
-		left: 100px;
+		@include get-sprite($icons-sprites, logo-small-white);
+		left: 95px;
 		top: 20px;
-		height: auto;
-		width: auto;
-		content: none;
   }	
 }
 

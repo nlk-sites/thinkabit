@@ -1,0 +1,14 @@
+body.section-blog {
+	
+	.landing-header {
+		background: $color-purple;
+
+		.field--subtitle {
+			width: 60%;
+	
+		  @include breakpoint($bp-desk) {
+				width: 260px;
+		  }
+		}
+	}
+}

@@ -1,4 +1,4 @@
-body.front {
+body.section-lab {
 
 	.site-logo {
 		@include get-sprite($icons-sprites, logo-large-black);
@@ -9,21 +9,12 @@ body.front {
 	}
 	
 	.landing-header {
-		height: 552px;
-		
-	  @include breakpoint($bp-desk) {
-			height: 802px;
-		}
-		
-		.field--pretitle {
-			color: $color-green;
-		}
+		height: 506px;
 
 		.field--title-field {
 
 			h1 {
 				color: $color-green;
-				text-transform: none;
 			}
 		}
 
@@ -32,7 +23,7 @@ body.front {
 			color: $color-black;
 	
 		  @include breakpoint($bp-desk) {
-				width: 250px;
+				width: 260px;
 				margin-left: 20px;
 		  }
 		}
