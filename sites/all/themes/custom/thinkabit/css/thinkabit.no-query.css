@@ -2972,6 +2972,9 @@ body.section-lab .landing-header {
 body.section-leadership .landing-header {
   background-color: #fcb614;
   height: 506px; }
+  /* line 7, ../sass/components/_leadership.scss */
+  body.section-leadership .landing-header .field--subtitle {
+    color: #000; }
 
 /* line 4, ../sass/components/_menu.scss */
 .responsive-menus.responsified span.toggler {

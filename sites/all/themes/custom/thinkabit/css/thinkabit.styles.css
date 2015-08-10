@@ -3106,6 +3106,13 @@ body.section-lab .landing-header {
 body.section-leadership .landing-header {
   background-color: #fcb614;
   height: 506px; }
+  /* line 7, ../sass/components/_leadership.scss */
+  body.section-leadership .landing-header .field--subtitle {
+    color: #000; }
+    @media (min-width: 1366px) {
+      /* line 7, ../sass/components/_leadership.scss */
+      body.section-leadership .landing-header .field--subtitle {
+        width: 530px; } }
 
 /* line 4, ../sass/components/_menu.scss */
 .responsive-menus.responsified span.toggler {
@@ -3270,7 +3277,7 @@ body.section-news .landing-header {
 body.section-projects .landing-header {
   height: 500px; }
   @media (min-width: 1366px) {
-    /* line 7, ../sass/components/_projects.scss */
+    /* line 6, ../sass/components/_projects.scss */
     body.section-projects .landing-header .field--subtitle {
       width: 530px; } }
 

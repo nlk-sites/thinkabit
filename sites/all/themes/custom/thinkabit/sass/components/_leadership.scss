@@ -3,5 +3,13 @@ body.section-leadership {
 	.landing-header {
 		background-color: $color-orange-light;
 		height: 506px;
+		
+		.field--subtitle {
+			color: $color-black;
+	
+		  @include breakpoint($bp-desk) {
+				width: 530px;
+		  }
+		}
 	}
 }
