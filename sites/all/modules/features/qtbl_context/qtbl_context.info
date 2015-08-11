@@ -1,10 +1,16 @@
 name = QTBL Context
 core = 7.x
 package = Features
+dependencies[] = bean
 dependencies[] = block
 dependencies[] = context
 dependencies[] = ctools
 dependencies[] = menu
+dependencies[] = views
 features[context][] = global
+features[context][] = home
+features[context][] = lab
+features[context][] = leadership
+features[context][] = projects
 features[ctools][] = context:context:3
 features[features_api][] = api:2

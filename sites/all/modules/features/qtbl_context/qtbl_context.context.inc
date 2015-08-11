@@ -73,5 +73,169 @@ function qtbl_context_context_default_contexts() {
   $context->condition_mode = 0;
   $export['global'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'home';
+  $context->description = '';
+  $context->tag = 'landing page';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        '<front>' => '<front>',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'bean-home-first' => array(
+          'module' => 'bean',
+          'delta' => 'home-first',
+          'region' => 'content_bottom',
+          'weight' => '-23',
+        ),
+        'bean-home-second' => array(
+          'module' => 'bean',
+          'delta' => 'home-second',
+          'region' => 'content_bottom',
+          'weight' => '-22',
+        ),
+        'bean-home-third' => array(
+          'module' => 'bean',
+          'delta' => 'home-third',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+        'bean-home-fourth' => array(
+          'module' => 'bean',
+          'delta' => 'home-fourth',
+          'region' => 'content_bottom',
+          'weight' => '-9',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('landing page');
+  $export['home'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'lab';
+  $context->description = '';
+  $context->tag = 'landing';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'lab' => 'lab',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'bean-lab-first' => array(
+          'module' => 'bean',
+          'delta' => 'lab-first',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+        'bean-lab-second' => array(
+          'module' => 'bean',
+          'delta' => 'lab-second',
+          'region' => 'content_bottom',
+          'weight' => '-9',
+        ),
+        'bean-lab-third' => array(
+          'module' => 'bean',
+          'delta' => 'lab-third',
+          'region' => 'content_bottom',
+          'weight' => '-8',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('landing');
+  $export['lab'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'leadership';
+  $context->description = '';
+  $context->tag = 'landing';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'leadership' => 'leadership',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'bean-leadership-first' => array(
+          'module' => 'bean',
+          'delta' => 'leadership-first',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+        'bean-leadership-second' => array(
+          'module' => 'bean',
+          'delta' => 'leadership-second',
+          'region' => 'content_bottom',
+          'weight' => '-9',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('landing');
+  $export['leadership'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'projects';
+  $context->description = '';
+  $context->tag = 'landing';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'projects' => 'projects',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-projects-block' => array(
+          'module' => 'views',
+          'delta' => 'projects-block',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('landing');
+  $export['projects'] = $context;
+
   return $export;
 }
