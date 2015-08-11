@@ -214,14 +214,15 @@ function qtbl_strongarm_strongarm() {
     'qtbl_content_types' => array(
       'node' => '333ad0e91d8b62be9629432c5790f8d1',
       'field_base' => 'e72aba075195718b884fe90aaede1b5e',
-      'field_instance' => '2f38554031d5ced227322530365def60',
+      'field_instance' => 'b649375dfbc80aa77e1692b0e110108b',
       'taxonomy' => 'dcbaffe2f734b63a1b42ea0991c9fef9',
-      'dependencies' => 'c40aac2d80d3d3b59c6ac1e5d510c8dd',
+      'dependencies' => 'c42fc31c4bb0e1aa6d251a0187cff89e',
       'field_group' => '93190c6955f042562e27204f99b742d6',
+      'variable' => '1b254be0c2dc626aabf7ba2cc452563a',
     ),
     'qtbl_views' => array(
-      'dependencies' => '854cfdaf1c240948a53699436e725b9f',
-      'views_view' => '7166a9256c494caadacc4d16fb44bda7',
+      'dependencies' => 'bef9c65722617551c096efaba92c88ec',
+      'views_view' => 'c4ece6a95c07d8af6657a91f112bc144',
     ),
     'qtbl_menus' => array(
       'menu_custom' => 'cdcb6a018b19147521fbee12fcd1c17c',
@@ -229,11 +230,27 @@ function qtbl_strongarm_strongarm() {
     ),
     'qtbl_context' => array(
       'dependencies' => 'd0c96cd21c2eb77b7af028fde368e61f',
-      'context' => '797895252f6bd8e0b5d85620693c3435',
+      'context' => 'd54733d9b8e6639ce7c9ae1d6ddc0f47',
     ),
     'qtbl_blocks' => array(
-      'fe_block_settings' => '1cdc373d409407adffa0b294fbacf8b2',
-      'dependencies' => '49933ad89544c1e381cab6f01091b135',
+      'fe_block_settings' => '5b61bbd4eefcba9aeac40cbf84d5e211',
+      'dependencies' => 'a8ef601e427a70b3da29a93728ffa24b',
+      'fe_block_boxes' => '6dfa9fffe6bf56e004c5763d8a28a115',
+    ),
+    'qtbl_strongarm' => array(
+      'variable' => '4fcc00b96a68d4cbbd0f0d9c28147f27',
+      'dependencies' => 'e410ca96d90029817c7bb9c7cb1f7ea4',
+    ),
+    'qtbl_text_formats' => array(
+      'filter' => '4804cf8fe90be8778a568775abc85d57',
+      'dependencies' => 'f67fe5a5c132d868e71f614f2c0855d4',
+    ),
+    'qtbl_bean' => array(
+      'fe_block_settings' => '40d9743dfbf1497e5f71a4da0cdb695c',
+      'field_base' => '3716b63bb4ff12d8283daa71d82dc6ed',
+      'field_instance' => '0273f9d26beb9987766fec3aecd8c419',
+      'dependencies' => 'e09cf15653995a60dcb515162c0e0c00',
+      'bean_type' => 'fd09ed5e8965b4c1ea32eae9d812f6fb',
     ),
   );
   $export['features_codecache'] = $strongarm;
@@ -461,6 +478,39 @@ function qtbl_strongarm_strongarm() {
   $strongarm->name = 'fences_default_markup';
   $strongarm->value = 1;
   $export['fences_default_markup'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_bean__static_bean';
+  $strongarm->value = array(
+    'view_modes' => array(
+      'default' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
+    'extra_fields' => array(
+      'form' => array(
+        'label' => array(
+          'weight' => '0',
+        ),
+        'revision' => array(
+          'weight' => '6',
+        ),
+        'view_mode' => array(
+          'weight' => '5',
+        ),
+        'title' => array(
+          'weight' => '4',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_bean__static_bean'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

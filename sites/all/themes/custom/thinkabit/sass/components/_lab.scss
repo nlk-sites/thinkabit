@@ -36,3 +36,80 @@ body.section-lab {
 		}
 	}
 }
+
+.block--bean-lab-first {
+	position: relative;
+	background: $color-green;
+	padding: 30px;
+	@include rem(font-size, 21px);
+	line-height: 24px;
+	color: $color-white;
+	
+  @include breakpoint($bp-desk) {
+		padding: 60px 100px 0;
+		height: 322px;
+		float: left;
+		width: 644px;
+  }
+	
+	h4 {
+		margin-bottom: 20px;
+	}
+	
+	.field--body {
+		a {
+			color: $color-white;
+			display: block;
+			text-decoration: none;
+		
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+		}
+	}
+}
+
+.block--bean-lab-second {
+	@extend .block--bean-lab-first;
+	background: $color-green-light;
+}
+
+.block--bean-lab-third {
+	position: relative;
+	clear: both;
+	padding: 30px;
+
+  @include breakpoint($bp-desk) {
+		padding: 60px 20px;
+  }
+	
+	.field--body {
+		
+		@include breakpoint($bp-desk) {
+			float: left;
+			width: 64%;
+			text-align: right;
+		}
+	}
+	h2 {
+		font-family: $QLight;
+		color: $color-green;
+
+		@include breakpoint($bp-desk) {
+			margin-bottom: 0;
+		}
+	}
+	
+	.field--cta {
+				
+		@include breakpoint($bp-desk) {
+			float: right;
+			width: 30%;
+		}
+	}
+}

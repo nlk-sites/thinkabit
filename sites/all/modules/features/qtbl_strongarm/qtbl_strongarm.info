@@ -65,6 +65,7 @@ features[variable][] = features_rebuild_on_flush
 features[variable][] = features_semaphore
 features[variable][] = fences_default_classes
 features[variable][] = fences_default_markup
+features[variable][] = field_bundle_settings_bean__static_bean
 features[variable][] = node_admin_theme
 features[variable][] = sharethis_blog_options
 features[variable][] = sharethis_blurb_options

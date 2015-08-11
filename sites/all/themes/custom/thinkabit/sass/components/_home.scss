@@ -240,6 +240,7 @@ body.front {
 		margin-bottom: 20px;
 		font-family: $QLight;
 		line-height: .9;
+		
 		@include breakpoint($bp-desk) {
 			padding-right: 20%;
 		}

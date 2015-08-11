@@ -13,3 +13,86 @@ body.section-leadership {
 		}
 	}
 }
+
+.block--bean-leadership-first {
+	height: 330px;
+
+  @include breakpoint($bp-desk) {
+		height: 618px;
+  }
+	
+	.field--image {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		
+		img {
+			width: 100%;
+			float: left;
+		}
+	}
+	
+	.field--body {
+		padding: 30px;
+		text-align: center;
+
+	  @include breakpoint($bp-desk) {
+			padding: 90px 240px;
+	  }
+	}
+	
+	h3 {
+		margin-bottom: 10px;
+	}
+	
+	.text {
+
+		@include breakpoint($bp-desk) {
+			@include rem(font-size, 21px);
+			line-height: 24px;
+		}
+	}
+}
+
+.block--bean-leadership-second {
+	background: $color-green;
+	color: $color-white;
+	padding: 30px;
+
+	@include breakpoint($bp-desk) {
+		background: none;
+		padding: 0;
+	}
+	
+	.field--image {
+		display: none;
+
+	  @include breakpoint($bp-desk) {
+			display: block;
+	  }
+
+		img {
+			float: left;
+		}
+	}
+	
+	.field--body {
+		position: absolute;
+		top: 80px;
+		left: 100px;
+		max-width: 610px;
+	}
+	
+	h4 {
+		font-family: $QLight;
+	}
+	
+	.text {
+
+		@include breakpoint($bp-desk) {
+			@include rem(font-size, 21px);
+			line-height: 24px;
+		}
+	}
+}

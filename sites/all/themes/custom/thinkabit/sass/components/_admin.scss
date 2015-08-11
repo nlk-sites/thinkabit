@@ -2,7 +2,8 @@
 	background: $color-darker-gray;
 	margin: 0;
 	border: 0;
-	padding: 20px 20px 0 100px;
+	padding: 20px 20px 0 30px;
+	margin-left: 80px;
 	
 	li {
 		float: none;
@@ -23,4 +24,9 @@
 			}
 		}
 	}
+}
+
+.messages {
+	margin-left: 90px;
+	margin-right: 10px;
 }

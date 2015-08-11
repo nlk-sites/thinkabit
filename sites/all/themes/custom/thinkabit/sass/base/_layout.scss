@@ -6,6 +6,17 @@
 		float: left;
 		padding-left: 80px;
   }
+	
+	&:before {
+		@include breakpoint($bp-desk) {
+			content: "";
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 79px;
+			border-left: 1px solid $color-lighter-gray;
+		}
+	}
 }
 
 .content-bottom {

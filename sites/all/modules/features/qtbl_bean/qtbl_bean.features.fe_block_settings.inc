@@ -96,5 +96,110 @@ function qtbl_bean_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['bean-lab-first'] = array(
+    'cache' => 1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'lab-first',
+    'module' => 'bean',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'thinkabit' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'thinkabit',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['bean-lab-second'] = array(
+    'cache' => 1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'lab-second',
+    'module' => 'bean',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'thinkabit' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'thinkabit',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['bean-lab-third'] = array(
+    'cache' => 1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'lab-third',
+    'module' => 'bean',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'thinkabit' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'thinkabit',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['bean-leadership-first'] = array(
+    'cache' => 1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'leadership-first',
+    'module' => 'bean',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'thinkabit' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'thinkabit',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['bean-leadership-second'] = array(
+    'cache' => 1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'leadership-second',
+    'module' => 'bean',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'thinkabit' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'thinkabit',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   return $export;
 }

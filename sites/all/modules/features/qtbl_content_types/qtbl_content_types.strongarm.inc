@@ -77,18 +77,14 @@ function qtbl_content_types_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_blog';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_blog'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_blurb';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_blurb'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -113,9 +109,7 @@ function qtbl_content_types_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_leader';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_leader'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -128,10 +122,17 @@ function qtbl_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_project';
+  $strongarm->name = 'menu_options_page';
   $strongarm->value = array(
     0 => 'main-menu',
   );
+  $export['menu_options_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_project';
+  $strongarm->value = array();
   $export['menu_options_project'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -197,6 +198,13 @@ function qtbl_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_page';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_project';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_project'] = $strongarm;
@@ -221,7 +229,6 @@ function qtbl_content_types_strongarm() {
   $strongarm->name = 'node_options_blog';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
   );
   $export['node_options_blog'] = $strongarm;
 
@@ -231,7 +238,6 @@ function qtbl_content_types_strongarm() {
   $strongarm->name = 'node_options_blurb';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
   );
   $export['node_options_blurb'] = $strongarm;
 
@@ -260,7 +266,6 @@ function qtbl_content_types_strongarm() {
   $strongarm->name = 'node_options_leader';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
   );
   $export['node_options_leader'] = $strongarm;
 
@@ -288,7 +293,6 @@ function qtbl_content_types_strongarm() {
   $strongarm->name = 'node_options_project';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
   );
   $export['node_options_project'] = $strongarm;
 
@@ -315,14 +319,14 @@ function qtbl_content_types_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_blog';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_blog'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_blurb';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_blurb'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -343,7 +347,7 @@ function qtbl_content_types_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_leader';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_leader'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -356,8 +360,15 @@ function qtbl_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_page';
+  $strongarm->value = '0';
+  $export['node_preview_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_project';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_project'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -371,7 +382,7 @@ function qtbl_content_types_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_blog';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['node_submitted_blog'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -413,7 +424,7 @@ function qtbl_content_types_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_page';
-  $strongarm->value = FALSE;
+  $strongarm->value = 0;
   $export['node_submitted_page'] = $strongarm;
 
   $strongarm = new stdClass();
