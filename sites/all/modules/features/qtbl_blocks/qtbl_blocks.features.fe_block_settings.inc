@@ -12,12 +12,12 @@ function qtbl_blocks_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
-  $export['disqus-disqus_combination_widget'] = array(
-    'cache' => 8,
+  $export['bean-home-first'] = array(
+    'cache' => 1,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 'disqus_combination_widget',
-    'module' => 'disqus',
+    'delta' => 'home-first',
+    'module' => 'bean',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
@@ -33,12 +33,12 @@ function qtbl_blocks_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['disqus-disqus_comments'] = array(
-    'cache' => -2,
+  $export['bean-home-fourth'] = array(
+    'cache' => 1,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 'disqus_comments',
-    'module' => 'disqus',
+    'delta' => 'home-fourth',
+    'module' => 'bean',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
@@ -54,12 +54,12 @@ function qtbl_blocks_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['disqus-disqus_popular_threads'] = array(
-    'cache' => 8,
+  $export['bean-home-second'] = array(
+    'cache' => 1,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 'disqus_popular_threads',
-    'module' => 'disqus',
+    'delta' => 'home-second',
+    'module' => 'bean',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
@@ -75,12 +75,12 @@ function qtbl_blocks_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['disqus-disqus_recent_comments'] = array(
-    'cache' => 8,
+  $export['bean-home-third'] = array(
+    'cache' => 1,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 'disqus_recent_comments',
-    'module' => 'disqus',
+    'delta' => 'home-third',
+    'module' => 'bean',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
@@ -96,12 +96,12 @@ function qtbl_blocks_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['disqus-disqus_top_commenters'] = array(
-    'cache' => 8,
+  $export['block-qtbl_footer_info'] = array(
+    'cache' => -1,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 'disqus_top_commenters',
-    'module' => 'disqus',
+    'machine_name' => 'qtbl_footer_info',
+    'module' => 'block',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
@@ -117,12 +117,12 @@ function qtbl_blocks_default_fe_block_settings() {
     'visibility' => 0,
   );
 
-  $export['sharethis-sharethis_block'] = array(
-    'cache' => 4,
-    'css_class' => '',
+  $export['block-qtbl_header_social'] = array(
+    'cache' => -1,
+    'css_class' => 'header-social',
     'custom' => 0,
-    'delta' => 'sharethis_block',
-    'module' => 'sharethis',
+    'machine_name' => 'qtbl_header_social',
+    'module' => 'block',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
