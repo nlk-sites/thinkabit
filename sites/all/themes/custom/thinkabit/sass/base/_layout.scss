@@ -2,7 +2,12 @@
 	width: 100%;
 	
   @include breakpoint($bp-desk) {
+		max-width: 1366px;
 		float: left;
 		padding-left: 80px;
   }
+}
+
+.content-bottom {
+	@include clearfix;
 }

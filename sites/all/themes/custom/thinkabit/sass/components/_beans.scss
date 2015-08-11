@@ -1,0 +1,8 @@
+.block--bean {
+	position: relative;
+	@include clearfix;
+	
+	.field--cta {
+		@extend .button;
+	}
+}

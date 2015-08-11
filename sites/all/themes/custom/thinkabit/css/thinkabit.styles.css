@@ -2750,8 +2750,15 @@
   @media (min-width: 1366px) {
     /* line 1, ../sass/base/_layout.scss */
     .l-page {
+      max-width: 1366px;
       float: left;
       padding-left: 80px; } }
+
+/* line 13, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/toolkit-2.6.0/stylesheets/toolkit/_clearfix.scss */
+.content-bottom:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 /* line 1, ../sass/base/_media.scss */
 img, media {
@@ -2785,41 +2792,60 @@ h1 {
 /* line 22, ../sass/base/_typography.scss */
 h2 {
   font-family: "Qualcomm-Bold", Arial, Sans-serif;
-  font-size: 55px;
-  font-size: 3.4375rem;
+  font-size: 42px;
+  font-size: 2.625rem;
   margin-bottom: 20px;
   margin-bottom: 1.25rem; }
+  @media (min-width: 1366px) {
+    /* line 22, ../sass/base/_typography.scss */
+    h2 {
+      font-size: 55px;
+      font-size: 3.4375rem; } }
 
-/* line 28, ../sass/base/_typography.scss */
+/* line 32, ../sass/base/_typography.scss */
 h3 {
   font-family: "Qualcomm-Regular", Arial, Sans-serif;
-  font-size: 42px;
-  font-size: 2.625rem; }
+  font-size: 31px;
+  font-size: 1.9375rem; }
+  @media (min-width: 1366px) {
+    /* line 32, ../sass/base/_typography.scss */
+    h3 {
+      font-size: 42px;
+      font-size: 2.625rem; } }
 
-/* line 33, ../sass/base/_typography.scss */
-h3 {
+/* line 41, ../sass/base/_typography.scss */
+h4 {
   font-family: "Qualcomm-Regular", Arial, Sans-serif;
   font-size: 36px;
   font-size: 2.25rem; }
 
-/* line 38, ../sass/base/_typography.scss */
+/* line 46, ../sass/base/_typography.scss */
 a {
   color: #0095a8;
   text-decoration: none; }
-  /* line 42, ../sass/base/_typography.scss */
+  /* line 50, ../sass/base/_typography.scss */
   a:hover {
     text-decoration: underline; }
 
-/* line 49, ../sass/base/_typography.scss */
+/* line 57, ../sass/base/_typography.scss */
 p {
   margin-bottom: 30px;
   margin-bottom: 1.875rem; }
 
-/* line 53, ../sass/base/_typography.scss */
+/* line 61, ../sass/base/_typography.scss */
 strong,
 b {
-  font-family: "Qualcomm-Bold", Arial, Sans-serif;
+  font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
   font-weight: normal; }
+
+/* line 1, ../sass/components/_beans.scss */
+.block--bean {
+  position: relative; }
+  /* line 13, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/toolkit-2.6.0/stylesheets/toolkit/_clearfix.scss */
+  .block--bean:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 /* line 3, ../sass/components/_blog.scss */
 body.section-blog .landing-header {
@@ -2833,7 +2859,7 @@ body.section-blog .landing-header {
         width: 260px; } }
 
 /* line 2, ../sass/components/_buttons.scss */
-.button a, .landing-header .field--cta a, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a {
+.button a, .block--bean .field--cta a, .landing-header .field--cta a, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a {
   position: relative;
   display: inline-block;
   background: #0095a8;
@@ -2849,7 +2875,7 @@ body.section-blog .landing-header {
   transition: background-color 0.3s ease; }
   @media (min-width: 1366px) {
     /* line 2, ../sass/components/_buttons.scss */
-    .button a, .landing-header .field--cta a, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a {
+    .button a, .block--bean .field--cta a, .landing-header .field--cta a, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a {
       height: 52px;
       line-height: 52px;
       padding: 0 20px 0 25px;
@@ -2857,7 +2883,7 @@ body.section-blog .landing-header {
       font-size: 1.25rem;
       font-family: "Qualcomm-Regular", Arial, Sans-serif; } }
   /* line 24, ../sass/components/_buttons.scss */
-  .button a:after, .landing-header .field--cta a:after, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:after {
+  .button a:after, .block--bean .field--cta a:after, .landing-header .field--cta a:after, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:after {
     background: url('../images/generated/icons-sa57b30c793.png') 0 -42px no-repeat;
     width: 20px;
     height: 13px;
@@ -2866,7 +2892,7 @@ body.section-blog .landing-header {
     margin-left: 15px; }
     @media (min-width: 1366px) {
       /* line 24, ../sass/components/_buttons.scss */
-      .button a:after, .landing-header .field--cta a:after, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:after {
+      .button a:after, .block--bean .field--cta a:after, .landing-header .field--cta a:after, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:after {
         background: url('../images/generated/icons-sa57b30c793.png') 0 -55px no-repeat;
         width: 26px;
         height: 17px;
@@ -2874,7 +2900,7 @@ body.section-blog .landing-header {
         display: inline-block;
         margin-left: 25px; } }
   /* line 34, ../sass/components/_buttons.scss */
-  .button a:hover, .landing-header .field--cta a:hover, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:hover {
+  .button a:hover, .block--bean .field--cta a:hover, .landing-header .field--cta a:hover, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:hover {
     background: #93397f; }
 
 /* line 1, ../sass/components/_footer.scss */
@@ -3053,6 +3079,195 @@ body.front .landing-header {
     body.front .landing-header .field--cta {
       margin-left: 20px; } }
 
+/* line 50, ../sass/components/_home.scss */
+.block--bean-home-first {
+  height: 668px;
+  background-color: #0095a8; }
+  @media (min-width: 1366px) {
+    /* line 50, ../sass/components/_home.scss */
+    .block--bean-home-first {
+      height: auto; } }
+  /* line 58, ../sass/components/_home.scss */
+  .block--bean-home-first .field--image {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    @media (min-width: 1366px) {
+      /* line 58, ../sass/components/_home.scss */
+      .block--bean-home-first .field--image {
+        position: relative;
+        bottom: auto;
+        left: auto; } }
+    /* line 69, ../sass/components/_home.scss */
+    .block--bean-home-first .field--image img {
+      float: left;
+      width: 100%; }
+  /* line 75, ../sass/components/_home.scss */
+  .block--bean-home-first .field--body {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    margin-right: 30px;
+    color: #fff; }
+    @media (min-width: 1366px) {
+      /* line 75, ../sass/components/_home.scss */
+      .block--bean-home-first .field--body {
+        top: 40px;
+        left: 110px;
+        max-width: 1000px; } }
+  /* line 89, ../sass/components/_home.scss */
+  .block--bean-home-first h3 {
+    margin-bottom: 10px; }
+  /* line 93, ../sass/components/_home.scss */
+  .block--bean-home-first .subtitle {
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin-bottom: 20px; }
+    @media (min-width: 1366px) {
+      /* line 93, ../sass/components/_home.scss */
+      .block--bean-home-first .subtitle {
+        font-size: 20px;
+        font-size: 1.25rem;
+        margin-bottom: 45px; } }
+  /* line 103, ../sass/components/_home.scss */
+  .block--bean-home-first .column-one,
+  .block--bean-home-first .column-two {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    line-height: 16px;
+    margin-bottom: 20px; }
+    @media (min-width: 1366px) {
+      /* line 103, ../sass/components/_home.scss */
+      .block--bean-home-first .column-one,
+      .block--bean-home-first .column-two {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 22px;
+        max-width: 472px;
+        float: left; } }
+  @media (min-width: 1366px) {
+    /* line 117, ../sass/components/_home.scss */
+    .block--bean-home-first .column-two {
+      max-width: 482px;
+      float: right; } }
+
+/* line 127, ../sass/components/_home.scss */
+.block--bean-home-second {
+  background: #ebebeb;
+  padding: 40px 25px 40px 30px; }
+  @media (min-width: 1366px) {
+    /* line 127, ../sass/components/_home.scss */
+    .block--bean-home-second {
+      padding: 0; } }
+  /* line 135, ../sass/components/_home.scss */
+  .block--bean-home-second .field--image {
+    display: none; }
+    @media (min-width: 1366px) {
+      /* line 135, ../sass/components/_home.scss */
+      .block--bean-home-second .field--image {
+        display: block; } }
+    @media (min-width: 1366px) {
+      /* line 142, ../sass/components/_home.scss */
+      .block--bean-home-second .field--image img {
+        float: left; } }
+  @media (min-width: 1366px) {
+    /* line 150, ../sass/components/_home.scss */
+    .block--bean-home-second .field--body {
+      position: absolute;
+      top: 70px;
+      left: 730px;
+      max-width: 450px; } }
+  /* line 160, ../sass/components/_home.scss */
+  .block--bean-home-second h3 {
+    color: #0095a8;
+    font-family: "Qualcomm-Light", Arial, Sans-serif;
+    margin-bottom: 10px; }
+    @media (min-width: 1366px) {
+      /* line 160, ../sass/components/_home.scss */
+      .block--bean-home-second h3 {
+        margin-bottom: 0; } }
+  /* line 170, ../sass/components/_home.scss */
+  .block--bean-home-second .subtitle {
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #0095a8; }
+    @media (min-width: 1366px) {
+      /* line 170, ../sass/components/_home.scss */
+      .block--bean-home-second .subtitle {
+        margin-bottom: 20px; } }
+  /* line 180, ../sass/components/_home.scss */
+  .block--bean-home-second .text {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    line-height: 16px;
+    margin-bottom: 10px; }
+    @media (min-width: 1366px) {
+      /* line 180, ../sass/components/_home.scss */
+      .block--bean-home-second .text {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 22px;
+        margin-bottom: 0; } }
+  /* line 192, ../sass/components/_home.scss */
+  .block--bean-home-second .field--content-image {
+    margin-bottom: 25px; }
+    @media (min-width: 1366px) {
+      /* line 192, ../sass/components/_home.scss */
+      .block--bean-home-second .field--content-image {
+        position: absolute;
+        top: 360px;
+        left: 710px;
+        margin-bottom: 0; } }
+  @media (min-width: 1366px) {
+    /* line 203, ../sass/components/_home.scss */
+    .block--bean-home-second .field--cta {
+      position: absolute;
+      top: 420px;
+      left: 892px; } }
+
+@media (min-width: 1366px) {
+  /* line 213, ../sass/components/_home.scss */
+  .block--bean-home-third {
+    float: left;
+    width: 50%; } }
+/* line 222, ../sass/components/_home.scss */
+.block--bean-home-third .field--image img {
+  float: left; }
+
+/* line 229, ../sass/components/_home.scss */
+.block--bean-home-fourth {
+  padding: 50px 30px;
+  color: #0095a8; }
+  @media (min-width: 1366px) {
+    /* line 229, ../sass/components/_home.scss */
+    .block--bean-home-fourth {
+      float: right;
+      width: 50%;
+      padding: 50px 70px; } }
+  /* line 239, ../sass/components/_home.scss */
+  .block--bean-home-fourth h2 {
+    margin-bottom: 20px;
+    font-family: "Qualcomm-Light", Arial, Sans-serif;
+    line-height: .9; }
+    @media (min-width: 1366px) {
+      /* line 239, ../sass/components/_home.scss */
+      .block--bean-home-fourth h2 {
+        padding-right: 20%; } }
+  /* line 248, ../sass/components/_home.scss */
+  .block--bean-home-fourth .text {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 23px; }
+    @media (min-width: 1366px) {
+      /* line 248, ../sass/components/_home.scss */
+      .block--bean-home-fourth .text {
+        font-size: 21px;
+        font-size: 1.3125rem;
+        line-height: 26px;
+        margin-bottom: 40px; } }
+
 /* line 3, ../sass/components/_lab.scss */
 body.section-lab .site-logo {
   background: url('../images/generated/icons-sa57b30c793.png') 0 -257px no-repeat;
@@ -3091,39 +3306,38 @@ body.section-lab .landing-header {
 /* line 1, ../sass/components/_landing-page.scss */
 .landing-header {
   padding: 80px 30px 30px;
-  background-size: cover;
   background-color: #0095a8;
   color: #fff; }
   @media (min-width: 1366px) {
     /* line 1, ../sass/components/_landing-page.scss */
     .landing-header {
       padding: 140px 30px 60px 95px; } }
-  /* line 11, ../sass/components/_landing-page.scss */
+  /* line 10, ../sass/components/_landing-page.scss */
   .landing-header .field--pretitle {
     font-size: 28px;
     font-size: 1.75rem;
     font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
     line-height: 1; }
     @media (min-width: 1366px) {
-      /* line 11, ../sass/components/_landing-page.scss */
+      /* line 10, ../sass/components/_landing-page.scss */
       .landing-header .field--pretitle {
         font-size: 36px;
         font-size: 2.25rem;
         font-family: "Qualcomm-Regular", Arial, Sans-serif; } }
-  /* line 24, ../sass/components/_landing-page.scss */
+  /* line 23, ../sass/components/_landing-page.scss */
   .landing-header .field--title-field h1 {
     line-height: .8;
     margin-bottom: 10px;
     text-transform: uppercase;
     color: #fff; }
-  /* line 32, ../sass/components/_landing-page.scss */
+  /* line 31, ../sass/components/_landing-page.scss */
   .landing-header .field--subtitle {
     font-size: 16px;
     font-size: 1rem;
     line-height: 18px;
     margin-bottom: 20px; }
     @media (min-width: 1366px) {
-      /* line 32, ../sass/components/_landing-page.scss */
+      /* line 31, ../sass/components/_landing-page.scss */
       .landing-header .field--subtitle {
         font-size: 21px;
         font-size: 1.3125rem;

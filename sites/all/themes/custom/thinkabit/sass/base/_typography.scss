@@ -21,16 +21,24 @@ h1 {
 
 h2 {
 	font-family: $QBold;
-  @include rem(font-size, 55px);
+	@include rem(font-size, 42px);
   @include rem(margin-bottom, 20px);
+
+  @include breakpoint($bp-desk) {
+  	@include rem(font-size, 55px);
+  }
 }
 
 h3 {
 	font-family: $QReg;
-  @include rem(font-size, 42px);
+  @include rem(font-size, 31px);
+
+  @include breakpoint($bp-desk) {
+		@include rem(font-size, 42px);
+  }
 }
 
-h3 {
+h4 {
 	font-family: $QReg;
   @include rem(font-size, 36px);
 }
@@ -52,6 +60,6 @@ p {
 
 strong,
 b {
-  font-family: $QBold;
+  font-family: $QSemiB;
 	font-weight: normal;
 }

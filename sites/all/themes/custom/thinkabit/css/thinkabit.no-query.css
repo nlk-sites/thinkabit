@@ -2748,6 +2748,12 @@
 .l-page {
   width: 100%; }
 
+/* line 13, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/toolkit-2.6.0/stylesheets/toolkit/_clearfix.scss */
+.content-bottom:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 /* line 1, ../sass/base/_media.scss */
 img, media {
   max-width: 100%; }
@@ -2775,41 +2781,50 @@ h1 {
 /* line 22, ../sass/base/_typography.scss */
 h2 {
   font-family: "Qualcomm-Bold", Arial, Sans-serif;
-  font-size: 55px;
-  font-size: 3.4375rem;
+  font-size: 42px;
+  font-size: 2.625rem;
   margin-bottom: 20px;
   margin-bottom: 1.25rem; }
 
-/* line 28, ../sass/base/_typography.scss */
+/* line 32, ../sass/base/_typography.scss */
 h3 {
   font-family: "Qualcomm-Regular", Arial, Sans-serif;
-  font-size: 42px;
-  font-size: 2.625rem; }
+  font-size: 31px;
+  font-size: 1.9375rem; }
 
-/* line 33, ../sass/base/_typography.scss */
-h3 {
+/* line 41, ../sass/base/_typography.scss */
+h4 {
   font-family: "Qualcomm-Regular", Arial, Sans-serif;
   font-size: 36px;
   font-size: 2.25rem; }
 
-/* line 38, ../sass/base/_typography.scss */
+/* line 46, ../sass/base/_typography.scss */
 a {
   color: #0095a8;
   text-decoration: none; }
-  /* line 42, ../sass/base/_typography.scss */
+  /* line 50, ../sass/base/_typography.scss */
   a:hover {
     text-decoration: underline; }
 
-/* line 49, ../sass/base/_typography.scss */
+/* line 57, ../sass/base/_typography.scss */
 p {
   margin-bottom: 30px;
   margin-bottom: 1.875rem; }
 
-/* line 53, ../sass/base/_typography.scss */
+/* line 61, ../sass/base/_typography.scss */
 strong,
 b {
-  font-family: "Qualcomm-Bold", Arial, Sans-serif;
+  font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
   font-weight: normal; }
+
+/* line 1, ../sass/components/_beans.scss */
+.block--bean {
+  position: relative; }
+  /* line 13, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/toolkit-2.6.0/stylesheets/toolkit/_clearfix.scss */
+  .block--bean:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 /* line 3, ../sass/components/_blog.scss */
 body.section-blog .landing-header {
@@ -2819,7 +2834,7 @@ body.section-blog .landing-header {
     width: 60%; }
 
 /* line 2, ../sass/components/_buttons.scss */
-.button a, .landing-header .field--cta a, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a {
+.button a, .block--bean .field--cta a, .landing-header .field--cta a, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a {
   position: relative;
   display: inline-block;
   background: #0095a8;
@@ -2834,7 +2849,7 @@ body.section-blog .landing-header {
   font-size: 0.9375rem;
   transition: background-color 0.3s ease; }
   /* line 24, ../sass/components/_buttons.scss */
-  .button a:after, .landing-header .field--cta a:after, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:after {
+  .button a:after, .block--bean .field--cta a:after, .landing-header .field--cta a:after, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:after {
     background: url('../images/generated/icons-sa57b30c793.png') 0 -42px no-repeat;
     width: 20px;
     height: 13px;
@@ -2842,7 +2857,7 @@ body.section-blog .landing-header {
     display: inline-block;
     margin-left: 15px; }
   /* line 34, ../sass/components/_buttons.scss */
-  .button a:hover, .landing-header .field--cta a:hover, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:hover {
+  .button a:hover, .block--bean .field--cta a:hover, .landing-header .field--cta a:hover, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:hover {
     background: #93397f; }
 
 /* line 1, ../sass/components/_footer.scss */
@@ -2952,6 +2967,90 @@ body.front .landing-header {
     width: 60%;
     color: #000; }
 
+/* line 50, ../sass/components/_home.scss */
+.block--bean-home-first {
+  height: 668px;
+  background-color: #0095a8; }
+  /* line 58, ../sass/components/_home.scss */
+  .block--bean-home-first .field--image {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+    /* line 69, ../sass/components/_home.scss */
+    .block--bean-home-first .field--image img {
+      float: left;
+      width: 100%; }
+  /* line 75, ../sass/components/_home.scss */
+  .block--bean-home-first .field--body {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    margin-right: 30px;
+    color: #fff; }
+  /* line 89, ../sass/components/_home.scss */
+  .block--bean-home-first h3 {
+    margin-bottom: 10px; }
+  /* line 93, ../sass/components/_home.scss */
+  .block--bean-home-first .subtitle {
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin-bottom: 20px; }
+  /* line 103, ../sass/components/_home.scss */
+  .block--bean-home-first .column-one,
+  .block--bean-home-first .column-two {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    line-height: 16px;
+    margin-bottom: 20px; }
+
+/* line 127, ../sass/components/_home.scss */
+.block--bean-home-second {
+  background: #ebebeb;
+  padding: 40px 25px 40px 30px; }
+  /* line 135, ../sass/components/_home.scss */
+  .block--bean-home-second .field--image {
+    display: none; }
+  /* line 160, ../sass/components/_home.scss */
+  .block--bean-home-second h3 {
+    color: #0095a8;
+    font-family: "Qualcomm-Light", Arial, Sans-serif;
+    margin-bottom: 10px; }
+  /* line 170, ../sass/components/_home.scss */
+  .block--bean-home-second .subtitle {
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #0095a8; }
+  /* line 180, ../sass/components/_home.scss */
+  .block--bean-home-second .text {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    line-height: 16px;
+    margin-bottom: 10px; }
+  /* line 192, ../sass/components/_home.scss */
+  .block--bean-home-second .field--content-image {
+    margin-bottom: 25px; }
+
+/* line 222, ../sass/components/_home.scss */
+.block--bean-home-third .field--image img {
+  float: left; }
+
+/* line 229, ../sass/components/_home.scss */
+.block--bean-home-fourth {
+  padding: 50px 30px;
+  color: #0095a8; }
+  /* line 239, ../sass/components/_home.scss */
+  .block--bean-home-fourth h2 {
+    margin-bottom: 20px;
+    font-family: "Qualcomm-Light", Arial, Sans-serif;
+    line-height: .9; }
+  /* line 248, ../sass/components/_home.scss */
+  .block--bean-home-fourth .text {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 23px; }
+
 /* line 3, ../sass/components/_lab.scss */
 body.section-lab .site-logo {
   background: url('../images/generated/icons-sa57b30c793.png') 0 -257px no-repeat;
@@ -2973,22 +3072,21 @@ body.section-lab .landing-header {
 /* line 1, ../sass/components/_landing-page.scss */
 .landing-header {
   padding: 80px 30px 30px;
-  background-size: cover;
   background-color: #0095a8;
   color: #fff; }
-  /* line 11, ../sass/components/_landing-page.scss */
+  /* line 10, ../sass/components/_landing-page.scss */
   .landing-header .field--pretitle {
     font-size: 28px;
     font-size: 1.75rem;
     font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
     line-height: 1; }
-  /* line 24, ../sass/components/_landing-page.scss */
+  /* line 23, ../sass/components/_landing-page.scss */
   .landing-header .field--title-field h1 {
     line-height: .8;
     margin-bottom: 10px;
     text-transform: uppercase;
     color: #fff; }
-  /* line 32, ../sass/components/_landing-page.scss */
+  /* line 31, ../sass/components/_landing-page.scss */
   .landing-header .field--subtitle {
     font-size: 16px;
     font-size: 1rem;
