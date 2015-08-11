@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the QTBL Bean feature.
+ */
+
+include_once 'qtbl_bean.features.inc';

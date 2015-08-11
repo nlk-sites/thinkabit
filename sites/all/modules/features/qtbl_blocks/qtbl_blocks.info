@@ -1,14 +1,9 @@
 name = QTBL Blocks
 core = 7.x
 package = Features
-dependencies[] = bean
 dependencies[] = fe_block
 features[fe_block_boxes][] = qtbl_footer_info
 features[fe_block_boxes][] = qtbl_header_social
-features[fe_block_settings][] = bean-home-first
-features[fe_block_settings][] = bean-home-fourth
-features[fe_block_settings][] = bean-home-second
-features[fe_block_settings][] = bean-home-third
 features[fe_block_settings][] = block-qtbl_footer_info
 features[fe_block_settings][] = block-qtbl_header_social
 features[features_api][] = api:2
