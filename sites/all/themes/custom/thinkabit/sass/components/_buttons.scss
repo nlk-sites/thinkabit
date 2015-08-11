@@ -11,6 +11,7 @@
 		color: $color-white;
 		text-decoration: none;
 		@include rem(font-size, 15px);
+		transition: background-color 0.3s ease;
 		
 	  @include breakpoint($bp-desk) {
 			height: 52px;

@@ -30,6 +30,17 @@
 					left: 30px;
 			  }
 			}
+			
+			&:hover {
+				
+				&:before {
+					@include get-sprite($icons-sprites, icon-menu-small-green);
+
+				  @include breakpoint($bp-desk) {
+						@include get-sprite($icons-sprites, icon-menu-green);
+				  }
+				}
+			}
 
 			&:after {
 				position: absolute;
@@ -46,6 +57,10 @@
 					text-align: center;
 			  }
 			}
+			
+			&:hover {
+				color: $color-green;
+			}
 		}
 		
 		&.responsive-toggled {
@@ -56,6 +71,18 @@
 				&:before {
 					@include get-sprite($icons-sprites, icon-menu-close);
 					text-indent: 0;
+					top: 13px;
+
+				  @include breakpoint($bp-desk) {
+						top: 30px;
+				  }
+				}
+				
+				&:hover {
+			
+					&:before {
+						@include get-sprite($icons-sprites, icon-menu-close-green);
+					}
 				}
 			
 				&:after {
@@ -74,6 +101,7 @@
 				left: 0;
 				background: $color-darker-gray;
 				opacity: .86;
+				z-index: 1;
 
 			  @include breakpoint($bp-desk) {
 					top: 0;

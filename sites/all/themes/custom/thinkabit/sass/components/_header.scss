@@ -67,6 +67,10 @@ header {
 						text-indent: 0;
 						font-size: 25px;
 					}
+				
+					&:hover {
+						color: $color-green;
+					}
 				}
 			}
 		
@@ -74,6 +78,10 @@ header {
 				a {
 					@include get-sprite($icons-sprites, icon-instagram);
 					@include hide-text;
+					
+					&:hover {
+						@include get-sprite($icons-sprites, icon-instagram-green);
+					}
 				}
 			}
 		}
