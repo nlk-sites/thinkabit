@@ -24,14 +24,14 @@ body.section-lab {
 	
 		  @include breakpoint($bp-desk) {
 				width: 260px;
-				margin-left: 20px;
+				@include rem(margin-left, 20px);
 		  }
 		}
 	
 		.field--cta {
 			
 		  @include breakpoint($bp-desk) {
-				margin-left: 20px;
+				@include rem(margin-left, 20px);
 		  }
 		}
 	}
@@ -53,7 +53,7 @@ body.section-lab {
   }
 	
 	h4 {
-		margin-bottom: 20px;
+		@include rem(margin-bottom, 20px);
 	}
 	
 	.field--body {

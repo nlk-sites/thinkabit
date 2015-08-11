@@ -42,12 +42,12 @@ header {
 		
 		li {
 			float: left;
-			margin-left: 20px;
+			@include rem(margin-left, 20px);
 
 		  @include breakpoint($bp-desk) {
 				clear: both;
 				margin-left: 0;
-				margin-bottom: 25px;
+				@include rem(margin-bottom, 25px);
 		  }
 		
 			&.icon-twitter {

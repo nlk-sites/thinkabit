@@ -22,7 +22,7 @@
 
 		h1 {
 			line-height: .8;
-			margin-bottom: 10px;
+			@include rem(margin-bottom, 10px);
 			text-transform: uppercase;
 			color: $color-white;
 		}
@@ -31,7 +31,7 @@
 	.field--subtitle {
 		@include font-size(16px);
 		line-height: 18px;
-		margin-bottom: 20px;
+		@include rem(margin-bottom, 20px);
 	
 	  @include breakpoint($bp-desk) {
 			@include font-size(21px);

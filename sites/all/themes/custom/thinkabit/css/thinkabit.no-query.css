@@ -2764,14 +2764,14 @@ body {
   color: #414042; }
 
 /* line 5, ../sass/base/_typography.scss */
-h1, h2, h3, h4, h5, h6 {
+h1, body.node-type-page .field--title-field, body.node-type-webform .field--title-field, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-weight: normal;
   line-height: 1; }
 
 /* line 12, ../sass/base/_typography.scss */
-h1 {
+h1, body.node-type-page .field--title-field, body.node-type-webform .field--title-field {
   font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
   font-size: 70px;
   font-size: 4.375rem;
@@ -2812,6 +2812,14 @@ p {
   margin-bottom: 1.875rem; }
 
 /* line 61, ../sass/base/_typography.scss */
+p:first-child {
+  margin-top: 0; }
+
+/* line 65, ../sass/base/_typography.scss */
+p:last-child {
+  margin-bottom: 0; }
+
+/* line 69, ../sass/base/_typography.scss */
 strong,
 b {
   font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
@@ -2846,6 +2854,16 @@ b {
 .messages {
   margin-left: 90px;
   margin-right: 10px; }
+
+/* line 3, ../sass/components/_basic.scss */
+body.node-type-page .field--title-field, body.node-type-webform .field--title-field {
+  padding: 80px 30px 30px;
+  background: #0095a8;
+  color: #fff;
+  text-transform: uppercase; }
+/* line 15, ../sass/components/_basic.scss */
+body.node-type-page .field--body, body.node-type-webform .field--body {
+  padding: 30px; }
 
 /* line 1, ../sass/components/_beans.scss */
 .block--bean {
@@ -2885,7 +2903,8 @@ body.section-blog .landing-header {
     height: 13px;
     content: "";
     display: inline-block;
-    margin-left: 15px; }
+    margin-left: 15px;
+    margin-left: 0.9375rem; }
   /* line 34, ../sass/components/_buttons.scss */
   .button a:hover, .block--bean .field--cta a:hover, .landing-header .field--cta a:hover, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:hover {
     background: #93397f; }
@@ -2933,7 +2952,8 @@ header {
   /* line 43, ../sass/components/_header.scss */
   .header-social ul li {
     float: left;
-    margin-left: 20px; }
+    margin-left: 20px;
+    margin-left: 1.25rem; }
     /* line 54, ../sass/components/_header.scss */
     .header-social ul li.icon-twitter a {
       position: relative;
@@ -2989,7 +3009,7 @@ body.front .landing-header {
   body.front .landing-header .field--pretitle {
     color: #0095a8; }
   /* line 24, ../sass/components/_home.scss */
-  body.front .landing-header .field--title-field h1 {
+  body.front .landing-header .field--title-field h1, body.front .landing-header .field--title-field body.node-type-page .field--title-field, body.node-type-page body.front .landing-header .field--title-field .field--title-field, body.front .landing-header .field--title-field body.node-type-webform .field--title-field, body.node-type-webform body.front .landing-header .field--title-field .field--title-field {
     color: #0095a8;
     text-transform: none; }
   /* line 30, ../sass/components/_home.scss */
@@ -3031,7 +3051,9 @@ body.front .landing-header {
     font-size: 13px;
     font-size: 0.8125rem;
     line-height: 16px;
-    margin-bottom: 20px; }
+    line-height: 1rem;
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem; }
 
 /* line 127, ../sass/components/_home.scss */
 .block--bean-home-second {
@@ -3044,22 +3066,26 @@ body.front .landing-header {
   .block--bean-home-second h3 {
     color: #0095a8;
     font-family: "Qualcomm-Light", Arial, Sans-serif;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-bottom: 0.625rem; }
   /* line 170, ../sass/components/_home.scss */
   .block--bean-home-second .subtitle {
     font-size: 20px;
     font-size: 1.25rem;
     margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     color: #0095a8; }
   /* line 180, ../sass/components/_home.scss */
   .block--bean-home-second .text {
     font-size: 13px;
     font-size: 0.8125rem;
     line-height: 16px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-bottom: 0.625rem; }
   /* line 192, ../sass/components/_home.scss */
   .block--bean-home-second .field--content-image {
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    margin-bottom: 1.5625rem; }
 
 /* line 222, ../sass/components/_home.scss */
 .block--bean-home-third .field--image img {
@@ -3072,11 +3098,13 @@ body.front .landing-header {
   /* line 239, ../sass/components/_home.scss */
   .block--bean-home-fourth h2 {
     margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     font-family: "Qualcomm-Light", Arial, Sans-serif;
     line-height: .9; }
   /* line 249, ../sass/components/_home.scss */
   .block--bean-home-fourth .text {
     margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     font-size: 20px;
     font-size: 1.25rem;
     line-height: 23px; }
@@ -3092,7 +3120,7 @@ body.section-lab .site-logo {
 body.section-lab .landing-header {
   height: 506px; }
   /* line 16, ../sass/components/_lab.scss */
-  body.section-lab .landing-header .field--title-field h1 {
+  body.section-lab .landing-header .field--title-field h1, body.section-lab .landing-header .field--title-field body.node-type-page .field--title-field, body.node-type-page body.section-lab .landing-header .field--title-field .field--title-field, body.section-lab .landing-header .field--title-field body.node-type-webform .field--title-field, body.node-type-webform body.section-lab .landing-header .field--title-field .field--title-field {
     color: #0095a8; }
   /* line 21, ../sass/components/_lab.scss */
   body.section-lab .landing-header .field--subtitle {
@@ -3110,7 +3138,8 @@ body.section-lab .landing-header {
   color: #fff; }
   /* line 55, ../sass/components/_lab.scss */
   .block--bean-lab-first h4, .block--bean-lab-second h4 {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem; }
   /* line 60, ../sass/components/_lab.scss */
   .block--bean-lab-first .field--body a, .block--bean-lab-second .field--body a {
     color: #fff;
@@ -3151,9 +3180,10 @@ body.section-lab .landing-header {
     font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
     line-height: 1; }
   /* line 23, ../sass/components/_landing-page.scss */
-  .landing-header .field--title-field h1 {
+  .landing-header .field--title-field h1, .landing-header .field--title-field body.node-type-page .field--title-field, body.node-type-page .landing-header .field--title-field .field--title-field, .landing-header .field--title-field body.node-type-webform .field--title-field, body.node-type-webform .landing-header .field--title-field .field--title-field {
     line-height: .8;
     margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     text-transform: uppercase;
     color: #fff; }
   /* line 31, ../sass/components/_landing-page.scss */
@@ -3161,7 +3191,8 @@ body.section-lab .landing-header {
     font-size: 16px;
     font-size: 1rem;
     line-height: 18px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem; }
 
 /* line 3, ../sass/components/_leadership.scss */
 body.section-leadership .landing-header {
@@ -3190,7 +3221,8 @@ body.section-leadership .landing-header {
     text-align: center; }
   /* line 45, ../sass/components/_leadership.scss */
   .block--bean-leadership-first h3 {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    margin-bottom: 0.625rem; }
 
 /* line 58, ../sass/components/_leadership.scss */
 .block--bean-leadership-second {

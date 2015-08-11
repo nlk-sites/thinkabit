@@ -23,11 +23,11 @@
 		
 		&:after {
 			@include get-sprite($icons-sprites, icon-arrow-small-white);
-			margin-left: 15px;
+			@include rem(margin-left, 15px);
 
 		  @include breakpoint($bp-desk) {
 				@include get-sprite($icons-sprites, icon-arrow-white);
-				margin-left: 25px;
+				@include rem(margin-left, 25px);
 		  }
 		}
 		
