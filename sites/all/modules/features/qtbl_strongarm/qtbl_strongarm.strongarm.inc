@@ -238,7 +238,7 @@ function qtbl_strongarm_strongarm() {
       'fe_block_boxes' => '6dfa9fffe6bf56e004c5763d8a28a115',
     ),
     'qtbl_strongarm' => array(
-      'variable' => '4fcc00b96a68d4cbbd0f0d9c28147f27',
+      'variable' => '662a3155d82b17d2d221a4f3d492c81d',
       'dependencies' => 'e410ca96d90029817c7bb9c7cb1f7ea4',
     ),
     'qtbl_text_formats' => array(
@@ -246,11 +246,12 @@ function qtbl_strongarm_strongarm() {
       'dependencies' => 'f67fe5a5c132d868e71f614f2c0855d4',
     ),
     'qtbl_bean' => array(
-      'fe_block_settings' => '40d9743dfbf1497e5f71a4da0cdb695c',
+      'fe_block_settings' => '6c6e84a50de5ca8053e603b7bed14793',
       'field_base' => '3716b63bb4ff12d8283daa71d82dc6ed',
       'field_instance' => '0273f9d26beb9987766fec3aecd8c419',
-      'dependencies' => 'e09cf15653995a60dcb515162c0e0c00',
+      'dependencies' => '4f8c75c50277d4c151c3bc133ac53d0a',
       'bean_type' => 'fd09ed5e8965b4c1ea32eae9d812f6fb',
+      'uuid_bean' => '3af63208d64e299d49b50cd3282a132e',
     ),
   );
   $export['features_codecache'] = $strongarm;
@@ -858,7 +859,7 @@ function qtbl_strongarm_strongarm() {
     'omega_enable_warning' => TRUE,
     'omega_toggle_extension_layouts' => 0,
     'omega_layout' => NULL,
-    'omega_toggle_extension_development' => 1,
+    'omega_toggle_extension_development' => 0,
     'omega_enable_export_reminder' => 1,
     'omega_rebuild_theme_registry' => 0,
     'omega_rebuild_aggregates' => 0,
@@ -916,6 +917,106 @@ function qtbl_strongarm_strongarm() {
     ),
   );
   $export['theme_thinkabit_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_entity_bean';
+  $strongarm->value = array(
+    'static_bean' => 'static_bean',
+  );
+  $export['uuid_features_entity_bean'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_entity_node';
+  $strongarm->value = array(
+    'page' => 0,
+    'blog' => 0,
+    'blurb' => 0,
+    'instagram' => 0,
+    'landing' => 0,
+    'leader' => 0,
+    'news' => 0,
+    'project' => 0,
+    'tweet' => 0,
+    'webform' => 0,
+  );
+  $export['uuid_features_entity_node'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_entity_taxonomy_term';
+  $strongarm->value = array(
+    'tags' => 0,
+  );
+  $export['uuid_features_entity_taxonomy_term'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_file_assets_path';
+  $strongarm->value = '';
+  $export['uuid_features_file_assets_path'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_file_bean';
+  $strongarm->value = array(
+    'static_bean' => 'static_bean',
+  );
+  $export['uuid_features_file_bean'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_file_mode';
+  $strongarm->value = 'inline';
+  $export['uuid_features_file_mode'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_file_node';
+  $strongarm->value = array(
+    'page' => 0,
+    'blog' => 0,
+    'blurb' => 0,
+    'instagram' => 0,
+    'landing' => 0,
+    'leader' => 0,
+    'news' => 0,
+    'project' => 0,
+    'tweet' => 0,
+    'webform' => 0,
+  );
+  $export['uuid_features_file_node'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_file_supported_fields';
+  $strongarm->value = 'file, image';
+  $export['uuid_features_file_supported_fields'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_file_taxonomy_term';
+  $strongarm->value = array(
+    'tags' => 0,
+  );
+  $export['uuid_features_file_taxonomy_term'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'uuid_features_vocabulary_terms';
+  $strongarm->value = 0;
+  $export['uuid_features_vocabulary_terms'] = $strongarm;
 
   return $export;
 }
