@@ -1,0 +1,68 @@
+body.section-schedule-visit {
+	
+	.field--body {
+		padding: 5%;
+
+	  @include breakpoint($bp-desk) {
+			float: right;
+			width: 30%;
+			padding: 4% 6% 4% 0;
+	  }
+		
+		.text {
+			@include rem(font-size, 21px);
+			@include rem(line-height, 24px);
+			@include rem(margin-bottom, 20px);
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+	
+	.webform-client-form {
+		padding: 0 5% 5%;
+
+	  @include breakpoint($bp-desk) {
+			float: left;
+			width: 60%;
+			padding: 3% 0 4% 9%;
+	  }
+		
+		.webform-component {
+
+		  @include breakpoint($bp-desk) {
+				float: left;
+				width: 48%;
+				
+				&:nth-child(2n) {
+					float: right;
+				}
+		  }
+			
+			&.webform-component--description {
+				@include rem(font-size, 21px);
+				@include rem(line-height, 24px);
+				@include rem(margin-bottom, 50px);
+
+			  @include breakpoint($bp-desk) {
+					float: none;
+					width: 100%;
+			  }
+			
+				h3 {
+					@include rem(margin-bottom, 10px);
+
+				}
+			}
+			
+			&.webform-component--message {
+
+			  @include breakpoint($bp-desk) {
+					float: none;
+					width: 100%;
+			  }
+			}
+		}
+	}
+}

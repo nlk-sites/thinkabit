@@ -1,0 +1,22 @@
+.form-item  {
+	label {
+		font-weight: normal;
+		@include rem(margin-bottom, 10px);
+	}
+}
+.marker, 
+.form-required {
+	color: $color-default;
+}
+
+input.form-text,
+textarea.form-textarea {
+	border: 1px solid $color-mediumest-gray;
+	background: $color-lightest-gray;
+	padding: 5px;
+	width: 100%;
+}
+
+input.form-submit {
+	@extend .button-style;
+}

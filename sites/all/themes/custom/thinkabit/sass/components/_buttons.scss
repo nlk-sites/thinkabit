@@ -1,38 +1,44 @@
-.button {
-	a {
-		position: relative;
-		display: inline-block;
-		background: $color-green;
-		height: 40px;
-		line-height: 40px;
-		padding: 0 10px 0 15px;
-		border-radius: 4px;
-		font-family: $QSemiB;
-		color: $color-white;
-		text-decoration: none;
-		@include rem(font-size, 15px);
-		transition: background-color 0.3s ease;
-		
-	  @include breakpoint($bp-desk) {
-			height: 52px;
-			line-height: 52px;
-			padding: 0 20px 0 25px;
-			@include rem(font-size, 20px);
-			font-family: $QReg;
-	  }
-		
-		&:after {
-			@include get-sprite($icons-sprites, icon-arrow-small-white);
-			@include rem(margin-left, 15px);
+.button-style {
+	position: relative;
+	display: inline-block;
+	background: $color-green;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px 0 15px;
+	border: 0;
+	border-radius: 4px;
+	font-family: $QSemiB;
+	color: $color-white;
+	text-decoration: none;
+	@include rem(font-size, 15px);
+	transition: background-color 0.3s ease;
+	
+  @include breakpoint($bp-desk) {
+		height: 52px;
+		line-height: 52px;
+		padding: 0 20px 0 25px;
+		@include rem(font-size, 20px);
+		font-family: $QReg;
+  }
+	
+	&:after {
+		@include get-sprite($icons-sprites, icon-arrow-small-white);
+		@include rem(margin-left, 15px);
 
-		  @include breakpoint($bp-desk) {
-				@include get-sprite($icons-sprites, icon-arrow-white);
-				@include rem(margin-left, 25px);
-		  }
-		}
-		
-		&:hover {
-			background: $color-purple;
-		}
+	  @include breakpoint($bp-desk) {
+			@include get-sprite($icons-sprites, icon-arrow-white);
+			@include rem(margin-left, 25px);
+	  }
+	}
+	
+	&:hover {
+		background: $color-purple;
+	}
+}
+
+.button {
+
+	a {
+		@extend .button-style;
 	}
 }
