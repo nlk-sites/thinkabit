@@ -1,12 +1,14 @@
 name = QTBL Views
 core = 7.x
 package = Features
-dependencies[] = ctools
 dependencies[] = drupagram
 dependencies[] = twitter
-dependencies[] = views
+dependencies[] = views_slideshow
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
+features[views_view][] = blog
 features[views_view][] = blurbs
 features[views_view][] = instagram
+features[views_view][] = leaders
+features[views_view][] = news
 features[views_view][] = projects
