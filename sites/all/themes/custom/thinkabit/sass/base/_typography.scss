@@ -15,6 +15,10 @@ h1 {
   @include rem(margin-bottom, 20px);
 
   @include breakpoint($bp-desk) {
+		@include rem(font-size, 80px);
+  }
+
+  @include breakpoint($bp-full) {
 		@include rem(font-size, 90px);
   }
 }
@@ -25,6 +29,10 @@ h2 {
   @include rem(margin-bottom, 20px);
 
   @include breakpoint($bp-desk) {
+  	@include rem(font-size, 48px);
+  }
+
+  @include breakpoint($bp-full) {
   	@include rem(font-size, 55px);
   }
 }
@@ -34,6 +42,10 @@ h3 {
   @include rem(font-size, 31px);
 
   @include breakpoint($bp-desk) {
+		@include rem(font-size, 36px);
+  }
+
+  @include breakpoint($bp-full) {
 		@include rem(font-size, 42px);
   }
 }

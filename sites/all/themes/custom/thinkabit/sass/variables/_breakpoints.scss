@@ -1,5 +1,16 @@
-$bp750: 750px;
+// 375px has been designed 
+// 1366px has been designed
+
+// 768 - 900
+$bp768: 768px;
+
+// 900 - 1366
+$bp900: 900px;
+
+// 1366 + 
 $bp1366: 1366px;
 
-$bp-tab: $bp750;
-$bp-desk: $bp1366;
+// then the styles for 
+$bp-tab: $bp768;
+$bp-desk: $bp900;
+$bp-full: $bp1366;

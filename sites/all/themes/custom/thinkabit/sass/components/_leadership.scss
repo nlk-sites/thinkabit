@@ -2,14 +2,20 @@ body.section-leadership {
 	
 	.landing-header {
 		background-color: $color-orange-light;
-		height: 506px;
+		height: 300px;
+		
+	  @include breakpoint($bp-desk) {
+			height: 506px;
+			background-position: 50% 0;
+	  }
 		
 		.field--subtitle {
 			color: $color-black;
 	
-		  @include breakpoint($bp-desk) {
-				width: 530px;
+		  @include breakpoint($bp-tab) {
+				width: 50%;
 		  }
+			
 		}
 	}
 }
@@ -17,7 +23,15 @@ body.section-leadership {
 .block--bean-leadership-first {
 	height: 330px;
 
+  @include breakpoint($bp-tab) {
+		height: 390px;
+  }
+	
   @include breakpoint($bp-desk) {
+		height: 520px;
+  }
+	
+  @include breakpoint($bp-full) {
 		height: 618px;
   }
 	
@@ -26,6 +40,7 @@ body.section-leadership {
 		bottom: 0;
 		left: 0;
 		z-index: -1;
+		width: 100%;
 		
 		img {
 			width: 100%;
@@ -34,10 +49,18 @@ body.section-leadership {
 	}
 	
 	.field--body {
-		padding: 30px;
+		padding: 8%;
 		text-align: center;
 
+	  @include breakpoint($bp-tab) {
+			padding: 6%;
+	  }
+
 	  @include breakpoint($bp-desk) {
+			padding: 9% 18%;
+	  }
+
+	  @include breakpoint($bp-full) {
 			padding: 90px 240px;
 	  }
 	}
@@ -58,15 +81,20 @@ body.section-leadership {
 .block--bean-leadership-second {
 	background: $color-green;
 	color: $color-white;
-	padding: 30px;
 
 	@include breakpoint($bp-desk) {
+		height: 334px;
+	}
+	
+	@include breakpoint($bp-full) {
 		background: none;
 		padding: 0;
+		height: 524px;
 	}
 	
 	.field--image {
 		display: none;
+		width: 100%;
 
 	  @include breakpoint($bp-desk) {
 			display: block;
@@ -74,23 +102,33 @@ body.section-leadership {
 
 		img {
 			float: left;
+			width: 100%;
 		}
 	}
 	
 	.field--body {
-		position: absolute;
-		top: 80px;
-		left: 100px;
-		max-width: 610px;
+		padding: 6%;
+
+	  @include breakpoint($bp-desk) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 3% 35% 3% 5%;
+	  }
 	}
 	
 	h4 {
 		font-family: $QLight;
+		@include rem(margin-bottom, 10px); 
 	}
 	
 	.text {
 
 		@include breakpoint($bp-desk) {
+			@include rem(font-size, 18px);
+		}
+
+		@include breakpoint($bp-full) {
 			@include rem(font-size, 21px);
 			line-height: 24px;
 		}

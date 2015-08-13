@@ -1,6 +1,7 @@
 .landing-header {
 	padding: 80px 30px 30px;
 	background-color: $color-green;
+	background-size: cover;
 	color: $color-white;
 
   @include breakpoint($bp-desk) {

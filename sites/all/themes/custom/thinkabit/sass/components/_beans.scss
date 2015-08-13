@@ -1,5 +1,6 @@
 .block--bean {
 	position: relative;
+	overflow: hidden;
 	@include clearfix;
 	
 	.field--cta {
