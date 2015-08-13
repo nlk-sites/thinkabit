@@ -49,6 +49,28 @@ function qtbl_content_types_field_default_field_bases() {
     'type' => 'backgroundfield',
   );
 
+  // Exported field_base: 'field_blog_images'
+  $field_bases['field_blog_images'] = array(
+    'active' => 1,
+    'cardinality' => 10,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_blog_images',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'image',
+    'settings' => array(
+      'default_image' => 0,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'image',
+  );
+
   // Exported field_base: 'field_cta'
   $field_bases['field_cta'] = array(
     'active' => 1,
@@ -85,6 +107,71 @@ function qtbl_content_types_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_image',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'image',
+    'settings' => array(
+      'default_image' => 0,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'image',
+  );
+
+  // Exported field_base: 'field_job_title'
+  $field_bases['field_job_title'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_job_title',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_leader_image'
+  $field_bases['field_leader_image'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_leader_image',
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'image',
+    'settings' => array(
+      'default_image' => 0,
+      'uri_scheme' => 'public',
+    ),
+    'translatable' => 0,
+    'type' => 'image',
+  );
+
+  // Exported field_base: 'field_news_images'
+  $field_bases['field_news_images'] = array(
+    'active' => 1,
+    'cardinality' => 10,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_news_images',
     'indexes' => array(
       'fid' => array(
         0 => 'fid',
