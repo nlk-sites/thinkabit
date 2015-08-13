@@ -2,6 +2,15 @@ body {
 	font-family: $QReg;
 	color: $color-default;
 }
+
+* {
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
   padding: 0;
