@@ -1,0 +1,6 @@
+name = QTBL Nodequeues
+core = 7.x
+package = Features
+dependencies[] = fe_nodequeue
+features[fe_nodequeue][] = leaders
+features[features_api][] = api:2

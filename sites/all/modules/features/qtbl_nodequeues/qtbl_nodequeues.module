@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the QTBL Nodequeues feature.
+ */
+
+include_once 'qtbl_nodequeues.features.inc';
