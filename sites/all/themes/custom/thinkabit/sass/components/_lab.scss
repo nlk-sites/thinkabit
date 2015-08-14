@@ -45,14 +45,11 @@ body.section-lab {
 	@include rem(line-height, 24px);
 	color: $color-white;
 	
-  @include breakpoint($bp-desk) {
+  @include breakpoint($bp-full) {
 		float: left;
 		width: 50%;
-		padding: 6% 6% 0;
-  }
-	
-  @include breakpoint($bp-full) {
 		padding: 6% 10% 0;
+		height: 322px;
   }
 	
 	h4 {
@@ -124,27 +121,51 @@ body.section-lab {
 // Row 1
 .block--views-instagram-block, 
 .block--views-blurbs-block-2 {
-	float: left;
-	width: 50%;
+
+	@include breakpoint($bp-tab) {
+		float: left;
+		width: 50%;
+	}
+
+	@include breakpoint($bp-full) {
+		width: 25%;
+		height: 322px;
+		overflow: hidden;
+	}
 }
 
 // Row 2
-.block-views-blurbs-block-3, 
-.block-views-instagram-block-1 {}
-
-//
-
-.block--bean-lab-first, 
-.block--views-instagram-block, 
-.block--views-blurbs-block-2,
-.block--bean-lab-second, 
 .block--views-blurbs-block-3, 
-.block--views-instagram-block-1, 
+.block--views-instagram-block-1 {
+	
+	@include breakpoint($bp-tab) {
+		float: left;
+		width: 50%;
+	}
+
+	@include breakpoint($bp-full) {
+		width: 25%;
+		height: 322px;
+		overflow: hidden;
+	}
+}
+
+// Row 3
 .block--views-blurbs-block-4, 
 .block--views-instagram-block-2, 
 .block--views-instagram-block-3, 
 .block--views-blurbs-block-5 {
-	float: left;
+
+	@include breakpoint($bp-tab) {
+		float: left;
+		width: 50%;
+	}
+
+	@include breakpoint($bp-full) {
+		width: 25%;
+		height: 322px;
+		overflow: hidden;
+	}
 }
 
 

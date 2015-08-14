@@ -82,8 +82,10 @@ function qtbl_views_views_default_views() {
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '250';
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
-  $handler->display->display_options['fields']['body']['element_type'] = '0';
+  $handler->display->display_options['fields']['body']['element_type'] = 'div';
+  $handler->display->display_options['fields']['body']['element_class'] = 'field--body';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
@@ -95,11 +97,10 @@ function qtbl_views_views_default_views() {
   $handler->display->display_options['fields']['view_node']['label'] = '';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['view_node']['text'] = 'Read More';
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Date (field_date) */
+  $handler->display->display_options['sorts']['field_date_value']['id'] = 'field_date_value';
+  $handler->display->display_options['sorts']['field_date_value']['table'] = 'field_data_field_date';
+  $handler->display->display_options['sorts']['field_date_value']['field'] = 'field_date_value';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -624,32 +625,11 @@ function qtbl_views_views_default_views() {
   $handler->display->display_options['fields']['field_news_images']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_news_images']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_news_images']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_news_images']['type'] = 'slideshow';
+  $handler->display->display_options['fields']['field_news_images']['type'] = 'flexslider';
   $handler->display->display_options['fields']['field_news_images']['settings'] = array(
-    'slideshow_image_style' => '',
-    'slideshow_link' => '',
-    'slideshow_caption' => '',
-    'slideshow_caption_link' => '',
-    'slideshow_fx' => 'fade',
-    'slideshow_speed' => '1000',
-    'slideshow_timeout' => '0',
-    'slideshow_order' => '',
-    'slideshow_controls' => 0,
-    'slideshow_controls_pause' => 0,
-    'slideshow_controls_position' => 'after',
-    'slideshow_pause' => 0,
-    'slideshow_start_on_hover' => 0,
-    'slideshow_pager' => 'number',
-    'slideshow_pager_position' => 'after',
-    'slideshow_pager_image_style' => '',
-    'slideshow_carousel_image_style' => '',
-    'slideshow_carousel_visible' => '3',
-    'slideshow_carousel_scroll' => '1',
-    'slideshow_carousel_speed' => '500',
-    'slideshow_carousel_skin' => '',
-    'slideshow_carousel_follow' => 0,
-    'slideshow_carousel_vertical' => 0,
-    'slideshow_carousel_circular' => 0,
+    'optionset' => 'default',
+    'image_style' => '546x400',
+    'caption' => 0,
   );
   $handler->display->display_options['fields']['field_news_images']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_news_images']['field_api_classes'] = TRUE;
@@ -685,8 +665,10 @@ function qtbl_views_views_default_views() {
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '250';
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
-  $handler->display->display_options['fields']['body']['element_type'] = '0';
+  $handler->display->display_options['fields']['body']['element_type'] = 'div';
+  $handler->display->display_options['fields']['body']['element_class'] = 'field--body';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;

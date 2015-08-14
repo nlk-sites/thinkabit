@@ -29,3 +29,7 @@
 .content-bottom {
 	@include clearfix;
 }
+
+h1.page-title {
+	display: none; // Using Title module but some pages need this (taxonomy)
+}

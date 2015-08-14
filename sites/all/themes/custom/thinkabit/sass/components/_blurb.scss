@@ -44,6 +44,14 @@ body.node-type-blurb {
 	  @include breakpoint($bp-tab) {
 			height: 384px;
 	  }
+		
+	  @include breakpoint($bp-desk) {
+			height: 410px;
+	  }
+		
+	  @include breakpoint($bp-full) {
+			height: 322px;
+	  }
 	}
 	
 	.views-field-title {

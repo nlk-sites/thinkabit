@@ -1,0 +1,87 @@
+.node--blog {
+	padding: 5%;
+
+	@include breakpoint($bp-desk) {
+		padding: 3% 10%;
+	}
+
+	@include breakpoint($bp-full) {
+		padding: 3% 5%;
+	}
+
+	.field--title-field {
+		h2 {
+			text-transform: uppercase;
+			font-family: $QSemiB;
+			color: $color-purple;
+			@include rem(margin-bottom, 20px);
+			
+			@include breakpoint($bp-full) {
+				@include rem(margin-bottom, 40px);
+			}
+		}
+	}
+	
+	.group-content {
+		@include rem(margin-bottom, 20px);
+
+		@include breakpoint($bp-desk) {
+			float: left;
+			width: 75%;
+		}
+	}
+	.group-sidebar {
+
+		@include breakpoint($bp-desk) {
+			float: right;
+			width: 20%;
+		}
+	}
+	
+	.flexslider {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+	}
+	
+	.field--date {
+		border-top: 1px solid $color-light-gray;
+		@include rem(font-size, 21px);
+		@include rem(padding-top, 20px);
+		@include rem(margin-bottom, 30px);
+	}
+
+	.group-tags {
+		@include rem(font-size, 14px);
+		@include rem(line-height, 18px);
+
+		.field-label {
+			@include rem(font-size, 14px);
+			
+			&:after {
+				content: ":";
+			}
+		}
+		
+		.field--tags {
+			display: inline-block;
+			
+			a {
+				color: $color-default;
+
+				&:after {
+					content: ", ";
+				}
+			}
+
+			&:last-child {
+				a {
+
+					&:after {
+						content: none;
+					}
+				}
+			}
+		}
+	}
+}

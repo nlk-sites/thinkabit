@@ -1,6 +1,8 @@
 name = QTBL Views
 core = 7.x
 package = Features
+dependencies[] = admin_views
+dependencies[] = bean
 dependencies[] = ctools
 dependencies[] = drupagram
 dependencies[] = twitter

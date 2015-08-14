@@ -59,7 +59,16 @@ h3 {
 
 h4 {
 	font-family: $QReg;
-  @include rem(font-size, 36px);
+  @include rem(font-size, 26px);
+
+
+  @include breakpoint($bp-desk) {
+		@include rem(font-size, 32px);
+  }
+
+  @include breakpoint($bp-full) {
+		@include rem(font-size, 36px);
+  }
 }
 
 h5 {

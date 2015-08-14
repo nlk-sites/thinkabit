@@ -124,11 +124,11 @@ function qtbl_content_types_field_group_info() {
     'label' => 'Header',
     'weight' => '0',
     'children' => array(
-      0 => 'title_field',
-      1 => 'field_pretitle',
-      2 => 'field_subtitle',
-      3 => 'field_cta',
-      4 => 'field_background_image',
+      0 => 'field_background_image',
+      1 => 'field_cta',
+      2 => 'field_pretitle',
+      3 => 'field_subtitle',
+      4 => 'title_field',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -160,9 +160,9 @@ function qtbl_content_types_field_group_info() {
     'label' => 'Sidebar',
     'weight' => '4',
     'children' => array(
-      0 => 'field_tags',
-      1 => 'field_date',
-      2 => 'sharethis',
+      0 => 'field_date',
+      1 => 'sharethis',
+      2 => 'group_tags',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -194,9 +194,9 @@ function qtbl_content_types_field_group_info() {
     'label' => 'Sidebar',
     'weight' => '2',
     'children' => array(
-      0 => 'field_tags',
-      1 => 'field_date',
-      2 => 'sharethis',
+      0 => 'field_date',
+      1 => 'sharethis',
+      2 => 'group_tags',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -214,6 +214,70 @@ function qtbl_content_types_field_group_info() {
     ),
   );
   $export['group_sidebar|node|news|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_tags|node|blog|default';
+  $field_group->group_name = 'group_tags';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'blog';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_sidebar';
+  $field_group->data = array(
+    'label' => 'Tags',
+    'weight' => '6',
+    'children' => array(
+      0 => 'field_tags',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Tags',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-tags field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_tags|node|blog|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_tags|node|news|default';
+  $field_group->group_name = 'group_tags';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'news';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_sidebar';
+  $field_group->data = array(
+    'label' => 'Tags',
+    'weight' => '5',
+    'children' => array(
+      0 => 'field_tags',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Tags',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-tags field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_tags|node|news|default'] = $field_group;
 
   return $export;
 }

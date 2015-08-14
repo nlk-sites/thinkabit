@@ -109,7 +109,7 @@ function qtbl_bean_uuid_features_default_beans() {
 	<div class="field--pretitle">Thinkabit</div>
 
 	<div class="field--title-field">
-		<h1><a href="/blog">Press & Media</a></h1>
+		<h1><a href="/news">Press &amp; Media</a></h1>
 	</div>
 </div>
 ',
@@ -117,7 +117,7 @@ function qtbl_bean_uuid_features_default_beans() {
           'safe_value' => '<div class="landing-header">
 <div class="field--pretitle">Thinkabit</div>
 <div class="field--title-field">
-<h1><a href="/blog">Press &amp; Media</a></h1>
+<h1><a href="/news">Press &amp; Media</a></h1>
 </div>
 </div>
 ',

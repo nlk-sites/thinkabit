@@ -26,6 +26,11 @@
 			@include rem(margin-bottom, 10px);
 			text-transform: uppercase;
 			color: $color-white;
+			
+			a {
+				color: $color-white;
+				text-decoration: none;
+			}
 		}
 	}
 

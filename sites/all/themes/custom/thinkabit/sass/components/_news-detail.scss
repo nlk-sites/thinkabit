@@ -1,0 +1,10 @@
+.node--news {
+	@extend .node--blog;
+	
+	.field--title-field {
+
+		h2 {
+			color: $color-orange;
+		}
+	}
+}
