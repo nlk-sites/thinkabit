@@ -1,0 +1,66 @@
+body.node-type-blurb {
+	
+	.field--title-field {
+		@extend h1;
+		padding: 80px 30px 30px;
+		background: $color-green;
+		color: $color-white;
+		text-transform: uppercase;
+
+	  @include breakpoint($bp-desk) {
+			padding: 160px 0 70px 95px;
+	  }
+	}
+}
+
+.view-blurbs {
+	width: 100%;
+	
+	&.blurb-blue {
+		background: $color-green;
+		color: $color-white;
+	}
+
+	&.blurb-white {
+		color: $color-green;
+	}
+
+	.views-slideshow-cycle-main-frame {
+		width: 100% !important;
+	}
+
+	.views-slideshow-cycle-main-frame-row {
+		display: table !important;
+		width: 100% !important;
+	}
+	
+	.views-row {
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		height: 375px;
+		width: 100%;
+
+	  @include breakpoint($bp-tab) {
+			height: 384px;
+	  }
+	}
+	
+	.views-field-title {
+		font-family: $QBold;
+		@include rem(font-size, 55px);
+		@include rem(margin-bottom, 15px);
+		line-height: 1;
+		padding: 0 20%;
+	}
+	
+	.field--body {
+		@include rem(font-size, 21px);
+		@include rem(line-height, 22px);
+		padding: 0 20%;
+		
+		p {
+			margin: 0;
+		}
+	}
+}

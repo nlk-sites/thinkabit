@@ -1,0 +1,9 @@
+.view-instagram {
+	.views-field-images {
+		img {
+			max-width: none;
+			width: 100%;
+			display: list-item;
+		}
+	}
+}

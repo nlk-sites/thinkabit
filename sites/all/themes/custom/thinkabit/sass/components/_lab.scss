@@ -49,12 +49,10 @@ body.section-lab {
 		float: left;
 		width: 50%;
 		padding: 6% 6% 0;
-		height: 322px;
   }
 	
   @include breakpoint($bp-full) {
 		padding: 6% 10% 0;
-		height: 322px;
   }
 	
 	h4 {
@@ -82,6 +80,10 @@ body.section-lab {
 .block--bean-lab-second {
 	@extend .block--bean-lab-first;
 	background: $color-green-light;
+
+  @include breakpoint($bp-tab) {
+		clear: left;
+  }
 }
 
 .block--bean-lab-third {
@@ -118,3 +120,31 @@ body.section-lab {
 		}
 	}
 }
+
+// Row 1
+.block--views-instagram-block, 
+.block--views-blurbs-block-2 {
+	float: left;
+	width: 50%;
+}
+
+// Row 2
+.block-views-blurbs-block-3, 
+.block-views-instagram-block-1 {}
+
+//
+
+.block--bean-lab-first, 
+.block--views-instagram-block, 
+.block--views-blurbs-block-2,
+.block--bean-lab-second, 
+.block--views-blurbs-block-3, 
+.block--views-instagram-block-1, 
+.block--views-blurbs-block-4, 
+.block--views-instagram-block-2, 
+.block--views-instagram-block-3, 
+.block--views-blurbs-block-5 {
+	float: left;
+}
+
+

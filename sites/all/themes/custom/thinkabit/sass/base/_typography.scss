@@ -14,7 +14,12 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
 	font-family: $QSemiB;
 	@include font-size(70px);
+	font-size: 14vw;
   @include rem(margin-bottom, 20px);
+
+  @include breakpoint($bp-tab) {
+		@include font-size(70px);
+  }
 
   @include breakpoint($bp-desk) {
 		@include rem(font-size, 80px);

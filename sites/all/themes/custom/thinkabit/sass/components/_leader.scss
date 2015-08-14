@@ -1,0 +1,14 @@
+body.node-type-leader {
+	
+	.field--title-field {
+		@extend h1;
+		padding: 80px 30px 30px;
+		background: $color-green;
+		color: $color-white;
+		text-transform: uppercase;
+
+	  @include breakpoint($bp-desk) {
+			padding: 160px 0 70px 95px;
+	  }
+	}
+}

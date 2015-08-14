@@ -115,6 +115,10 @@ body.section-leadership {
 			left: 0;
 			padding: 3% 35% 3% 5%;
 	  }
+		
+	  @include breakpoint($bp-full) {
+			padding: 7% 42% 3% 10%;
+	  }
 	}
 	
 	h4 {
@@ -131,6 +135,49 @@ body.section-leadership {
 		@include breakpoint($bp-full) {
 			@include rem(font-size, 21px);
 			line-height: 24px;
+		}
+	}
+}
+
+// Leaders block
+.block--views-leaders-block {
+	@include clearfix;
+	padding: 5%;
+
+	@include breakpoint($bp-tab) {
+		padding: 5% 10%;
+	}
+	
+	h2 {
+		font-family: $QLight;
+		@include rem(font-size, 32px);
+	}
+	
+	.view-leaders {
+
+		.views-row {
+			@include rem(margin-bottom, 20px);
+
+			@include breakpoint($bp-tab) {
+				float: left;
+				width: 50%;
+			}
+
+			@include breakpoint($bp-full) {
+				width: 25%;
+				@include rem(padding-right, 20px);
+			}
+		}
+		
+		.field--leader-image {
+			@include rem(margin-bottom, 10px);
+		}
+		.views-field-title {
+			font-family: $QSemiB;
+			@include rem(font-size, 24px);
+		}
+		.field--job-title {
+			@include rem(font-size, 21px);
 		}
 	}
 }
