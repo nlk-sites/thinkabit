@@ -86,6 +86,58 @@ function qtbl_bean_uuid_features_default_beans() {
     'field_content_image' => array(),
   );
   $beans[] = array(
+    'label' => 'News Header',
+    'description' => NULL,
+    'title' => '',
+    'type' => 'static_bean',
+    'data' => array(
+      'view_mode' => 'default',
+    ),
+    'delta' => 'news-header',
+    'view_mode' => 'default',
+    'created' => 1439526036,
+    'log' => '',
+    'uid' => 1,
+    'default_revision' => 1,
+    'revisions' => array(),
+    'vuuid' => '66d44791-3630-4be5-ad51-219f40dc1b48',
+    'uuid' => '25eff488-e1c9-49ae-811b-d69ba0c1b285',
+    'field_body' => array(
+      'und' => array(
+        0 => array(
+          'value' => '<div class="landing-header">
+	<div class="field--pretitle">Thinkabit</div>
+
+	<div class="field--title-field">
+		<h1><a href="/blog">Press & Media</a></h1>
+	</div>
+</div>
+',
+          'format' => 'full_html',
+          'safe_value' => '<div class="landing-header">
+<div class="field--pretitle">Thinkabit</div>
+<div class="field--title-field">
+<h1><a href="/blog">Press &amp; Media</a></h1>
+</div>
+</div>
+',
+        ),
+      ),
+    ),
+    'field_cta' => array(),
+    'field_image' => array(),
+    'title_field' => array(
+      'und' => array(
+        0 => array(
+          'value' => NULL,
+          'format' => NULL,
+          'safe_value' => '',
+        ),
+      ),
+    ),
+    'field_content_image' => array(),
+  );
+  $beans[] = array(
     'label' => 'Home Second',
     'description' => NULL,
     'title' => '',
@@ -274,6 +326,58 @@ function qtbl_bean_uuid_features_default_beans() {
         ),
       ),
     ),
+    'field_image' => array(),
+    'title_field' => array(
+      'und' => array(
+        0 => array(
+          'value' => NULL,
+          'format' => NULL,
+          'safe_value' => '',
+        ),
+      ),
+    ),
+    'field_content_image' => array(),
+  );
+  $beans[] = array(
+    'label' => 'Blog Header',
+    'description' => NULL,
+    'title' => '',
+    'type' => 'static_bean',
+    'data' => array(
+      'view_mode' => 'default',
+    ),
+    'delta' => 'blog-header',
+    'view_mode' => 'default',
+    'created' => 1439522417,
+    'log' => '',
+    'uid' => 1,
+    'default_revision' => 1,
+    'revisions' => array(),
+    'vuuid' => '068ed791-b81c-49cc-bf07-02da5cc6f9fd',
+    'uuid' => '7afe61b9-0101-47bb-9b0d-968360b8ad4d',
+    'field_body' => array(
+      'und' => array(
+        0 => array(
+          'value' => '<div class="landing-header">
+	<div class="field--pretitle">The Blog</div>
+
+	<div class="field--title-field">
+		<h1><a href="/blog">#Whatjusthappened</a></h1>
+	</div>
+</div>
+',
+          'format' => 'full_html',
+          'safe_value' => '<div class="landing-header">
+<div class="field--pretitle">The Blog</div>
+<div class="field--title-field">
+<h1><a href="/blog">#Whatjusthappened</a></h1>
+</div>
+</div>
+',
+        ),
+      ),
+    ),
+    'field_cta' => array(),
     'field_image' => array(),
     'title_field' => array(
       'und' => array(

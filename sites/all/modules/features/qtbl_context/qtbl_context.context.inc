@@ -195,6 +195,12 @@ function qtbl_context_context_default_contexts() {
           'region' => 'content_bottom',
           'weight' => '-9',
         ),
+        'views-leaders-block' => array(
+          'module' => 'views',
+          'delta' => 'leaders-block',
+          'region' => 'content_bottom',
+          'weight' => '-8',
+        ),
       ),
     ),
   );

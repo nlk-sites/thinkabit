@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the QTBL Date feature.
+ */
+
+include_once 'qtbl_date.features.inc';

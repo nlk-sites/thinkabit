@@ -3,13 +3,6 @@ body {
 	color: $color-default;
 }
 
-* {
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
-}
 
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
@@ -65,8 +58,8 @@ h4 {
 }
 
 h5 {
-	font-family: $QBold;
-  @include rem(font-size, 21px);
+	font-family: $QReg;
+  @include rem(font-size, 32px);
 }
 
 a {
@@ -75,6 +68,7 @@ a {
 
   &:hover {
     text-decoration: underline;
+		color: $color-black;
   }
 
 }

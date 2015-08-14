@@ -85,6 +85,12 @@
 </header>
 <div class="l-page">
 
+  <div class="content-top">
+		<?php if ($page['content_top']): ?>
+			<?php print render($page['content_top']); ?>
+		<?php endif; ?>
+  </div>
+	
   <div class="l-main">
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>

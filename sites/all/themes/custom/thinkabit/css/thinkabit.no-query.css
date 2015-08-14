@@ -2747,6 +2747,13 @@
 /* line 1, ../sass/base/_layout.scss */
 .l-page {
   width: 100%; }
+  /* line 20, ../sass/base/_layout.scss */
+  .l-page * {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
 
 /* line 13, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/toolkit-2.6.0/stylesheets/toolkit/_clearfix.scss */
 .content-bottom:after {
@@ -2763,22 +2770,14 @@ body {
   font-family: "Qualcomm-Regular", Arial, Sans-serif;
   color: #414042; }
 
-/* line 6, ../sass/base/_typography.scss */
-* {
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease; }
-
-/* line 14, ../sass/base/_typography.scss */
+/* line 7, ../sass/base/_typography.scss */
 h1, body.node-type-page .field--title-field, body.node-type-webform .field--title-field, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-weight: normal;
   line-height: 1; }
 
-/* line 21, ../sass/base/_typography.scss */
+/* line 14, ../sass/base/_typography.scss */
 h1, body.node-type-page .field--title-field, body.node-type-webform .field--title-field {
   font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
   font-size: 70px;
@@ -2786,7 +2785,7 @@ h1, body.node-type-page .field--title-field, body.node-type-webform .field--titl
   margin-bottom: 20px;
   margin-bottom: 1.25rem; }
 
-/* line 35, ../sass/base/_typography.scss */
+/* line 28, ../sass/base/_typography.scss */
 h2 {
   font-family: "Qualcomm-Bold", Arial, Sans-serif;
   font-size: 42px;
@@ -2794,46 +2793,47 @@ h2 {
   margin-bottom: 20px;
   margin-bottom: 1.25rem; }
 
-/* line 49, ../sass/base/_typography.scss */
+/* line 42, ../sass/base/_typography.scss */
 h3 {
   font-family: "Qualcomm-Regular", Arial, Sans-serif;
   font-size: 31px;
   font-size: 1.9375rem; }
 
-/* line 62, ../sass/base/_typography.scss */
+/* line 55, ../sass/base/_typography.scss */
 h4 {
   font-family: "Qualcomm-Regular", Arial, Sans-serif;
   font-size: 36px;
   font-size: 2.25rem; }
 
-/* line 67, ../sass/base/_typography.scss */
+/* line 60, ../sass/base/_typography.scss */
 h5 {
-  font-family: "Qualcomm-Bold", Arial, Sans-serif;
-  font-size: 21px;
-  font-size: 1.3125rem; }
+  font-family: "Qualcomm-Regular", Arial, Sans-serif;
+  font-size: 32px;
+  font-size: 2rem; }
 
-/* line 72, ../sass/base/_typography.scss */
+/* line 65, ../sass/base/_typography.scss */
 a {
   color: #0095a8;
   text-decoration: none; }
-  /* line 76, ../sass/base/_typography.scss */
+  /* line 69, ../sass/base/_typography.scss */
   a:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #000; }
 
-/* line 83, ../sass/base/_typography.scss */
+/* line 77, ../sass/base/_typography.scss */
 p {
   margin: 30px 0;
   margin: 1.875rem 0; }
 
-/* line 87, ../sass/base/_typography.scss */
+/* line 81, ../sass/base/_typography.scss */
 p:first-child {
   margin-top: 0; }
 
-/* line 91, ../sass/base/_typography.scss */
+/* line 85, ../sass/base/_typography.scss */
 p:last-child {
   margin-bottom: 0; }
 
-/* line 95, ../sass/base/_typography.scss */
+/* line 89, ../sass/base/_typography.scss */
 strong,
 b {
   font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
