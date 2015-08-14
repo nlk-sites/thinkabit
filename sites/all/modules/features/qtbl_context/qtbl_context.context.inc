@@ -13,6 +13,73 @@ function qtbl_context_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'blog_detail';
+  $context->description = '';
+  $context->tag = 'detail page';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'blog' => 'blog',
+      ),
+      'options' => array(
+        'node_form' => '1',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'bean-blog-header' => array(
+          'module' => 'bean',
+          'delta' => 'blog-header',
+          'region' => 'content_top',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('detail page');
+  $export['blog_detail'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'blog_page';
+  $context->description = '';
+  $context->tag = 'page';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'blog' => 'blog',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-blog-block' => array(
+          'module' => 'views',
+          'delta' => 'blog-block',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('page');
+  $export['blog_page'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'global';
   $context->description = '';
   $context->tag = '';
@@ -143,24 +210,72 @@ function qtbl_context_context_default_contexts() {
           'module' => 'bean',
           'delta' => 'lab-first',
           'region' => 'content_bottom',
-          'weight' => '-10',
+          'weight' => '-29',
+        ),
+        'views-instagram-block' => array(
+          'module' => 'views',
+          'delta' => 'instagram-block',
+          'region' => 'content_bottom',
+          'weight' => '-28',
+        ),
+        'views-blurbs-block_2' => array(
+          'module' => 'views',
+          'delta' => 'blurbs-block_2',
+          'region' => 'content_bottom',
+          'weight' => '-27',
         ),
         'bean-lab-second' => array(
           'module' => 'bean',
           'delta' => 'lab-second',
           'region' => 'content_bottom',
-          'weight' => '-9',
+          'weight' => '-26',
+        ),
+        'views-blurbs-block_3' => array(
+          'module' => 'views',
+          'delta' => 'blurbs-block_3',
+          'region' => 'content_bottom',
+          'weight' => '-25',
+        ),
+        'views-instagram-block_1' => array(
+          'module' => 'views',
+          'delta' => 'instagram-block_1',
+          'region' => 'content_bottom',
+          'weight' => '-24',
+        ),
+        'views-blurbs-block_4' => array(
+          'module' => 'views',
+          'delta' => 'blurbs-block_4',
+          'region' => 'content_bottom',
+          'weight' => '-23',
+        ),
+        'views-instagram-block_2' => array(
+          'module' => 'views',
+          'delta' => 'instagram-block_2',
+          'region' => 'content_bottom',
+          'weight' => '-22',
+        ),
+        'views-instagram-block_3' => array(
+          'module' => 'views',
+          'delta' => 'instagram-block_3',
+          'region' => 'content_bottom',
+          'weight' => '-21',
+        ),
+        'views-blurbs-block_5' => array(
+          'module' => 'views',
+          'delta' => 'blurbs-block_5',
+          'region' => 'content_bottom',
+          'weight' => '-20',
         ),
         'bean-lab-third' => array(
           'module' => 'bean',
           'delta' => 'lab-third',
           'region' => 'content_bottom',
-          'weight' => '-8',
+          'weight' => '-19',
         ),
       ),
     ),
   );
-  $context->condition_mode = 0;
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.
@@ -210,6 +325,73 @@ function qtbl_context_context_default_contexts() {
   // Included for use with string extractors like potx.
   t('landing');
   $export['leadership'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'news_detail';
+  $context->description = '';
+  $context->tag = 'detail page';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'news' => 'news',
+      ),
+      'options' => array(
+        'node_form' => '1',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'bean-news-header' => array(
+          'module' => 'bean',
+          'delta' => 'news-header',
+          'region' => 'content_top',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('detail page');
+  $export['news_detail'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'news_page';
+  $context->description = '';
+  $context->tag = 'page';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'news' => 'news',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-news-block' => array(
+          'module' => 'views',
+          'delta' => 'news-block',
+          'region' => 'content_bottom',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('page');
+  $export['news_page'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
