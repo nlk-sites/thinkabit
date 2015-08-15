@@ -33,8 +33,12 @@ body.front {
 			color: $color-black;
 	
 		  @include breakpoint($bp-desk) {
-				width: 250px;
+				width: 38%;
 				@include rem(margin-left, 20px);
+		  }
+
+		  @include breakpoint($bp-desk) {
+				width: 28%;
 		  }
 		}
 	

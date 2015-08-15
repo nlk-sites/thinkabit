@@ -79,7 +79,11 @@ function qtbl_content_types_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'path' => array(
+          'weight' => '3',
+        ),
+      ),
       'display' => array(
         'sharethis' => array(
           'default' => array(

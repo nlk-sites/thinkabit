@@ -3055,24 +3055,20 @@ body.node-type-blurb .field--title-field {
     height: 375px;
     width: 100%; }
   /* line 57, ../sass/components/_blurb.scss */
-  .view-blurbs .views-field-title {
+  .view-blurbs .field--blurb-title {
     font-family: "Qualcomm-Bold", Arial, Sans-serif;
-    font-size: 55px;
-    font-size: 3.4375rem;
+    font-size: 50px;
+    font-size: 3.125rem;
     margin-bottom: 15px;
     margin-bottom: 0.9375rem;
-    line-height: 1;
-    padding: 0 20%; }
-  /* line 65, ../sass/components/_blurb.scss */
-  .view-blurbs .field--body {
+    line-height: 1; }
+  /* line 64, ../sass/components/_blurb.scss */
+  .view-blurbs .field--blurb-text {
     font-size: 21px;
     font-size: 1.3125rem;
     line-height: 22px;
     line-height: 1.375rem;
     padding: 0 20%; }
-    /* line 70, ../sass/components/_blurb.scss */
-    .view-blurbs .field--body p {
-      margin: 0; }
 
 /* line 1, ../sass/components/_buttons.scss */
 .button-style, .view-blog .views-field-view-node a, .button a, .block--bean .field--cta a, .landing-header .field--cta a, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a, input.form-submit, .view-news .views-field-view-node a, .view-taxonomy-term .views-field-view-node a {
@@ -3231,32 +3227,32 @@ body.front .landing-header {
     width: 60%;
     color: #000; }
 
-/* line 51, ../sass/components/_home.scss */
+/* line 55, ../sass/components/_home.scss */
 .block--bean-home-first {
   height: 600px;
   background-color: #0095a8; }
-  /* line 61, ../sass/components/_home.scss */
+  /* line 65, ../sass/components/_home.scss */
   .block--bean-home-first .field--image img {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%; }
-  /* line 69, ../sass/components/_home.scss */
+  /* line 73, ../sass/components/_home.scss */
   .block--bean-home-first .field--body {
     position: absolute;
     top: 0;
     left: 0;
     padding: 8%;
     color: #fff; }
-  /* line 81, ../sass/components/_home.scss */
+  /* line 85, ../sass/components/_home.scss */
   .block--bean-home-first h3 {
     margin-bottom: 10px; }
-  /* line 85, ../sass/components/_home.scss */
+  /* line 89, ../sass/components/_home.scss */
   .block--bean-home-first .subtitle {
     font-size: 18px;
     font-size: 1.125rem;
     margin-bottom: 20px; }
-  /* line 95, ../sass/components/_home.scss */
+  /* line 99, ../sass/components/_home.scss */
   .block--bean-home-first .column-one,
   .block--bean-home-first .column-two {
     font-size: 13px;
@@ -3266,61 +3262,61 @@ body.front .landing-header {
     margin-bottom: 20px;
     margin-bottom: 1.25rem; }
 
-/* line 118, ../sass/components/_home.scss */
+/* line 122, ../sass/components/_home.scss */
 .block--bean-home-second {
   background: #ebebeb;
   padding: 6% 5%; }
-  /* line 127, ../sass/components/_home.scss */
+  /* line 131, ../sass/components/_home.scss */
   .block--bean-home-second .field--image {
     display: none; }
-    /* line 134, ../sass/components/_home.scss */
+    /* line 138, ../sass/components/_home.scss */
     .block--bean-home-second .field--image img {
       position: absolute;
       bottom: 0;
       left: 0;
       width: auto;
       max-width: none; }
-  /* line 165, ../sass/components/_home.scss */
+  /* line 169, ../sass/components/_home.scss */
   .block--bean-home-second h3 {
     color: #0095a8;
     font-family: "Qualcomm-Light", Arial, Sans-serif;
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
-  /* line 175, ../sass/components/_home.scss */
+  /* line 179, ../sass/components/_home.scss */
   .block--bean-home-second .subtitle {
     font-size: 20px;
     font-size: 1.25rem;
     margin-bottom: 10px;
     margin-bottom: 0.625rem;
     color: #0095a8; }
-  /* line 185, ../sass/components/_home.scss */
+  /* line 189, ../sass/components/_home.scss */
   .block--bean-home-second .text {
     font-size: 13px;
     font-size: 0.8125rem;
     line-height: 16px;
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
-  /* line 197, ../sass/components/_home.scss */
+  /* line 201, ../sass/components/_home.scss */
   .block--bean-home-second .field--content-image {
     margin-bottom: 25px;
     margin-bottom: 1.5625rem; }
 
-/* line 231, ../sass/components/_home.scss */
+/* line 235, ../sass/components/_home.scss */
 .block--bean-home-third .field--image img {
   float: left;
   width: 100%; }
 
-/* line 239, ../sass/components/_home.scss */
+/* line 243, ../sass/components/_home.scss */
 .block--bean-home-fourth {
   padding: 10% 5%;
   color: #0095a8; }
-  /* line 253, ../sass/components/_home.scss */
+  /* line 257, ../sass/components/_home.scss */
   .block--bean-home-fourth h2 {
     margin-bottom: 20px;
     margin-bottom: 1.25rem;
     font-family: "Qualcomm-Light", Arial, Sans-serif;
     line-height: .9; }
-  /* line 263, ../sass/components/_home.scss */
+  /* line 267, ../sass/components/_home.scss */
   .block--bean-home-fourth .text {
     margin-bottom: 30px;
     margin-bottom: 1.875rem;
