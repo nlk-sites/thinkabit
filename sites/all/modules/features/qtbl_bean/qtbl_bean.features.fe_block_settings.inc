@@ -12,6 +12,27 @@ function qtbl_bean_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
+  $export['bean-blog-header'] = array(
+    'cache' => 1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'blog-header',
+    'module' => 'bean',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'thinkabit' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'thinkabit',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['bean-home-first'] = array(
     'cache' => 1,
     'css_class' => '',
@@ -185,6 +206,48 @@ function qtbl_bean_default_fe_block_settings() {
     'css_class' => '',
     'custom' => 0,
     'delta' => 'leadership-second',
+    'module' => 'bean',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'thinkabit' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'thinkabit',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['bean-news-header'] = array(
+    'cache' => 1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'news-header',
+    'module' => 'bean',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'thinkabit' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'thinkabit',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['bean-project-header'] = array(
+    'cache' => 1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'project-header',
     'module' => 'bean',
     'node_types' => array(),
     'pages' => '',

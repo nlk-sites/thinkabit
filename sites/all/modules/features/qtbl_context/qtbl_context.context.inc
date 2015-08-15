@@ -396,6 +396,41 @@ function qtbl_context_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'project_detail';
+  $context->description = '';
+  $context->tag = 'detail page';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'project' => 'project',
+      ),
+      'options' => array(
+        'node_form' => '1',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'bean-project-header' => array(
+          'module' => 'bean',
+          'delta' => 'project-header',
+          'region' => 'content_top',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('detail page');
+  $export['project_detail'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'projects';
   $context->description = '';
   $context->tag = 'landing';

@@ -86,6 +86,59 @@ function qtbl_bean_uuid_features_default_beans() {
     'field_content_image' => array(),
   );
   $beans[] = array(
+    'label' => 'Project Header',
+    'description' => NULL,
+    'title' => '',
+    'type' => 'static_bean',
+    'data' => array(
+      'view_mode' => 'default',
+    ),
+    'delta' => 'project-header',
+    'view_mode' => 'default',
+    'created' => 1439659901,
+    'log' => '',
+    'uid' => 1,
+    'default_revision' => 1,
+    'revisions' => array(),
+    'vuuid' => '725334e4-6336-49b0-bdb5-2ff6d7223410',
+    'uuid' => '1fb4e933-0a08-40c2-90da-1e739f125440',
+    'field_body' => array(
+      'und' => array(
+        0 => array(
+          'value' => '<div class="landing-header">
+  <div class="field--pretitle">
+    Thinkabit  </div>
+
+  <div class="field--title-field">
+    <h1>Projects</h1>
+  </div>
+</div>',
+          'format' => 'full_html',
+          'safe_value' => '<div class="landing-header">
+<div class="field--pretitle">
+    Thinkabit  </div>
+<div class="field--title-field">
+<h1>Projects</h1>
+</div>
+</div>
+',
+        ),
+      ),
+    ),
+    'field_cta' => array(),
+    'field_image' => array(),
+    'title_field' => array(
+      'und' => array(
+        0 => array(
+          'value' => NULL,
+          'format' => NULL,
+          'safe_value' => '',
+        ),
+      ),
+    ),
+    'field_content_image' => array(),
+  );
+  $beans[] = array(
     'label' => 'News Header',
     'description' => NULL,
     'title' => '',
@@ -157,15 +210,16 @@ function qtbl_bean_uuid_features_default_beans() {
     'field_body' => array(
       'und' => array(
         0 => array(
-          'value' => '<h3>COME BUILD SOMETHING IN THE <strong>Thinkabit Lab.</strong></h3>
+          'value' => '<h3>COME BUILD SOMETHING in the&nbsp;<strong>Thinkabit Lab&trade;​.</strong></h3>
 
-<div class="subtitle">Thinkabit is the integration of a lab, makerspace, and classroom for grades 6-8.</div>
+<div class="subtitle">Where creativity, innovation and a glittery mess is celebrated!</div>
 
-<div class="text">The classroom is equal parts engineering lab and art studio. Classes are led by Qualcomm engineers while students create, code, collaborate and present robotic creations better known as “Robo Crafts.” Students learn about what engineers and supporting departments do at the Company. Activities combine mini-lectures with team interactions.</div>',
+<div class="text">The space is equal parts engineering lab and art studio. Classes are led by engineers while students learn to code, create and present their robotic creations known as Robo Crafts. Students&rsquo; awareness of careers is expanded during the QWOW, Qualcomm World of Work portion. From quick facts on Qualcomm to career development activities, students walk away with a broader knowledge of careers in their own backyard!</div>
+',
           'format' => 'full_html',
-          'safe_value' => '<h3>COME BUILD SOMETHING IN THE <strong>Thinkabit Lab.</strong></h3>
-<div class="subtitle">Thinkabit is the integration of a lab, makerspace, and classroom for grades 6-8.</div>
-<div class="text">The classroom is equal parts engineering lab and art studio. Classes are led by Qualcomm engineers while students create, code, collaborate and present robotic creations better known as “Robo Crafts.” Students learn about what engineers and supporting departments do at the Company. Activities combine mini-lectures with team interactions.</div>
+          'safe_value' => '<h3>COME BUILD SOMETHING in the&nbsp;<strong>Thinkabit Lab&trade;​.</strong></h3>
+<div class="subtitle">Where creativity, innovation and a glittery mess is celebrated!</div>
+<div class="text">The space is equal parts engineering lab and art studio. Classes are led by engineers while students learn to code, create and present their robotic creations known as Robo Crafts. Students&rsquo; awareness of careers is expanded during the QWOW, Qualcomm World of Work portion. From quick facts on Qualcomm to career development activities, students walk away with a broader knowledge of careers in their own backyard!</div>
 ',
         ),
       ),
@@ -267,11 +321,11 @@ function qtbl_bean_uuid_features_default_beans() {
         0 => array(
           'value' => '<h4><a href="/projects">Engineering the Future.</a></h4>
 
-<div class="text">The space is equal parts engineering lab and art studio. Classes are led by engineers while students learn to code, create and present their robotic creations known as Robo Crafts. Students’ awareness of careers is expanded during the QWOW, Qualcomm World of Work portion. From quick facts on Qualcomm to career development activities, students walk away with a broader knowledge of careers in their own backyard!</div>
+<div class="text">Students gain exposure to the many different types of engineering careers&mdash;software, hardware, systems and anything that pushes the boundaries of the field over the next 100 years in two unique learning environments.</div>
 ',
           'format' => 'full_html',
           'safe_value' => '<h4><a href="/projects">Engineering the Future.</a></h4>
-<div class="text">The space is equal parts engineering lab and art studio. Classes are led by engineers while students learn to code, create and present their robotic creations known as Robo Crafts. Students’ awareness of careers is expanded during the QWOW, Qualcomm World of Work portion. From quick facts on Qualcomm to career development activities, students walk away with a broader knowledge of careers in their own backyard!</div>
+<div class="text">Students gain exposure to the many different types of engineering careers&mdash;software, hardware, systems and anything that pushes the boundaries of the field over the next 100 years in two unique learning environments.</div>
 ',
         ),
       ),
