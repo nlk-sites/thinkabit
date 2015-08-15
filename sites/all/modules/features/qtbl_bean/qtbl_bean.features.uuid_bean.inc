@@ -106,19 +106,18 @@ function qtbl_bean_uuid_features_default_beans() {
       'und' => array(
         0 => array(
           'value' => '<div class="landing-header">
-  <div class="field--pretitle">
-    Thinkabit  </div>
+	<div class="field--pretitle">Thinkabit</div>
 
-  <div class="field--title-field">
-    <h1>Projects</h1>
-  </div>
-</div>',
+	<div class="field--title-field">
+		<h1><a href="/projects">Projects</a></h1>
+	</div>
+</div>
+',
           'format' => 'full_html',
           'safe_value' => '<div class="landing-header">
-<div class="field--pretitle">
-    Thinkabit  </div>
+<div class="field--pretitle">Thinkabit</div>
 <div class="field--title-field">
-<h1>Projects</h1>
+<h1><a href="/projects">Projects</a></h1>
 </div>
 </div>
 ',

@@ -726,21 +726,23 @@ function qtbl_views_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Block: Background Image */
-  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
-  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
-  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
-  $handler->display->display_options['fields']['field_image']['label'] = '';
-  $handler->display->display_options['fields']['field_image']['element_type'] = '0';
-  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_image']['element_wrapper_type'] = '0';
-  $handler->display->display_options['fields']['field_image']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_image']['settings'] = array(
-    'image_style' => '',
+  /* Field: Field: Content Image */
+  $handler->display->display_options['fields']['field_content_image']['id'] = 'field_content_image';
+  $handler->display->display_options['fields']['field_content_image']['table'] = 'field_data_field_content_image';
+  $handler->display->display_options['fields']['field_content_image']['field'] = 'field_content_image';
+  $handler->display->display_options['fields']['field_content_image']['label'] = '';
+  $handler->display->display_options['fields']['field_content_image']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_content_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_content_image']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_content_image']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_content_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_content_image']['settings'] = array(
+    'image_style' => '288x284',
     'image_link' => 'content',
   );
-  $handler->display->display_options['fields']['field_image']['field_api_classes'] = TRUE;
+  $handler->display->display_options['fields']['field_content_image']['delta_limit'] = '1';
+  $handler->display->display_options['fields']['field_content_image']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_content_image']['field_api_classes'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';

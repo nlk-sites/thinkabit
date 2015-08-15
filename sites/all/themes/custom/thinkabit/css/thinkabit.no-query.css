@@ -2762,7 +2762,7 @@
   clear: both; }
 
 /* line 33, ../sass/base/_layout.scss */
-h1.page-title, body.node-type-page .page-title.field--title-field, body.node-type-blurb .page-title.field--title-field, body.node-type-leader .page-title.field--title-field, body.node-type-project .page-title.field--title-field, body.node-type-webform .page-title.field--title-field {
+h1.page-title, body.node-type-page .page-title.field--title-field, body.node-type-blurb .page-title.field--title-field, body.node-type-leader .page-title.field--title-field, body.node-type-webform .page-title.field--title-field {
   display: none; }
 
 /* line 1, ../sass/base/_media.scss */
@@ -2775,14 +2775,14 @@ body {
   color: #414042; }
 
 /* line 7, ../sass/base/_typography.scss */
-h1, body.node-type-page .field--title-field, body.node-type-blurb .field--title-field, body.node-type-leader .field--title-field, body.node-type-project .field--title-field, body.node-type-webform .field--title-field, h2, h3, h4, h5, h6 {
+h1, body.node-type-page .field--title-field, body.node-type-blurb .field--title-field, body.node-type-leader .field--title-field, body.node-type-webform .field--title-field, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-weight: normal;
   line-height: 1; }
 
 /* line 14, ../sass/base/_typography.scss */
-h1, body.node-type-page .field--title-field, body.node-type-blurb .field--title-field, body.node-type-leader .field--title-field, body.node-type-project .field--title-field, body.node-type-webform .field--title-field {
+h1, body.node-type-page .field--title-field, body.node-type-blurb .field--title-field, body.node-type-leader .field--title-field, body.node-type-webform .field--title-field {
   font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
   font-size: 70px;
   font-size: 4.375rem;
@@ -2901,26 +2901,26 @@ body.node-type-page .field--body {
     clear: both; }
 
 /* line 1, ../sass/components/_blog-detail.scss */
-.node--blog, .node--news {
+.node--blog, .node--news, .node--project {
   padding: 5%; }
   /* line 13, ../sass/components/_blog-detail.scss */
-  .node--blog .field--title-field h2, .node--news .field--title-field h2 {
+  .node--blog .field--title-field h2, .node--news .field--title-field h2, .node--project .field--title-field h2 {
     text-transform: uppercase;
     font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
     color: #93397f;
     margin-bottom: 20px;
     margin-bottom: 1.25rem; }
   /* line 25, ../sass/components/_blog-detail.scss */
-  .node--blog .group-content, .node--news .group-content {
+  .node--blog .group-content, .node--news .group-content, .node--project .group-content {
     margin-bottom: 20px;
     margin-bottom: 1.25rem; }
   /* line 41, ../sass/components/_blog-detail.scss */
-  .node--blog .flexslider, .node--news .flexslider {
+  .node--blog .flexslider, .node--news .flexslider, .node--project .flexslider {
     border: 0;
     border-radius: 0;
     box-shadow: none; }
   /* line 47, ../sass/components/_blog-detail.scss */
-  .node--blog .field--date, .node--news .field--date {
+  .node--blog .field--date, .node--news .field--date, .node--project .field--date {
     border-top: 1px solid #b7b7b7;
     font-size: 21px;
     font-size: 1.3125rem;
@@ -2929,29 +2929,76 @@ body.node-type-page .field--body {
     margin-bottom: 30px;
     margin-bottom: 1.875rem; }
   /* line 54, ../sass/components/_blog-detail.scss */
-  .node--blog .group-tags, .node--news .group-tags {
+  .node--blog .group-category, .node--news .group-category, .node--project .group-category,
+  .node--blog .group-tags,
+  .node--news .group-tags,
+  .node--project .group-tags {
     font-size: 14px;
     font-size: 0.875rem;
     line-height: 18px;
-    line-height: 1.125rem; }
-    /* line 58, ../sass/components/_blog-detail.scss */
-    .node--blog .group-tags .field-label, .node--news .group-tags .field-label {
+    line-height: 1.125rem;
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem; }
+    /* line 60, ../sass/components/_blog-detail.scss */
+    .node--blog .group-category .field-label, .node--news .group-category .field-label, .node--project .group-category .field-label,
+    .node--blog .group-tags .field-label,
+    .node--news .group-tags .field-label,
+    .node--project .group-tags .field-label {
       font-size: 14px;
       font-size: 0.875rem; }
-      /* line 61, ../sass/components/_blog-detail.scss */
-      .node--blog .group-tags .field-label:after, .node--news .group-tags .field-label:after {
+      /* line 63, ../sass/components/_blog-detail.scss */
+      .node--blog .group-category .field-label:after, .node--news .group-category .field-label:after, .node--project .group-category .field-label:after,
+      .node--blog .group-tags .field-label:after,
+      .node--news .group-tags .field-label:after,
+      .node--project .group-tags .field-label:after {
         content: ":"; }
-    /* line 66, ../sass/components/_blog-detail.scss */
-    .node--blog .group-tags .field--tags, .node--news .group-tags .field--tags {
+    /* line 67, ../sass/components/_blog-detail.scss */
+    .node--blog .group-category .field--category, .node--news .group-category .field--category, .node--project .group-category .field--category,
+    .node--blog .group-category .field--tags,
+    .node--news .group-category .field--tags,
+    .node--project .group-category .field--tags,
+    .node--blog .group-tags .field--category,
+    .node--news .group-tags .field--category,
+    .node--project .group-tags .field--category,
+    .node--blog .group-tags .field--tags,
+    .node--news .group-tags .field--tags,
+    .node--project .group-tags .field--tags {
       display: inline-block; }
-      /* line 69, ../sass/components/_blog-detail.scss */
-      .node--blog .group-tags .field--tags a, .node--news .group-tags .field--tags a {
+      /* line 71, ../sass/components/_blog-detail.scss */
+      .node--blog .group-category .field--category a, .node--news .group-category .field--category a, .node--project .group-category .field--category a,
+      .node--blog .group-category .field--tags a,
+      .node--news .group-category .field--tags a,
+      .node--project .group-category .field--tags a,
+      .node--blog .group-tags .field--category a,
+      .node--news .group-tags .field--category a,
+      .node--project .group-tags .field--category a,
+      .node--blog .group-tags .field--tags a,
+      .node--news .group-tags .field--tags a,
+      .node--project .group-tags .field--tags a {
         color: #414042; }
-        /* line 72, ../sass/components/_blog-detail.scss */
-        .node--blog .group-tags .field--tags a:after, .node--news .group-tags .field--tags a:after {
+        /* line 74, ../sass/components/_blog-detail.scss */
+        .node--blog .group-category .field--category a:after, .node--news .group-category .field--category a:after, .node--project .group-category .field--category a:after,
+        .node--blog .group-category .field--tags a:after,
+        .node--news .group-category .field--tags a:after,
+        .node--project .group-category .field--tags a:after,
+        .node--blog .group-tags .field--category a:after,
+        .node--news .group-tags .field--category a:after,
+        .node--project .group-tags .field--category a:after,
+        .node--blog .group-tags .field--tags a:after,
+        .node--news .group-tags .field--tags a:after,
+        .node--project .group-tags .field--tags a:after {
           content: ", "; }
-      /* line 80, ../sass/components/_blog-detail.scss */
-      .node--blog .group-tags .field--tags:last-child a:after, .node--news .group-tags .field--tags:last-child a:after {
+      /* line 82, ../sass/components/_blog-detail.scss */
+      .node--blog .group-category .field--category:last-child a:after, .node--news .group-category .field--category:last-child a:after, .node--project .group-category .field--category:last-child a:after,
+      .node--blog .group-category .field--tags:last-child a:after,
+      .node--news .group-category .field--tags:last-child a:after,
+      .node--project .group-category .field--tags:last-child a:after,
+      .node--blog .group-tags .field--category:last-child a:after,
+      .node--news .group-tags .field--category:last-child a:after,
+      .node--project .group-tags .field--category:last-child a:after,
+      .node--blog .group-tags .field--tags:last-child a:after,
+      .node--news .group-tags .field--tags:last-child a:after,
+      .node--project .group-tags .field--tags:last-child a:after {
         content: none; }
 
 /* line 3, ../sass/components/_blog.scss */
@@ -3219,7 +3266,7 @@ body.front .landing-header {
   body.front .landing-header .field--pretitle {
     color: #0095a8; }
   /* line 25, ../sass/components/_home.scss */
-  body.front .landing-header .field--title-field h1, body.front .landing-header .field--title-field body.node-type-page .field--title-field, body.node-type-page body.front .landing-header .field--title-field .field--title-field, body.front .landing-header .field--title-field body.node-type-blurb .field--title-field, body.node-type-blurb body.front .landing-header .field--title-field .field--title-field, body.front .landing-header .field--title-field body.node-type-leader .field--title-field, body.node-type-leader body.front .landing-header .field--title-field .field--title-field, body.front .landing-header .field--title-field body.node-type-project .field--title-field, body.node-type-project body.front .landing-header .field--title-field .field--title-field, body.front .landing-header .field--title-field body.node-type-webform .field--title-field, body.node-type-webform body.front .landing-header .field--title-field .field--title-field {
+  body.front .landing-header .field--title-field h1, body.front .landing-header .field--title-field body.node-type-page .field--title-field, body.node-type-page body.front .landing-header .field--title-field .field--title-field, body.front .landing-header .field--title-field body.node-type-blurb .field--title-field, body.node-type-blurb body.front .landing-header .field--title-field .field--title-field, body.front .landing-header .field--title-field body.node-type-leader .field--title-field, body.node-type-leader body.front .landing-header .field--title-field .field--title-field, body.front .landing-header .field--title-field body.node-type-webform .field--title-field, body.node-type-webform body.front .landing-header .field--title-field .field--title-field {
     color: #0095a8;
     text-transform: none; }
   /* line 31, ../sass/components/_home.scss */
@@ -3276,47 +3323,54 @@ body.front .landing-header {
       left: 0;
       width: auto;
       max-width: none; }
-  /* line 169, ../sass/components/_home.scss */
+  /* line 155, ../sass/components/_home.scss */
+  .block--bean-home-second .field--body {
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem; }
+  /* line 170, ../sass/components/_home.scss */
   .block--bean-home-second h3 {
     color: #0095a8;
     font-family: "Qualcomm-Light", Arial, Sans-serif;
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
-  /* line 179, ../sass/components/_home.scss */
+  /* line 180, ../sass/components/_home.scss */
   .block--bean-home-second .subtitle {
     font-size: 20px;
     font-size: 1.25rem;
     margin-bottom: 10px;
     margin-bottom: 0.625rem;
     color: #0095a8; }
-  /* line 189, ../sass/components/_home.scss */
+  /* line 190, ../sass/components/_home.scss */
   .block--bean-home-second .text {
     font-size: 13px;
     font-size: 0.8125rem;
     line-height: 16px;
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
-  /* line 201, ../sass/components/_home.scss */
+  /* line 202, ../sass/components/_home.scss */
   .block--bean-home-second .field--content-image {
-    margin-bottom: 25px;
-    margin-bottom: 1.5625rem; }
+    float: left; }
+  /* line 219, ../sass/components/_home.scss */
+  .block--bean-home-second .field--cta {
+    float: left;
+    margin: 70px 0 0 20px; }
 
-/* line 235, ../sass/components/_home.scss */
+/* line 246, ../sass/components/_home.scss */
 .block--bean-home-third .field--image img {
   float: left;
   width: 100%; }
 
-/* line 243, ../sass/components/_home.scss */
+/* line 254, ../sass/components/_home.scss */
 .block--bean-home-fourth {
   padding: 10% 5%;
   color: #0095a8; }
-  /* line 257, ../sass/components/_home.scss */
+  /* line 268, ../sass/components/_home.scss */
   .block--bean-home-fourth h2 {
     margin-bottom: 20px;
     margin-bottom: 1.25rem;
     font-family: "Qualcomm-Light", Arial, Sans-serif;
     line-height: .9; }
-  /* line 267, ../sass/components/_home.scss */
+  /* line 278, ../sass/components/_home.scss */
   .block--bean-home-fourth .text {
     margin-bottom: 30px;
     margin-bottom: 1.875rem;
@@ -3341,7 +3395,7 @@ body.section-lab .site-logo {
 body.section-lab .landing-header {
   height: 506px; }
   /* line 16, ../sass/components/_lab.scss */
-  body.section-lab .landing-header .field--title-field h1, body.section-lab .landing-header .field--title-field body.node-type-page .field--title-field, body.node-type-page body.section-lab .landing-header .field--title-field .field--title-field, body.section-lab .landing-header .field--title-field body.node-type-blurb .field--title-field, body.node-type-blurb body.section-lab .landing-header .field--title-field .field--title-field, body.section-lab .landing-header .field--title-field body.node-type-leader .field--title-field, body.node-type-leader body.section-lab .landing-header .field--title-field .field--title-field, body.section-lab .landing-header .field--title-field body.node-type-project .field--title-field, body.node-type-project body.section-lab .landing-header .field--title-field .field--title-field, body.section-lab .landing-header .field--title-field body.node-type-webform .field--title-field, body.node-type-webform body.section-lab .landing-header .field--title-field .field--title-field {
+  body.section-lab .landing-header .field--title-field h1, body.section-lab .landing-header .field--title-field body.node-type-page .field--title-field, body.node-type-page body.section-lab .landing-header .field--title-field .field--title-field, body.section-lab .landing-header .field--title-field body.node-type-blurb .field--title-field, body.node-type-blurb body.section-lab .landing-header .field--title-field .field--title-field, body.section-lab .landing-header .field--title-field body.node-type-leader .field--title-field, body.node-type-leader body.section-lab .landing-header .field--title-field .field--title-field, body.section-lab .landing-header .field--title-field body.node-type-webform .field--title-field, body.node-type-webform body.section-lab .landing-header .field--title-field .field--title-field {
     color: #0095a8; }
   /* line 21, ../sass/components/_lab.scss */
   body.section-lab .landing-header .field--subtitle {
@@ -3390,6 +3444,10 @@ body.section-lab .landing-header {
     font-family: "Qualcomm-Light", Arial, Sans-serif;
     color: #0095a8; }
 
+/* line 172, ../sass/components/_lab.scss */
+.block--views-instagram-block-3 {
+  clear: left; }
+
 /* line 1, ../sass/components/_landing-page.scss */
 .landing-header {
   padding: 80px 30px 30px;
@@ -3403,14 +3461,14 @@ body.section-lab .landing-header {
     font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
     line-height: 1; }
   /* line 24, ../sass/components/_landing-page.scss */
-  .landing-header .field--title-field h1, .landing-header .field--title-field body.node-type-page .field--title-field, body.node-type-page .landing-header .field--title-field .field--title-field, .landing-header .field--title-field body.node-type-blurb .field--title-field, body.node-type-blurb .landing-header .field--title-field .field--title-field, .landing-header .field--title-field body.node-type-leader .field--title-field, body.node-type-leader .landing-header .field--title-field .field--title-field, .landing-header .field--title-field body.node-type-project .field--title-field, body.node-type-project .landing-header .field--title-field .field--title-field, .landing-header .field--title-field body.node-type-webform .field--title-field, body.node-type-webform .landing-header .field--title-field .field--title-field {
+  .landing-header .field--title-field h1, .landing-header .field--title-field body.node-type-page .field--title-field, body.node-type-page .landing-header .field--title-field .field--title-field, .landing-header .field--title-field body.node-type-blurb .field--title-field, body.node-type-blurb .landing-header .field--title-field .field--title-field, .landing-header .field--title-field body.node-type-leader .field--title-field, body.node-type-leader .landing-header .field--title-field .field--title-field, .landing-header .field--title-field body.node-type-webform .field--title-field, body.node-type-webform .landing-header .field--title-field .field--title-field {
     line-height: .8;
     margin-bottom: 10px;
     margin-bottom: 0.625rem;
     text-transform: uppercase;
     color: #fff; }
     /* line 30, ../sass/components/_landing-page.scss */
-    .landing-header .field--title-field h1 a, .landing-header .field--title-field body.node-type-page .field--title-field a, body.node-type-page .landing-header .field--title-field .field--title-field a, .landing-header .field--title-field body.node-type-blurb .field--title-field a, body.node-type-blurb .landing-header .field--title-field .field--title-field a, .landing-header .field--title-field body.node-type-leader .field--title-field a, body.node-type-leader .landing-header .field--title-field .field--title-field a, .landing-header .field--title-field body.node-type-project .field--title-field a, body.node-type-project .landing-header .field--title-field .field--title-field a, .landing-header .field--title-field body.node-type-webform .field--title-field a, body.node-type-webform .landing-header .field--title-field .field--title-field a {
+    .landing-header .field--title-field h1 a, .landing-header .field--title-field body.node-type-page .field--title-field a, body.node-type-page .landing-header .field--title-field .field--title-field a, .landing-header .field--title-field body.node-type-blurb .field--title-field a, body.node-type-blurb .landing-header .field--title-field .field--title-field a, .landing-header .field--title-field body.node-type-leader .field--title-field a, body.node-type-leader .landing-header .field--title-field .field--title-field a, .landing-header .field--title-field body.node-type-webform .field--title-field a, body.node-type-webform .landing-header .field--title-field .field--title-field a {
       color: #fff;
       text-decoration: none; }
   /* line 37, ../sass/components/_landing-page.scss */
@@ -3689,19 +3747,16 @@ body.section-news .landing-header {
   .view-news .views-field-view-node, .view-taxonomy-term .views-field-view-node {
     clear: left; }
 
-/* line 3, ../sass/components/_project.scss */
-body.node-type-project .field--title-field {
-  padding: 80px 30px 30px;
-  background: #0095a8;
-  color: #fff;
-  text-transform: uppercase; }
+/* line 6, ../sass/components/_project-detail.scss */
+.node--project .field--title-field h2 {
+  color: #0095a8; }
 
 /* line 3, ../sass/components/_projects.scss */
 body.section-projects .landing-header {
   height: 500px; }
 
 /* line 3, ../sass/components/_tags.scss */
-body.page-taxonomy-term h1.page-title, body.page-taxonomy-term body.node-type-page .page-title.field--title-field, body.node-type-page body.page-taxonomy-term .page-title.field--title-field, body.page-taxonomy-term body.node-type-blurb .page-title.field--title-field, body.node-type-blurb body.page-taxonomy-term .page-title.field--title-field, body.page-taxonomy-term body.node-type-leader .page-title.field--title-field, body.node-type-leader body.page-taxonomy-term .page-title.field--title-field, body.page-taxonomy-term body.node-type-project .page-title.field--title-field, body.node-type-project body.page-taxonomy-term .page-title.field--title-field, body.page-taxonomy-term body.node-type-webform .page-title.field--title-field, body.node-type-webform body.page-taxonomy-term .page-title.field--title-field {
+body.page-taxonomy-term h1.page-title, body.page-taxonomy-term body.node-type-page .page-title.field--title-field, body.node-type-page body.page-taxonomy-term .page-title.field--title-field, body.page-taxonomy-term body.node-type-blurb .page-title.field--title-field, body.node-type-blurb body.page-taxonomy-term .page-title.field--title-field, body.page-taxonomy-term body.node-type-leader .page-title.field--title-field, body.node-type-leader body.page-taxonomy-term .page-title.field--title-field, body.page-taxonomy-term body.node-type-webform .page-title.field--title-field, body.node-type-webform body.page-taxonomy-term .page-title.field--title-field {
   display: block;
   padding: 80px 30px 30px;
   background: #0095a8;

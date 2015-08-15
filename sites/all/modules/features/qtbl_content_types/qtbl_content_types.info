@@ -15,6 +15,7 @@ dependencies[] = image
 dependencies[] = link
 dependencies[] = media
 dependencies[] = options
+dependencies[] = qtbl_context
 dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = text

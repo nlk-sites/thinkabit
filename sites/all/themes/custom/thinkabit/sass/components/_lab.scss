@@ -48,7 +48,7 @@ body.section-lab {
   @include breakpoint($bp-full) {
 		float: left;
 		width: 50%;
-		padding: 3% 6% 0;
+		padding: 4% 10% 0;
 		height: 322px;
   }
 	
@@ -169,3 +169,6 @@ body.section-lab {
 }
 
 
+.block--views-instagram-block-3 {
+	clear: left;
+}

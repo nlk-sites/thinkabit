@@ -1,0 +1,10 @@
+.node--project {
+	@extend .node--blog;
+
+	.field--title-field {
+
+		h2 {
+			color: $color-green;
+		}
+	}
+}

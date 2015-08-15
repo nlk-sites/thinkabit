@@ -153,6 +153,7 @@ body.front {
 	}
 	
 	.field--body {
+		@include rem(margin-bottom, 20px);
 
 	  @include breakpoint($bp-desk) {
 			position: absolute;
@@ -199,26 +200,36 @@ body.front {
 	}
 
 	.field--content-image {
-		@include rem(margin-bottom, 25px);
+		float: left;
 
 	  @include breakpoint($bp-desk) {
+			float: none;
 			position: absolute;
-			top: 54%;
+			top: 60%;
 			left: 48%;
 			margin-bottom: 0;
 	  }
 
 	  @include breakpoint($bp-full) {
 			left: 58%;
+			top: 54%;
 	  }
 	}
 
 	.field--cta {
+		float: left;
+		margin: 70px 0 0 20px;
 
 	  @include breakpoint($bp-desk) {
+			float: none;
+			margin: 0;
 			position: absolute;
-			top: 62%;
+			top: 68%;
 			left: 73%;
+	  }
+
+	  @include breakpoint($bp-full) {
+			top: 62%;
 	  }
 	}
 }
