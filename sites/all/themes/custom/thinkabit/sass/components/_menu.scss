@@ -1,9 +1,15 @@
 .responsive-menus {
 	&.responsified {
+
+	  @include breakpoint($bp-desk) {
+			position: fixed;
+			top: 0;
+			left: 0;
+	  }
 		
 		span.toggler {
 			position: relative;
-	    background: transparent;
+	    background: $color-white;
 	    border-radius: 0;
 	    box-shadow: none;
 	    color: $color-black;
@@ -12,10 +18,13 @@
 	    text-align: left;
 			line-height: 1;
 			@include hide-text;
+			padding: 0;
 
 		  @include breakpoint($bp-desk) {
 				@include font-size(35px);
-				height: 84px;
+				height: 80px;
+				width: 79px;
+				z-index: 1000;
 		  }
 			
 			&:before {

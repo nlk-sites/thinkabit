@@ -2937,8 +2937,8 @@ body.node-type-page .field--body {
     font-size: 0.875rem;
     line-height: 18px;
     line-height: 1.125rem;
-    margin-bottom: 20px;
-    margin-bottom: 1.25rem; }
+    margin-bottom: 18px;
+    margin-bottom: 1.125rem; }
     /* line 60, ../sass/components/_blog-detail.scss */
     .node--blog .group-category .field-label, .node--news .group-category .field-label, .node--project .group-category .field-label,
     .node--blog .group-tags .field-label,
@@ -2952,7 +2952,7 @@ body.node-type-page .field--body {
       .node--news .group-tags .field-label:after,
       .node--project .group-tags .field-label:after {
         content: ":"; }
-    /* line 67, ../sass/components/_blog-detail.scss */
+    /* line 68, ../sass/components/_blog-detail.scss */
     .node--blog .group-category .field--category, .node--news .group-category .field--category, .node--project .group-category .field--category,
     .node--blog .group-category .field--tags,
     .node--news .group-category .field--tags,
@@ -2964,7 +2964,7 @@ body.node-type-page .field--body {
     .node--news .group-tags .field--tags,
     .node--project .group-tags .field--tags {
       display: inline-block; }
-      /* line 71, ../sass/components/_blog-detail.scss */
+      /* line 72, ../sass/components/_blog-detail.scss */
       .node--blog .group-category .field--category a, .node--news .group-category .field--category a, .node--project .group-category .field--category a,
       .node--blog .group-category .field--tags a,
       .node--news .group-category .field--tags a,
@@ -2976,7 +2976,7 @@ body.node-type-page .field--body {
       .node--news .group-tags .field--tags a,
       .node--project .group-tags .field--tags a {
         color: #414042; }
-        /* line 74, ../sass/components/_blog-detail.scss */
+        /* line 75, ../sass/components/_blog-detail.scss */
         .node--blog .group-category .field--category a:after, .node--news .group-category .field--category a:after, .node--project .group-category .field--category a:after,
         .node--blog .group-category .field--tags a:after,
         .node--news .group-category .field--tags a:after,
@@ -2988,7 +2988,7 @@ body.node-type-page .field--body {
         .node--news .group-tags .field--tags a:after,
         .node--project .group-tags .field--tags a:after {
           content: ", "; }
-      /* line 82, ../sass/components/_blog-detail.scss */
+      /* line 83, ../sass/components/_blog-detail.scss */
       .node--blog .group-category .field--category:last-child a:after, .node--news .group-category .field--category:last-child a:after, .node--project .group-category .field--category:last-child a:after,
       .node--blog .group-category .field--tags:last-child a:after,
       .node--news .group-category .field--tags:last-child a:after,
@@ -3184,8 +3184,18 @@ textarea.form-textarea {
 /* line 1, ../sass/components/_header.scss */
 header {
   height: 42px; }
+  /* line 10, ../sass/components/_header.scss */
+  header .l-region--header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    height: 42px;
+    z-index: 100;
+    border-bottom: 1px solid #b7b7b7; }
 
-/* line 11, ../sass/components/_header.scss */
+/* line 32, ../sass/components/_header.scss */
 .site-logo {
   position: absolute;
   left: 20px;
@@ -3195,22 +3205,22 @@ header {
   height: 66px;
   content: "";
   display: inline-block; }
-  /* line 17, ../sass/components/_header.scss */
+  /* line 38, ../sass/components/_header.scss */
   .site-logo img {
     display: none; }
 
-/* line 28, ../sass/components/_header.scss */
+/* line 49, ../sass/components/_header.scss */
 .header-social {
   position: absolute;
   top: 12px;
   right: 25px;
   z-index: 1000; }
-  /* line 43, ../sass/components/_header.scss */
+  /* line 64, ../sass/components/_header.scss */
   .header-social ul li {
     float: left;
     margin-left: 20px;
     margin-left: 1.25rem; }
-    /* line 54, ../sass/components/_header.scss */
+    /* line 75, ../sass/components/_header.scss */
     .header-social ul li.icon-twitter a {
       position: relative;
       display: block;
@@ -3222,17 +3232,17 @@ header {
       text-decoration: none;
       color: #707070;
       margin-top: -2px; }
-      /* line 63, ../sass/components/_header.scss */
+      /* line 84, ../sass/components/_header.scss */
       .header-social ul li.icon-twitter a:before {
         display: block;
         font-family: "FontAwesome", Arial;
         content: "\f099";
         text-indent: 0;
         font-size: 25px; }
-      /* line 71, ../sass/components/_header.scss */
+      /* line 92, ../sass/components/_header.scss */
       .header-social ul li.icon-twitter a:hover {
         color: #0095a8; }
-    /* line 78, ../sass/components/_header.scss */
+    /* line 99, ../sass/components/_header.scss */
     .header-social ul li.icon-instagram a {
       background: url('../images/generated/icons-sa57b30c793.png') 0 -94px no-repeat;
       width: 22px;
@@ -3243,7 +3253,7 @@ header {
       overflow: hidden;
       text-align: left;
       text-transform: capitalize; }
-      /* line 82, ../sass/components/_header.scss */
+      /* line 103, ../sass/components/_header.scss */
       .header-social ul li.icon-instagram a:hover {
         background: url('../images/generated/icons-sa57b30c793.png') 0 -72px no-repeat;
         width: 22px;
@@ -3569,10 +3579,10 @@ body.section-leadership .landing-header {
     font-size: 21px;
     font-size: 1.3125rem; }
 
-/* line 4, ../sass/components/_menu.scss */
+/* line 10, ../sass/components/_menu.scss */
 .responsive-menus.responsified span.toggler {
   position: relative;
-  background: transparent;
+  background: #fff;
   border-radius: 0;
   box-shadow: none;
   color: #000;
@@ -3584,8 +3594,9 @@ body.section-leadership .landing-header {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  text-transform: capitalize; }
-  /* line 21, ../sass/components/_menu.scss */
+  text-transform: capitalize;
+  padding: 0; }
+  /* line 30, ../sass/components/_menu.scss */
   .responsive-menus.responsified span.toggler:before {
     position: absolute;
     top: 15px;
@@ -3595,27 +3606,27 @@ body.section-leadership .landing-header {
     height: 14px;
     content: "";
     display: inline-block; }
-  /* line 36, ../sass/components/_menu.scss */
+  /* line 45, ../sass/components/_menu.scss */
   .responsive-menus.responsified span.toggler:hover:before {
     background: url('../images/generated/icons-sa57b30c793.png') 0 -170px no-repeat;
     width: 18px;
     height: 14px;
     content: "";
     display: inline-block; }
-  /* line 45, ../sass/components/_menu.scss */
+  /* line 54, ../sass/components/_menu.scss */
   .responsive-menus.responsified span.toggler:after {
     position: absolute;
     top: 12px;
     left: 50px;
     content: "Menu";
     text-indent: 0; }
-  /* line 61, ../sass/components/_menu.scss */
+  /* line 70, ../sass/components/_menu.scss */
   .responsive-menus.responsified span.toggler:hover {
     color: #0095a8; }
-/* line 68, ../sass/components/_menu.scss */
+/* line 77, ../sass/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled span.toggler {
   border: 0; }
-  /* line 71, ../sass/components/_menu.scss */
+  /* line 80, ../sass/components/_menu.scss */
   .responsive-menus.responsified.responsive-toggled span.toggler:before {
     background: url('../images/generated/icons-sa57b30c793.png') 0 -134px no-repeat;
     width: 19px;
@@ -3624,18 +3635,18 @@ body.section-leadership .landing-header {
     display: inline-block;
     text-indent: 0;
     top: 13px; }
-  /* line 83, ../sass/components/_menu.scss */
+  /* line 92, ../sass/components/_menu.scss */
   .responsive-menus.responsified.responsive-toggled span.toggler:hover:before {
     background: url('../images/generated/icons-sa57b30c793.png') 0 -116px no-repeat;
     width: 19px;
     height: 18px;
     content: "";
     display: inline-block; }
-  /* line 88, ../sass/components/_menu.scss */
+  /* line 97, ../sass/components/_menu.scss */
   .responsive-menus.responsified.responsive-toggled span.toggler:after {
     content: "Close";
     text-indent: 0; }
-/* line 94, ../sass/components/_menu.scss */
+/* line 103, ../sass/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled:after {
   content: "";
   display: block;
@@ -3647,7 +3658,7 @@ body.section-leadership .landing-header {
   background: #363636;
   opacity: .86;
   z-index: 1; }
-/* line 112, ../sass/components/_menu.scss */
+/* line 121, ../sass/components/_menu.scss */
 .responsive-menus.responsified.responsive-toggled .responsive-menus-simple {
   background: #363636;
   border-radius: 0;
@@ -3659,21 +3670,21 @@ body.section-leadership .landing-header {
   top: 42px;
   left: 0;
   z-index: 999; }
-  /* line 142, ../sass/components/_menu.scss */
+  /* line 151, ../sass/components/_menu.scss */
   .responsive-menus.responsified.responsive-toggled .responsive-menus-simple ul {
     padding: 20px 10px 80px 40px; }
-  /* line 151, ../sass/components/_menu.scss */
+  /* line 160, ../sass/components/_menu.scss */
   .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li a {
     position: relative;
     border-bottom: 0;
     color: #fff;
     display: block;
     padding: 6px 10px; }
-  /* line 172, ../sass/components/_menu.scss */
+  /* line 181, ../sass/components/_menu.scss */
   .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child {
     padding-top: 60px;
     margin-left: -10px; }
-    /* line 181, ../sass/components/_menu.scss */
+    /* line 190, ../sass/components/_menu.scss */
     .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a {
       text-transform: none; }
 

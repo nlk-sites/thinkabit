@@ -4,8 +4,29 @@ header {
   @include breakpoint($bp-desk) {
 		position: absolute;
     height: auto;
-		width: 84px;
+		width: 80px;
   }
+	
+	.l-region--header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background: $color-white;
+		height: 42px;
+		z-index: 100;
+		border-bottom: 1px solid $color-light-gray;
+
+	  @include breakpoint($bp-desk) {
+			position: static;
+			top: auto;
+			left: auto;
+			width: auto;
+			height: auto;
+			border-bottom: 0;
+			background: none;
+	  }
+	}
 }
 
 .site-logo {
