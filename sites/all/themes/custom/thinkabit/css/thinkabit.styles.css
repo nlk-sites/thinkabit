@@ -3974,14 +3974,14 @@ body.section-lab .landing-header {
         font-size: 1.3125rem;
         line-height: 26px; } }
 
-/* line 3, ../sass/components/_leader.scss */
+/* line 3, ../sass/components/_leader-detail.scss */
 body.node-type-leader .field--title-field {
   padding: 80px 30px 30px;
   background: #0095a8;
   color: #fff;
   text-transform: uppercase; }
   @media (min-width: 900px) {
-    /* line 3, ../sass/components/_leader.scss */
+    /* line 3, ../sass/components/_leader-detail.scss */
     body.node-type-leader .field--title-field {
       padding: 160px 0 70px 95px; } }
 
@@ -4148,12 +4148,12 @@ body.section-leadership .landing-header {
   .block--views-leaders-block .view-leaders .field--leader-image {
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
-  /* line 175, ../sass/components/_leadership.scss */
+  /* line 176, ../sass/components/_leadership.scss */
   .block--views-leaders-block .view-leaders .views-field-title {
     font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
     font-size: 24px;
     font-size: 1.5rem; }
-  /* line 179, ../sass/components/_leadership.scss */
+  /* line 181, ../sass/components/_leadership.scss */
   .block--views-leaders-block .view-leaders .field--job-title {
     font-size: 21px;
     font-size: 1.3125rem; }
@@ -4479,6 +4479,54 @@ body.section-projects .landing-header {
     /* line 6, ../sass/components/_projects.scss */
     body.section-projects .landing-header .field--subtitle {
       width: 530px; } }
+
+/* line 17, ../sass/components/_projects.scss */
+.block--views-projects-block {
+  padding: 5%; }
+  /* line 13, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/toolkit-2.6.0/stylesheets/toolkit/_clearfix.scss */
+  .block--views-projects-block:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 27, ../sass/components/_projects.scss */
+  .block--views-projects-block .view-projects .views-row {
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    border: 1px solid #b7b7b7; }
+    @media (min-width: 768px) {
+      /* line 27, ../sass/components/_projects.scss */
+      .block--views-projects-block .view-projects .views-row {
+        float: left;
+        width: 30%;
+        margin-right: 3%; } }
+  /* line 43, ../sass/components/_projects.scss */
+  .block--views-projects-block .view-projects .field--content-image img {
+    width: 100%; }
+  /* line 48, ../sass/components/_projects.scss */
+  .block--views-projects-block .view-projects .views-field-title {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 1;
+    padding: 20px;
+    padding: 1.25rem; }
+    @media (min-width: 768px) {
+      /* line 48, ../sass/components/_projects.scss */
+      .block--views-projects-block .view-projects .views-field-title {
+        font-size: 26px;
+        font-size: 1.625rem; } }
+    @media (min-width: 1366px) {
+      /* line 48, ../sass/components/_projects.scss */
+      .block--views-projects-block .view-projects .views-field-title {
+        font-size: 36px;
+        font-size: 2.25rem;
+        padding: 30px 30px 60px;
+        padding: 1.875rem 1.875rem 3.75rem; } }
+    /* line 62, ../sass/components/_projects.scss */
+    .block--views-projects-block .view-projects .views-field-title a {
+      color: #414042; }
+      /* line 65, ../sass/components/_projects.scss */
+      .block--views-projects-block .view-projects .views-field-title a:hover {
+        color: #0095a8; }
 
 /* line 3, ../sass/components/_tags.scss */
 body.page-taxonomy-term h1.page-title, body.page-taxonomy-term body.node-type-page .page-title.field--title-field, body.node-type-page body.page-taxonomy-term .page-title.field--title-field, body.page-taxonomy-term body.node-type-blurb .page-title.field--title-field, body.node-type-blurb body.page-taxonomy-term .page-title.field--title-field, body.page-taxonomy-term body.node-type-leader .page-title.field--title-field, body.node-type-leader body.page-taxonomy-term .page-title.field--title-field, body.page-taxonomy-term body.node-type-webform .page-title.field--title-field, body.node-type-webform body.page-taxonomy-term .page-title.field--title-field {

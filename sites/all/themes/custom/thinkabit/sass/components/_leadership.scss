@@ -172,10 +172,12 @@ body.section-leadership {
 		.field--leader-image {
 			@include rem(margin-bottom, 10px);
 		}
+		
 		.views-field-title {
 			font-family: $QSemiB;
 			@include rem(font-size, 24px);
 		}
+		
 		.field--job-title {
 			@include rem(font-size, 21px);
 		}

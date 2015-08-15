@@ -11,3 +11,61 @@ body.section-projects {
 		}
 	}
 }
+
+
+// Projects block
+.block--views-projects-block {
+	@include clearfix;
+	padding: 5%;
+
+	@include breakpoint($bp-tab) {
+
+	}
+	
+	.view-projects {
+
+		.views-row {
+			@include rem(margin-bottom, 20px);
+			border: 1px solid $color-light-gray;
+
+			@include breakpoint($bp-tab) {
+				float: left;
+				width: 30%;
+				margin-right: 3%;
+			}
+
+			@include breakpoint($bp-full) {
+			}
+		}
+		
+		.field--content-image {
+			
+			img {
+				width: 100%;
+			}
+		}
+		
+		.views-field-title {
+			@include rem(font-size, 22px);
+			line-height: 1;
+			@include rem(padding, 20px);
+
+			@include breakpoint($bp-tab) {
+				@include rem(font-size, 26px);
+			}
+			
+			@include breakpoint($bp-full) {
+				@include rem(font-size, 36px);
+			@include rem(padding, 30px 30px 60px);
+			}
+			
+			a {
+				color: $color-default;
+				
+				&:hover {
+					color: $color-green;
+				}
+			}
+		}
+	}
+}
