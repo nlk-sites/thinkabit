@@ -6,7 +6,7 @@
 
 		@include breakpoint($bp-tab) {
 			float: left;
-			width: 30%;
+			width: 40%;
 		}
 	}
 	
@@ -14,7 +14,7 @@
 
 		@include breakpoint($bp-tab) {
 			float: right;
-			width: 65%;
+			width: 55%;
 		}
 		
 		h3 {

@@ -3338,12 +3338,12 @@ body.node-type-blurb .field--title-field {
     /* line 3, ../sass/components/_colorbox.scss */
     #colorbox .column-one {
       float: left;
-      width: 30%; } }
+      width: 40%; } }
 @media (min-width: 768px) {
   /* line 13, ../sass/components/_colorbox.scss */
   #colorbox .column-two {
     float: right;
-    width: 65%; } }
+    width: 55%; } }
 /* line 20, ../sass/components/_colorbox.scss */
 #colorbox .column-two h3 {
   font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
