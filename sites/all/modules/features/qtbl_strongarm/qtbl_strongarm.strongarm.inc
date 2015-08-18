@@ -111,7 +111,7 @@ function qtbl_strongarm_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'chosen_minimum_width';
-  $strongarm->value = '400';
+  $strongarm->value = '200';
   $export['chosen_minimum_width'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -352,24 +352,28 @@ function qtbl_strongarm_strongarm() {
   $strongarm->value = array(
     'qtbl_content_types' => array(
       'node' => '333ad0e91d8b62be9629432c5790f8d1',
-      'field_base' => 'b37e773ca71ab83fcc31744c09d4d67e',
-      'field_instance' => 'e2f40ba4d8018b40a35ca50a2ec27dd4',
-      'taxonomy' => 'dcbaffe2f734b63a1b42ea0991c9fef9',
-      'dependencies' => '69fef283a4acf1c88e13918c37826065',
-      'field_group' => '5cec2880946da95b91f7637061318cda',
-      'variable' => '623ed2dd371077a5d75aaaac7e44a557',
+      'field_base' => '3378c165c0bf2a79c43d12cc4637422e',
+      'field_instance' => '3a43b4cf4af098e2716c85d81617ba63',
+      'taxonomy' => '7d5941960d6fb84ff8ed47f766670500',
+      'dependencies' => 'b3b3b88042a5a968be6308a9690e2c16',
+      'field_group' => 'b2c1f9042f97034ab047194965b98eeb',
+      'variable' => 'f84d2821d8002492c9624bd84d81d4cf',
     ),
     'qtbl_views' => array(
-      'dependencies' => '17939ec8c8e456318aa7f7968dd8b64d',
-      'views_view' => 'de2fc2b1e57cab5287648581f6265753',
+      'dependencies' => '8557cb70f918583a894ddde2f69e23c5',
+      'views_view' => '91988e6e723d932d61bf26bf82be1df5',
     ),
     'qtbl_menus' => array(
       'menu_custom' => 'cdcb6a018b19147521fbee12fcd1c17c',
       'dependencies' => 'ce43b2cc540f90d9ef38740c8f0b0f83',
     ),
     'qtbl_context' => array(
-      'dependencies' => 'f3d538b850a80ea0851258a31e28798b',
-      'context' => '8c49ed5fa0b45395ccbbd8fe2a2bea5e',
+      'dependencies' => '14d05821afd3976e240353d24f27301c',
+      'context' => 'd072f4192d41a047310286840959a622',
+      'field_base' => 'ec34ce26d4d827cf3b0110bdef644804',
+      'field_group' => '1bf9f3b8dc8d147de8eac8d939e21a18',
+      'field_instance' => '83219896a8947879e444f0318d115366',
+      'taxonomy' => 'a838d042b1f484f8bda2dbfd87062f7f',
     ),
     'qtbl_blocks' => array(
       'fe_block_settings' => '5b61bbd4eefcba9aeac40cbf84d5e211',
@@ -377,20 +381,21 @@ function qtbl_strongarm_strongarm() {
       'fe_block_boxes' => '6dfa9fffe6bf56e004c5763d8a28a115',
     ),
     'qtbl_strongarm' => array(
-      'variable' => '8637552c1eeeb348e35b89c0e9fe8d2d',
+      'variable' => '9dc2ebaed94822f3fcb29a4ee579f231',
       'dependencies' => 'e410ca96d90029817c7bb9c7cb1f7ea4',
     ),
     'qtbl_text_formats' => array(
       'filter' => 'de84d491f746b051f4c67d337712f759',
-      'dependencies' => 'f67fe5a5c132d868e71f614f2c0855d4',
+      'dependencies' => 'c317658c8905b7a9253f47d99a416429',
+      'wysiwyg' => '37ea7e9ec881519bb947d2d7ac172677',
     ),
     'qtbl_bean' => array(
-      'fe_block_settings' => '6c6e84a50de5ca8053e603b7bed14793',
-      'field_base' => '3716b63bb4ff12d8283daa71d82dc6ed',
+      'fe_block_settings' => 'f2795ea5bdce44e63153d4b0e2a062f4',
+      'field_base' => '9689988fa01c5852d192014775e05561',
       'field_instance' => '0273f9d26beb9987766fec3aecd8c419',
       'dependencies' => '4f8c75c50277d4c151c3bc133ac53d0a',
       'bean_type' => 'fd09ed5e8965b4c1ea32eae9d812f6fb',
-      'uuid_bean' => '6202ace7a35beb62d60a85a677e8f2bf',
+      'uuid_bean' => '93a9c813f6149f94c0b02ecb78e30c78',
     ),
     'qtbl_date' => array(
       'variable' => '37f39f5d22f8f9e48fa2533c42bb9a9a',
@@ -398,7 +403,16 @@ function qtbl_strongarm_strongarm() {
     ),
     'qtbl_image_styles' => array(
       'dependencies' => 'b5cc61d4a303d79dab8a8515c295c0c2',
-      'image' => '3f12beadde03f2ff4d184a668fdcf311',
+      'image' => 'e978c27be7094c20cd4af42f5607913d',
+    ),
+    'qtbl_nodequeues' => array(
+      'fe_nodequeue' => '19478bd4b8271dd99b6df521d59ff609',
+      'dependencies' => 'ac1289a61350a0a2c2c546e6244d278e',
+    ),
+    'qtbl_overrides' => array(
+      'features_override_items' => FALSE,
+      'features_overrides' => '1d7b6f62028c7d415b86f209a5f7dd75',
+      'dependencies' => '3805014b47d8a4c736b8467934f621c8',
     ),
   );
   $export['features_codecache'] = $strongarm;
@@ -1082,13 +1096,13 @@ function qtbl_strongarm_strongarm() {
   $strongarm->name = 'sharethis_node_types';
   $strongarm->value = array(
     'blog' => 'blog',
+    'news' => 'news',
+    'project' => 'project',
     'page' => 0,
     'blurb' => 0,
     'instagram' => 0,
     'landing' => 0,
     'leader' => 0,
-    'news' => 0,
-    'project' => 0,
     'tweet' => 0,
     'webform' => 0,
   );

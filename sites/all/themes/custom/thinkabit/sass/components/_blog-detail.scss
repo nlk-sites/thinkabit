@@ -31,6 +31,7 @@
 		}
 	}
 	.group-sidebar {
+		@include rem(margin-bottom, 20px);
 
 		@include breakpoint($bp-desk) {
 			float: right;
@@ -55,7 +56,7 @@
 	.group-tags {
 		@include rem(font-size, 14px);
 		@include rem(line-height, 18px);
-		@include rem(margin-bottom, 18px);
+		@include rem(margin-bottom, 30px);
 
 		.field-label {
 			@include rem(font-size, 14px);

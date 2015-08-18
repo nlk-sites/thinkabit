@@ -1,0 +1,67 @@
+.sharethis-buttons {
+	
+	span {
+		position: relative;
+		display: block;
+		background: $color-lightest-gray;
+		@include rem(margin-right, 1px);
+		height: 75px;
+		width: 75px;
+		cursor: pointer;
+		float: left;
+		
+		@include breakpoint($bp-desk) {
+			float: none;
+			margin-right: 0;
+			@include rem(margin-bottom, 1px);
+		}
+		
+		&:hover {
+			background: $color-green;
+		}
+
+		&:before {
+			display: block;
+			font-family: $fa;
+			content: "\f099";
+			font-size: 25px;
+			color: $color-light-gray;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			@include rem(margin, -12px 0 0 -10px);
+		}
+		
+		&:hover:before {
+			color: $color-white;
+		}
+	}
+	
+	.st_twitter_custom {
+
+		&:before {
+			content: "\f099";
+		}
+	}
+	
+	.st_facebook_custom {
+
+		&:before {
+			content: "\f230";
+		}
+	}
+	
+	.st_linkedin_custom {
+
+		&:before {
+			content: "\f08c";
+		}
+	}
+	
+	.st_googleplus_custom {
+
+		&:before {
+			content: "\f0d4";
+		}
+	}
+}

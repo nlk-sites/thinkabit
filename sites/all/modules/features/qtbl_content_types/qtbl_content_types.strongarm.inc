@@ -336,8 +336,8 @@ function qtbl_content_types_strongarm() {
       'display' => array(
         'sharethis' => array(
           'default' => array(
-            'weight' => '5',
-            'visible' => FALSE,
+            'weight' => '6',
+            'visible' => TRUE,
           ),
         ),
       ),

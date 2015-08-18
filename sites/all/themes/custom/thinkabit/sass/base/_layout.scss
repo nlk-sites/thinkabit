@@ -26,6 +26,11 @@
 	}
 }
 
+.l-main {
+	@include clearfix;
+	@include rem(margin-bottom, 75px);
+}
+
 .content-bottom {
 	@include clearfix;
 }
