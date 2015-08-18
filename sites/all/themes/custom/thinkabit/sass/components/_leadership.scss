@@ -169,13 +169,22 @@ body.section-leadership {
 			}
 		}
 		
-		.field--leader-image {
+		.views-field-colorbox {
 			@include rem(margin-bottom, 10px);
 		}
 		
-		.views-field-title {
+		.views-field-colorbox-1 {
 			font-family: $QSemiB;
 			@include rem(font-size, 24px);
+			
+			a {
+				color: $color-default;
+				text-decoration: none;
+				
+				&:hover {
+					color: $color-green;
+				}
+			}
 		}
 		
 		.field--job-title {

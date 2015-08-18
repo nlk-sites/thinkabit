@@ -3329,6 +3329,33 @@ body.node-type-blurb .field--title-field {
   .button-style:hover, .view-blog .views-field-view-node a:hover, .button a:hover, .block--bean .field--cta a:hover, .landing-header .field--cta a:hover, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:hover, input.form-submit:hover, .view-news .views-field-view-node a:hover, .view-taxonomy-term .views-field-view-node a:hover {
     background: #93397f; }
 
+/* line 3, ../sass/components/_colorbox.scss */
+#colorbox .column-one {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem; }
+  @media (min-width: 768px) {
+    /* line 3, ../sass/components/_colorbox.scss */
+    #colorbox .column-one {
+      float: left;
+      width: 30%; } }
+@media (min-width: 768px) {
+  /* line 13, ../sass/components/_colorbox.scss */
+  #colorbox .column-two {
+    float: right;
+    width: 65%; } }
+/* line 20, ../sass/components/_colorbox.scss */
+#colorbox .column-two h3 {
+  font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem; }
+/* line 25, ../sass/components/_colorbox.scss */
+#colorbox .column-two .field-job-title {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem; }
+
 /* line 1, ../sass/components/_footer.scss */
 footer {
   clear: both;
@@ -4167,15 +4194,22 @@ body.section-leadership .landing-header {
         padding-right: 20px;
         padding-right: 1.25rem; } }
   /* line 172, ../sass/components/_leadership.scss */
-  .block--views-leaders-block .view-leaders .field--leader-image {
+  .block--views-leaders-block .view-leaders .views-field-colorbox {
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
   /* line 176, ../sass/components/_leadership.scss */
-  .block--views-leaders-block .view-leaders .views-field-title {
+  .block--views-leaders-block .view-leaders .views-field-colorbox-1 {
     font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
     font-size: 24px;
     font-size: 1.5rem; }
-  /* line 181, ../sass/components/_leadership.scss */
+    /* line 180, ../sass/components/_leadership.scss */
+    .block--views-leaders-block .view-leaders .views-field-colorbox-1 a {
+      color: #414042;
+      text-decoration: none; }
+      /* line 184, ../sass/components/_leadership.scss */
+      .block--views-leaders-block .view-leaders .views-field-colorbox-1 a:hover {
+        color: #0095a8; }
+  /* line 190, ../sass/components/_leadership.scss */
   .block--views-leaders-block .view-leaders .field--job-title {
     font-size: 21px;
     font-size: 1.3125rem; }

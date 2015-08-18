@@ -1,0 +1,30 @@
+#colorbox {
+	
+	.column-one {
+		text-align: center;
+		@include rem(margin-bottom, 20px);
+
+		@include breakpoint($bp-tab) {
+			float: left;
+			width: 30%;
+		}
+	}
+	
+	.column-two {
+
+		@include breakpoint($bp-tab) {
+			float: right;
+			width: 65%;
+		}
+		
+		h3 {
+			font-family: $QSemiB;
+			@include rem(font-size, 24px);
+		}
+
+		.field-job-title {
+			@include rem(font-size, 21px);
+			@include rem(margin-bottom, 10px);
+		}
+	}
+}

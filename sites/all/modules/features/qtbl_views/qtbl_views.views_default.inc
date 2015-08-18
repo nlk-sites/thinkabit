@@ -529,6 +529,7 @@ function qtbl_views_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
   /* Relationship: Nodequeue: Queue */
   $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
   $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
@@ -538,11 +539,30 @@ function qtbl_views_views_default_views() {
   $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
     'leaders' => 'leaders',
   );
+  /* Field: Content: Job Title */
+  $handler->display->display_options['fields']['field_job_title_1']['id'] = 'field_job_title_1';
+  $handler->display->display_options['fields']['field_job_title_1']['table'] = 'field_data_field_job_title';
+  $handler->display->display_options['fields']['field_job_title_1']['field'] = 'field_job_title';
+  $handler->display->display_options['fields']['field_job_title_1']['label'] = '';
+  $handler->display->display_options['fields']['field_job_title_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_job_title_1']['element_label_colon'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_type'] = '0';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['body']['field_api_classes'] = TRUE;
   /* Field: Content: Leader Image */
   $handler->display->display_options['fields']['field_leader_image']['id'] = 'field_leader_image';
   $handler->display->display_options['fields']['field_leader_image']['table'] = 'field_data_field_leader_image';
   $handler->display->display_options['fields']['field_leader_image']['field'] = 'field_leader_image';
   $handler->display->display_options['fields']['field_leader_image']['label'] = '';
+  $handler->display->display_options['fields']['field_leader_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_leader_image']['element_type'] = '0';
   $handler->display->display_options['fields']['field_leader_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_leader_image']['element_wrapper_type'] = '0';
@@ -558,10 +578,32 @@ function qtbl_views_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Colorbox: Colorbox trigger */
+  $handler->display->display_options['fields']['colorbox']['id'] = 'colorbox';
+  $handler->display->display_options['fields']['colorbox']['table'] = 'colorbox';
+  $handler->display->display_options['fields']['colorbox']['field'] = 'colorbox';
+  $handler->display->display_options['fields']['colorbox']['label'] = '';
+  $handler->display->display_options['fields']['colorbox']['alter']['text'] = '<div class="column-one">[field_leader_image]</div><div class="column-two"><h3>[title]</h3><div class="field-job-title">[field_job_title]</div><div class="fied-body">[body]</div>';
+  $handler->display->display_options['fields']['colorbox']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['colorbox']['trigger_field'] = 'field_leader_image';
+  $handler->display->display_options['fields']['colorbox']['popup'] = '<div class="column-one">[field_leader_image]</div><div class="column-two"><h3>[title]</h3><div class="field-job-title">[field_job_title_1]</div><div class="fied-body">[body]</div></div>';
+  $handler->display->display_options['fields']['colorbox']['gid'] = 0;
+  /* Field: Colorbox: Colorbox trigger */
+  $handler->display->display_options['fields']['colorbox_1']['id'] = 'colorbox_1';
+  $handler->display->display_options['fields']['colorbox_1']['table'] = 'colorbox';
+  $handler->display->display_options['fields']['colorbox_1']['field'] = 'colorbox';
+  $handler->display->display_options['fields']['colorbox_1']['label'] = '';
+  $handler->display->display_options['fields']['colorbox_1']['alter']['text'] = '[title]
+[field_job_title]';
+  $handler->display->display_options['fields']['colorbox_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['colorbox_1']['trigger_field'] = 'title';
+  $handler->display->display_options['fields']['colorbox_1']['popup'] = '<div class="column-one">[field_leader_image]</div><div class="column-two"><h3>[title]</h3><div class="field-job-title">[field_job_title_1]</div><div class="fied-body">[body]</div></div>';
+  $handler->display->display_options['fields']['colorbox_1']['gid'] = 0;
   /* Field: Content: Job Title */
   $handler->display->display_options['fields']['field_job_title']['id'] = 'field_job_title';
   $handler->display->display_options['fields']['field_job_title']['table'] = 'field_data_field_job_title';
