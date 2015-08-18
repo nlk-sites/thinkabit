@@ -3201,7 +3201,7 @@ textarea.form-textarea {
 /* line 1, ../sass/components/_header.scss */
 header {
   height: 42px; }
-  /* line 10, ../sass/components/_header.scss */
+  /* line 11, ../sass/components/_header.scss */
   header .l-region--header {
     position: fixed;
     top: 0;
@@ -3212,7 +3212,7 @@ header {
     z-index: 100;
     border-bottom: 1px solid #b7b7b7; }
 
-/* line 32, ../sass/components/_header.scss */
+/* line 33, ../sass/components/_header.scss */
 .site-logo {
   position: absolute;
   left: 20px;
@@ -3222,22 +3222,22 @@ header {
   height: 66px;
   content: "";
   display: inline-block; }
-  /* line 38, ../sass/components/_header.scss */
+  /* line 39, ../sass/components/_header.scss */
   .site-logo img {
     display: none; }
 
-/* line 49, ../sass/components/_header.scss */
+/* line 50, ../sass/components/_header.scss */
 .header-social {
   position: absolute;
   top: 12px;
   right: 25px;
   z-index: 1000; }
-  /* line 64, ../sass/components/_header.scss */
+  /* line 65, ../sass/components/_header.scss */
   .header-social ul li {
     float: left;
     margin-left: 20px;
     margin-left: 1.25rem; }
-    /* line 75, ../sass/components/_header.scss */
+    /* line 76, ../sass/components/_header.scss */
     .header-social ul li.icon-twitter a {
       position: relative;
       display: block;
@@ -3249,17 +3249,17 @@ header {
       text-decoration: none;
       color: #707070;
       margin-top: -2px; }
-      /* line 84, ../sass/components/_header.scss */
+      /* line 85, ../sass/components/_header.scss */
       .header-social ul li.icon-twitter a:before {
         display: block;
         font-family: "FontAwesome", Arial;
         content: "\f099";
         text-indent: 0;
         font-size: 25px; }
-      /* line 92, ../sass/components/_header.scss */
+      /* line 93, ../sass/components/_header.scss */
       .header-social ul li.icon-twitter a:hover {
         color: #0095a8; }
-    /* line 99, ../sass/components/_header.scss */
+    /* line 100, ../sass/components/_header.scss */
     .header-social ul li.icon-instagram a {
       background: url('../images/generated/icons-sa57b30c793.png') 0 -94px no-repeat;
       width: 22px;
@@ -3270,7 +3270,7 @@ header {
       overflow: hidden;
       text-align: left;
       text-transform: capitalize; }
-      /* line 103, ../sass/components/_header.scss */
+      /* line 104, ../sass/components/_header.scss */
       .header-social ul li.icon-instagram a:hover {
         background: url('../images/generated/icons-sa57b30c793.png') 0 -72px no-repeat;
         width: 22px;
@@ -3478,29 +3478,28 @@ body.section-lab .landing-header {
 /* line 1, ../sass/components/_landing-page.scss */
 .landing-header {
   position: relative;
-  z-index: -1;
   padding: 80px 30px 30px;
   background-color: #0095a8;
   background-size: cover;
   color: #fff; }
-  /* line 13, ../sass/components/_landing-page.scss */
+  /* line 12, ../sass/components/_landing-page.scss */
   .landing-header .field--pretitle {
     font-size: 28px;
     font-size: 1.75rem;
     font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
     line-height: 1; }
-  /* line 26, ../sass/components/_landing-page.scss */
+  /* line 25, ../sass/components/_landing-page.scss */
   .landing-header .field--title-field h1, .landing-header .field--title-field body.node-type-page .field--title-field, body.node-type-page .landing-header .field--title-field .field--title-field, .landing-header .field--title-field body.node-type-blurb .field--title-field, body.node-type-blurb .landing-header .field--title-field .field--title-field, .landing-header .field--title-field body.node-type-leader .field--title-field, body.node-type-leader .landing-header .field--title-field .field--title-field, .landing-header .field--title-field body.node-type-webform .field--title-field, body.node-type-webform .landing-header .field--title-field .field--title-field {
     line-height: .8;
     margin-bottom: 10px;
     margin-bottom: 0.625rem;
     text-transform: uppercase;
     color: #fff; }
-    /* line 32, ../sass/components/_landing-page.scss */
+    /* line 31, ../sass/components/_landing-page.scss */
     .landing-header .field--title-field h1 a, .landing-header .field--title-field body.node-type-page .field--title-field a, body.node-type-page .landing-header .field--title-field .field--title-field a, .landing-header .field--title-field body.node-type-blurb .field--title-field a, body.node-type-blurb .landing-header .field--title-field .field--title-field a, .landing-header .field--title-field body.node-type-leader .field--title-field a, body.node-type-leader .landing-header .field--title-field .field--title-field a, .landing-header .field--title-field body.node-type-webform .field--title-field a, body.node-type-webform .landing-header .field--title-field .field--title-field a {
       color: #fff;
       text-decoration: none; }
-  /* line 39, ../sass/components/_landing-page.scss */
+  /* line 38, ../sass/components/_landing-page.scss */
   .landing-header .field--subtitle {
     font-size: 16px;
     font-size: 1rem;

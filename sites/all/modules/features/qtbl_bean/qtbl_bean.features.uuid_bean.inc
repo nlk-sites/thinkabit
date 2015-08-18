@@ -30,7 +30,7 @@ function qtbl_bean_uuid_features_default_beans() {
     'field_body' => array(
       'und' => array(
         0 => array(
-          'value' => '<h4>Why are we qualified?</h4>
+          'value' => '<h4>Who are we?</h4>
 
 <div class="text">
 	<p>We are a dynamic team of engineers, teachers, coaches and developers ready to expand student potential. The Thinkabit Lab is lead by a passionate instructor who holds a EE degree and who has previously taught engineering youth camps at UCSD. Other members of our core team have taught at the elementary, high school and college level and are passionate about expanding students&rsquo; career awareness.</p>
@@ -39,7 +39,7 @@ function qtbl_bean_uuid_features_default_beans() {
 </div>
 ',
           'format' => 'full_html',
-          'safe_value' => '<h4>Why are we qualified?</h4>
+          'safe_value' => '<h4>Who are we?</h4>
 <div class="text">
 <p>We are a dynamic team of engineers, teachers, coaches and developers ready to expand student potential. The Thinkabit Lab is lead by a passionate instructor who holds a EE degree and who has previously taught engineering youth camps at UCSD. Other members of our core team have taught at the elementary, high school and college level and are passionate about expanding students&rsquo; career awareness.</p>
 <p>We recognize the importance of curriculum development and are fortunate to have career coaches on staff. And, as you know, no team is complete without the tireless dedication of our volunteers &ndash; from self-taught engineers to innovators at the Masters and PhD level &ndash; the common thread between our team and volunteers is that we are all passionate about the opportunity to serve the local community.</p>
