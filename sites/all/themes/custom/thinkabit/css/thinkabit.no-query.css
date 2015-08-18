@@ -3524,7 +3524,7 @@ body.section-leadership .landing-header {
 
 /* line 23, ../sass/components/_leadership.scss */
 .block--bean-leadership-first {
-  height: 330px; }
+  height: 360px; }
   /* line 38, ../sass/components/_leadership.scss */
   .block--bean-leadership-first .field--image {
     position: absolute;
@@ -3532,41 +3532,41 @@ body.section-leadership .landing-header {
     left: 0;
     z-index: -1;
     width: 100%; }
-    /* line 45, ../sass/components/_leadership.scss */
+    /* line 51, ../sass/components/_leadership.scss */
     .block--bean-leadership-first .field--image img {
       width: 100%;
       float: left; }
-  /* line 51, ../sass/components/_leadership.scss */
+  /* line 57, ../sass/components/_leadership.scss */
   .block--bean-leadership-first .field--body {
     padding: 8%;
     text-align: center; }
-  /* line 68, ../sass/components/_leadership.scss */
+  /* line 74, ../sass/components/_leadership.scss */
   .block--bean-leadership-first h3 {
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
 
-/* line 81, ../sass/components/_leadership.scss */
+/* line 87, ../sass/components/_leadership.scss */
 .block--bean-leadership-second {
   background: #0095a8;
   color: #fff; }
-  /* line 95, ../sass/components/_leadership.scss */
+  /* line 101, ../sass/components/_leadership.scss */
   .block--bean-leadership-second .field--image {
     display: none;
     width: 100%; }
-    /* line 103, ../sass/components/_leadership.scss */
+    /* line 109, ../sass/components/_leadership.scss */
     .block--bean-leadership-second .field--image img {
       float: left;
       width: 100%; }
-  /* line 109, ../sass/components/_leadership.scss */
+  /* line 115, ../sass/components/_leadership.scss */
   .block--bean-leadership-second .field--body {
     padding: 6%; }
-  /* line 124, ../sass/components/_leadership.scss */
+  /* line 130, ../sass/components/_leadership.scss */
   .block--bean-leadership-second h4 {
     font-family: "Qualcomm-Light", Arial, Sans-serif;
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
 
-/* line 143, ../sass/components/_leadership.scss */
+/* line 149, ../sass/components/_leadership.scss */
 .block--views-leaders-block {
   padding: 5%; }
   /* line 13, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/toolkit-2.6.0/stylesheets/toolkit/_clearfix.scss */
@@ -3574,32 +3574,32 @@ body.section-leadership .landing-header {
     content: "";
     display: table;
     clear: both; }
-  /* line 151, ../sass/components/_leadership.scss */
+  /* line 157, ../sass/components/_leadership.scss */
   .block--views-leaders-block h2 {
     font-family: "Qualcomm-Light", Arial, Sans-serif;
     font-size: 32px;
     font-size: 2rem; }
-  /* line 158, ../sass/components/_leadership.scss */
+  /* line 164, ../sass/components/_leadership.scss */
   .block--views-leaders-block .view-leaders .views-row {
     margin-bottom: 20px;
     margin-bottom: 1.25rem; }
-  /* line 172, ../sass/components/_leadership.scss */
+  /* line 178, ../sass/components/_leadership.scss */
   .block--views-leaders-block .view-leaders .views-field-colorbox {
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
-  /* line 176, ../sass/components/_leadership.scss */
+  /* line 182, ../sass/components/_leadership.scss */
   .block--views-leaders-block .view-leaders .views-field-colorbox-1 {
     font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
     font-size: 24px;
     font-size: 1.5rem; }
-    /* line 180, ../sass/components/_leadership.scss */
+    /* line 186, ../sass/components/_leadership.scss */
     .block--views-leaders-block .view-leaders .views-field-colorbox-1 a {
       color: #414042;
       text-decoration: none; }
-      /* line 184, ../sass/components/_leadership.scss */
+      /* line 190, ../sass/components/_leadership.scss */
       .block--views-leaders-block .view-leaders .views-field-colorbox-1 a:hover {
         color: #0095a8; }
-  /* line 190, ../sass/components/_leadership.scss */
+  /* line 196, ../sass/components/_leadership.scss */
   .block--views-leaders-block .view-leaders .field--job-title {
     font-size: 21px;
     font-size: 1.3125rem; }

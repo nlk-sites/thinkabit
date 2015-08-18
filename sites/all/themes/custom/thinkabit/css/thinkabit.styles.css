@@ -4053,19 +4053,19 @@ body.section-leadership .landing-header {
 
 /* line 23, ../sass/components/_leadership.scss */
 .block--bean-leadership-first {
-  height: 330px; }
+  height: 360px; }
   @media (min-width: 768px) {
     /* line 23, ../sass/components/_leadership.scss */
     .block--bean-leadership-first {
-      height: 390px; } }
+      height: 480px; } }
   @media (min-width: 900px) {
     /* line 23, ../sass/components/_leadership.scss */
     .block--bean-leadership-first {
-      height: 520px; } }
+      height: 580px; } }
   @media (min-width: 1366px) {
     /* line 23, ../sass/components/_leadership.scss */
     .block--bean-leadership-first {
-      height: 618px; } }
+      height: 678px; } }
   /* line 38, ../sass/components/_leadership.scss */
   .block--bean-leadership-first .field--image {
     position: absolute;
@@ -4073,95 +4073,101 @@ body.section-leadership .landing-header {
     left: 0;
     z-index: -1;
     width: 100%; }
-    /* line 45, ../sass/components/_leadership.scss */
+    @media (min-width: 1366px) {
+      /* line 38, ../sass/components/_leadership.scss */
+      .block--bean-leadership-first .field--image {
+        width: auto;
+        left: 50%;
+        margin-left: -525px; } }
+    /* line 51, ../sass/components/_leadership.scss */
     .block--bean-leadership-first .field--image img {
       width: 100%;
       float: left; }
-  /* line 51, ../sass/components/_leadership.scss */
+  /* line 57, ../sass/components/_leadership.scss */
   .block--bean-leadership-first .field--body {
     padding: 8%;
     text-align: center; }
     @media (min-width: 768px) {
-      /* line 51, ../sass/components/_leadership.scss */
+      /* line 57, ../sass/components/_leadership.scss */
       .block--bean-leadership-first .field--body {
         padding: 6%; } }
     @media (min-width: 900px) {
-      /* line 51, ../sass/components/_leadership.scss */
+      /* line 57, ../sass/components/_leadership.scss */
       .block--bean-leadership-first .field--body {
         padding: 9% 18%; } }
     @media (min-width: 1366px) {
-      /* line 51, ../sass/components/_leadership.scss */
+      /* line 57, ../sass/components/_leadership.scss */
       .block--bean-leadership-first .field--body {
         padding: 90px 240px; } }
-  /* line 68, ../sass/components/_leadership.scss */
+  /* line 74, ../sass/components/_leadership.scss */
   .block--bean-leadership-first h3 {
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
   @media (min-width: 900px) {
-    /* line 72, ../sass/components/_leadership.scss */
+    /* line 78, ../sass/components/_leadership.scss */
     .block--bean-leadership-first .text {
       font-size: 21px;
       font-size: 1.3125rem;
       line-height: 24px; } }
 
-/* line 81, ../sass/components/_leadership.scss */
+/* line 87, ../sass/components/_leadership.scss */
 .block--bean-leadership-second {
   background: #0095a8;
   color: #fff; }
   @media (min-width: 900px) {
-    /* line 81, ../sass/components/_leadership.scss */
+    /* line 87, ../sass/components/_leadership.scss */
     .block--bean-leadership-second {
       height: 334px; } }
   @media (min-width: 1366px) {
-    /* line 81, ../sass/components/_leadership.scss */
+    /* line 87, ../sass/components/_leadership.scss */
     .block--bean-leadership-second {
       background: none;
       padding: 0;
       height: 524px; } }
-  /* line 95, ../sass/components/_leadership.scss */
+  /* line 101, ../sass/components/_leadership.scss */
   .block--bean-leadership-second .field--image {
     display: none;
     width: 100%; }
     @media (min-width: 900px) {
-      /* line 95, ../sass/components/_leadership.scss */
+      /* line 101, ../sass/components/_leadership.scss */
       .block--bean-leadership-second .field--image {
         display: block; } }
-    /* line 103, ../sass/components/_leadership.scss */
+    /* line 109, ../sass/components/_leadership.scss */
     .block--bean-leadership-second .field--image img {
       float: left;
       width: 100%; }
-  /* line 109, ../sass/components/_leadership.scss */
+  /* line 115, ../sass/components/_leadership.scss */
   .block--bean-leadership-second .field--body {
     padding: 6%; }
     @media (min-width: 900px) {
-      /* line 109, ../sass/components/_leadership.scss */
+      /* line 115, ../sass/components/_leadership.scss */
       .block--bean-leadership-second .field--body {
         position: absolute;
         top: 0;
         left: 0;
         padding: 3% 35% 3% 5%; } }
     @media (min-width: 1366px) {
-      /* line 109, ../sass/components/_leadership.scss */
+      /* line 115, ../sass/components/_leadership.scss */
       .block--bean-leadership-second .field--body {
         padding: 7% 42% 3% 10%; } }
-  /* line 124, ../sass/components/_leadership.scss */
+  /* line 130, ../sass/components/_leadership.scss */
   .block--bean-leadership-second h4 {
     font-family: "Qualcomm-Light", Arial, Sans-serif;
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
   @media (min-width: 900px) {
-    /* line 129, ../sass/components/_leadership.scss */
+    /* line 135, ../sass/components/_leadership.scss */
     .block--bean-leadership-second .text {
       font-size: 18px;
       font-size: 1.125rem; } }
   @media (min-width: 1366px) {
-    /* line 129, ../sass/components/_leadership.scss */
+    /* line 135, ../sass/components/_leadership.scss */
     .block--bean-leadership-second .text {
       font-size: 21px;
       font-size: 1.3125rem;
       line-height: 24px; } }
 
-/* line 143, ../sass/components/_leadership.scss */
+/* line 149, ../sass/components/_leadership.scss */
 .block--views-leaders-block {
   padding: 5%; }
   /* line 13, ../../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/toolkit-2.6.0/stylesheets/toolkit/_clearfix.scss */
@@ -4170,46 +4176,46 @@ body.section-leadership .landing-header {
     display: table;
     clear: both; }
   @media (min-width: 768px) {
-    /* line 143, ../sass/components/_leadership.scss */
+    /* line 149, ../sass/components/_leadership.scss */
     .block--views-leaders-block {
       padding: 5% 10%; } }
-  /* line 151, ../sass/components/_leadership.scss */
+  /* line 157, ../sass/components/_leadership.scss */
   .block--views-leaders-block h2 {
     font-family: "Qualcomm-Light", Arial, Sans-serif;
     font-size: 32px;
     font-size: 2rem; }
-  /* line 158, ../sass/components/_leadership.scss */
+  /* line 164, ../sass/components/_leadership.scss */
   .block--views-leaders-block .view-leaders .views-row {
     margin-bottom: 20px;
     margin-bottom: 1.25rem; }
     @media (min-width: 768px) {
-      /* line 158, ../sass/components/_leadership.scss */
+      /* line 164, ../sass/components/_leadership.scss */
       .block--views-leaders-block .view-leaders .views-row {
         float: left;
         width: 50%; } }
     @media (min-width: 1366px) {
-      /* line 158, ../sass/components/_leadership.scss */
+      /* line 164, ../sass/components/_leadership.scss */
       .block--views-leaders-block .view-leaders .views-row {
         width: 25%;
         padding-right: 20px;
         padding-right: 1.25rem; } }
-  /* line 172, ../sass/components/_leadership.scss */
+  /* line 178, ../sass/components/_leadership.scss */
   .block--views-leaders-block .view-leaders .views-field-colorbox {
     margin-bottom: 10px;
     margin-bottom: 0.625rem; }
-  /* line 176, ../sass/components/_leadership.scss */
+  /* line 182, ../sass/components/_leadership.scss */
   .block--views-leaders-block .view-leaders .views-field-colorbox-1 {
     font-family: "Qualcomm-Semibold", "Arial Bold", Sans-serif;
     font-size: 24px;
     font-size: 1.5rem; }
-    /* line 180, ../sass/components/_leadership.scss */
+    /* line 186, ../sass/components/_leadership.scss */
     .block--views-leaders-block .view-leaders .views-field-colorbox-1 a {
       color: #414042;
       text-decoration: none; }
-      /* line 184, ../sass/components/_leadership.scss */
+      /* line 190, ../sass/components/_leadership.scss */
       .block--views-leaders-block .view-leaders .views-field-colorbox-1 a:hover {
         color: #0095a8; }
-  /* line 190, ../sass/components/_leadership.scss */
+  /* line 196, ../sass/components/_leadership.scss */
   .block--views-leaders-block .view-leaders .field--job-title {
     font-size: 21px;
     font-size: 1.3125rem; }

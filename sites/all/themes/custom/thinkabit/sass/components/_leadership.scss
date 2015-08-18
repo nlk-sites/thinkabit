@@ -21,18 +21,18 @@ body.section-leadership {
 }
 
 .block--bean-leadership-first {
-	height: 330px;
+	height: 360px;
 
   @include breakpoint($bp-tab) {
-		height: 390px;
+		height: 480px;
   }
 	
   @include breakpoint($bp-desk) {
-		height: 520px;
+		height: 580px;
   }
 	
   @include breakpoint($bp-full) {
-		height: 618px;
+		height: 678px;
   }
 	
 	.field--image {
@@ -41,6 +41,12 @@ body.section-leadership {
 		left: 0;
 		z-index: -1;
 		width: 100%;
+	
+	  @include breakpoint($bp-full) {
+			width: auto;
+			left: 50%;
+			margin-left: -525px;
+	  }
 		
 		img {
 			width: 100%;
