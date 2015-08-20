@@ -1,3 +1,7 @@
+body.node-type-news {
+	@extend body.node-type-blog;
+}
+
 .node--news {
 	@extend .node--blog;
 	

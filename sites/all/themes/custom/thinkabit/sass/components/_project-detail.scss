@@ -1,3 +1,7 @@
+body.node-type-project {
+	@extend body.node-type-blog;
+}
+
 .node--project {
 	@extend .node--blog;
 

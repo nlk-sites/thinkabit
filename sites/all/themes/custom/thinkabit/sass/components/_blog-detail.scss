@@ -1,3 +1,11 @@
+body.node-type-blog {
+
+	.l-main {
+		@include clearfix;
+		@include rem(margin-bottom, 75px);
+	}
+}
+
 .node--blog {
 	padding: 5%;
 
