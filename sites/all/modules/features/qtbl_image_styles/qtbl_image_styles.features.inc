@@ -55,6 +55,21 @@ function qtbl_image_styles_image_default_styles() {
     ),
   );
 
+  // Exported image style: 642x642.
+  $styles['642x642'] = array(
+    'label' => '642x642',
+    'effects' => array(
+      5 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 642,
+          'height' => 642,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: 820x600.
   $styles['820x600'] = array(
     'label' => '820x600',

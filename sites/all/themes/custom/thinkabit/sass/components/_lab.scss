@@ -168,6 +168,32 @@ body.section-lab {
 	}
 }
 
+.block--bean-lab-slideshow {
+	position: relative;
+
+	@include breakpoint($bp-tab) {
+		float: right;
+		width: 100%;
+	}
+	
+	@include breakpoint($bp-full) {
+		width: 50%;
+		height: 642px;
+	}
+	
+	.flexslider {
+		position: static;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+		margin: 0;
+	}
+
+	.flex-control-nav {
+		bottom: 20px;
+	}
+}
+
 
 .block--views-instagram-block-3 {
 	clear: left;

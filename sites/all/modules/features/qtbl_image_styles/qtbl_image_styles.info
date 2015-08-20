@@ -6,4 +6,5 @@ features[features_api][] = api:2
 features[image][] = 260x220
 features[image][] = 288x284
 features[image][] = 546x400
+features[image][] = 642x642
 features[image][] = 820x600

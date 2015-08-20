@@ -10,6 +10,101 @@
 function qtbl_bean_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'bean-slideshow_bean-field_images'
+  $field_instances['bean-slideshow_bean-field_images'] = array(
+    'bundle' => 'slideshow_bean',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'flexslider_fields',
+        'settings' => array(
+          'caption' => 0,
+          'image_style' => '642x642',
+          'optionset' => 'default',
+        ),
+        'type' => 'flexslider',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_images',
+    'label' => 'Images',
+    'required' => 1,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'private' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'upload' => 0,
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'bean-slideshow_bean-title_field'
+  $field_instances['bean-slideshow_bean-title_field'] = array(
+    'bundle' => 'slideshow_bean',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'The Title of the block.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'bean',
+    'field_name' => 'title_field',
+    'label' => 'Title',
+    'required' => FALSE,
+    'settings' => array(
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'bean-static_bean-field_body'
   $field_instances['bean-static_bean-field_body'] = array(
     'bundle' => 'static_bean',
@@ -251,6 +346,7 @@ function qtbl_bean_field_default_field_instances() {
   t('Body');
   t('Call to Action');
   t('Content Image');
+  t('Images');
   t('The Title of the block.');
   t('This image will be the background of the block.');
   t('Title');

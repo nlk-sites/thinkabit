@@ -3491,7 +3491,21 @@ body.section-lab .landing-header {
     font-family: "Qualcomm-Light", Arial, Sans-serif;
     color: #0095a8; }
 
-/* line 172, ../sass/components/_lab.scss */
+/* line 171, ../sass/components/_lab.scss */
+.block--bean-lab-slideshow {
+  position: relative; }
+  /* line 184, ../sass/components/_lab.scss */
+  .block--bean-lab-slideshow .flexslider {
+    position: static;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0; }
+  /* line 192, ../sass/components/_lab.scss */
+  .block--bean-lab-slideshow .flex-control-nav {
+    bottom: 20px; }
+
+/* line 198, ../sass/components/_lab.scss */
 .block--views-instagram-block-3 {
   clear: left; }
 
