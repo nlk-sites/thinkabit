@@ -31,6 +31,7 @@ features[fe_block_settings][] = bean-project-header
 features[features_api][] = api:2
 features[field_base][] = field_body
 features[field_base][] = field_content_image
+features[field_base][] = field_image
 features[field_base][] = field_images
 features[field_instance][] = bean-slideshow_bean-field_images
 features[field_instance][] = bean-slideshow_bean-title_field

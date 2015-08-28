@@ -367,10 +367,11 @@ function qtbl_bean_uuid_features_default_beans() {
         0 => array(
           'value' => '<h2>ARE YOU READY TO <strong>THINKABIT?</strong></h2>
 
-<div class="text">Qualcomm Thinkabit Lab welcomes all San Diego School Districts and enjoy working with Carlsbad, Chula Vista, Del Mar, San Diego Unified, Santee, Sweetwater and Vista. Participating schools do not have to incur any Thinkabit lab or program costs.. Lunch is provided for each student.</div>',
+<div class="text">Qualcomm&reg; Thinkabit Lab&trade; welcomes all San Diego school districts in grades 6-8. Participating schools do not incur any program costs other than transportation. Lunch, creativity and FUN is provided for each students and teacher/chaperone attending!</div>
+',
           'format' => 'full_html',
           'safe_value' => '<h2>ARE YOU READY TO <strong>THINKABIT?</strong></h2>
-<div class="text">Qualcomm Thinkabit Lab welcomes all San Diego School Districts and enjoy working with Carlsbad, Chula Vista, Del Mar, San Diego Unified, Santee, Sweetwater and Vista. Participating schools do not have to incur any Thinkabit lab or program costs.. Lunch is provided for each student.</div>
+<div class="text">Qualcomm&reg; Thinkabit Lab&trade; welcomes all San Diego school districts in grades 6-8. Participating schools do not incur any program costs other than transportation. Lunch, creativity and FUN is provided for each students and teacher/chaperone attending!</div>
 ',
         ),
       ),
