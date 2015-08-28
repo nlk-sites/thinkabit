@@ -4437,9 +4437,12 @@ body.section-leadership .landing-header {
     border-bottom: 0;
     color: #fff;
     display: block;
-    padding: 6px 10px; }
+    padding: 8px 10px; }
+    /* line 168, ../sass/components/_menu.scss */
+    .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li a.active-trail {
+      color: #0095a8; }
   @media (min-width: 900px) {
-    /* line 173, ../sass/components/_menu.scss */
+    /* line 177, ../sass/components/_menu.scss */
     .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:first-child a:before {
       background: url('../images/generated/icons-sa57b30c793.png') 0 -437px no-repeat;
       width: 164px;
@@ -4449,15 +4452,15 @@ body.section-leadership .landing-header {
       position: absolute;
       left: 0;
       top: -80px; } }
-  /* line 182, ../sass/components/_menu.scss */
+  /* line 186, ../sass/components/_menu.scss */
   .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child {
     padding-top: 60px;
     margin-left: -10px; }
     @media (min-width: 900px) {
-      /* line 182, ../sass/components/_menu.scss */
+      /* line 186, ../sass/components/_menu.scss */
       .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child {
         margin-left: 0px; } }
-    /* line 191, ../sass/components/_menu.scss */
+    /* line 195, ../sass/components/_menu.scss */
     .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a {
       text-transform: none; }
 
