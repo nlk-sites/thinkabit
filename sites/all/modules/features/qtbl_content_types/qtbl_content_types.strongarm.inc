@@ -48,6 +48,12 @@ function qtbl_content_types_strongarm() {
             'visible' => TRUE,
           ),
         ),
+        'disqus' => array(
+          'default' => array(
+            'weight' => '1002',
+            'visible' => TRUE,
+          ),
+        ),
       ),
     ),
   );
@@ -450,6 +456,13 @@ function qtbl_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_options_image';
+  $strongarm->value = array();
+  $export['menu_options_image'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_instagram';
   $strongarm->value = array(
     0 => 'main-menu',
@@ -530,6 +543,13 @@ function qtbl_content_types_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'menu_parent_image';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_image'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_instagram';
   $strongarm->value = 'main-menu:0';
   $export['menu_parent_instagram'] = $strongarm;
@@ -600,6 +620,15 @@ function qtbl_content_types_strongarm() {
     0 => 'status',
   );
   $export['node_options_blurb'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_options_image';
+  $strongarm->value = array(
+    0 => 'status',
+  );
+  $export['node_options_image'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -751,6 +780,13 @@ function qtbl_content_types_strongarm() {
   $strongarm->name = 'node_submitted_blurb';
   $strongarm->value = 0;
   $export['node_submitted_blurb'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_submitted_image';
+  $strongarm->value = 0;
+  $export['node_submitted_image'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

@@ -37,6 +37,14 @@ function qtbl_content_types_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'image' => array(
+      'name' => t('Image'),
+      'base' => 'node_content',
+      'description' => t('For images in a carousel.'),
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'instagram' => array(
       'name' => t('Instagram'),
       'base' => 'node_content',
