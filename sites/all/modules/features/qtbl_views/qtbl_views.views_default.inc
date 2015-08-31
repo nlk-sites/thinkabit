@@ -68,6 +68,7 @@ function qtbl_views_views_default_views() {
   $handler->display->display_options['fields']['field_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_date']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_date']['type'] = 'custom_formatters_blog_date_format';
   $handler->display->display_options['fields']['field_date']['settings'] = array(
     'format_type' => 'month_day_year',
     'fromto' => 'both',
@@ -696,6 +697,7 @@ function qtbl_views_views_default_views() {
   $handler->display->display_options['fields']['field_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_date']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['field_date']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_date']['type'] = 'custom_formatters_blog_date_format';
   $handler->display->display_options['fields']['field_date']['settings'] = array(
     'format_type' => 'month_day_year',
     'fromto' => 'both',

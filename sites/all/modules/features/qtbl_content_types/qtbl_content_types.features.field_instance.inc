@@ -121,15 +121,9 @@ function qtbl_content_types_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'month_day_year',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
+        'module' => 'custom_formatters',
+        'settings' => array(),
+        'type' => 'custom_formatters_blog_date_format',
         'weight' => 5,
       ),
       'teaser' => array(
@@ -952,15 +946,9 @@ function qtbl_content_types_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'month_day_year',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-        ),
-        'type' => 'date_default',
+        'module' => 'custom_formatters',
+        'settings' => array(),
+        'type' => 'custom_formatters_blog_date_format',
         'weight' => 4,
       ),
       'teaser' => array(
