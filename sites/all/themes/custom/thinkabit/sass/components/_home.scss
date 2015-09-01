@@ -234,6 +234,150 @@ body.front {
 	}
 }
 
+.block--views-news-block-1 {
+	position: relative;
+	clear: both;
+	background: $color-green;
+	padding: 5%;
+	
+	@include breakpoint($bp-full) {
+		float: left;
+		width: 50%;
+		height: 322px;
+		padding: 5% 8%;
+	}
+
+	h2 {
+		position: relative;
+		color: $color-white;
+		font-family: $QReg;
+		@include rem(font-size, 16px);
+		text-transform: uppercase;
+		@include rem(padding-left, 35px);
+		
+		@include breakpoint($bp-full) {
+			position: absolute;
+			top: 25px;
+			left: 30px;
+		}
+		
+		&:before {
+			content: "";
+			@include get-sprite($icons-sprites, icon-news);
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	
+	.views-field-title {
+		@include rem(font-size, 21px);
+		@include rem(margin-bottom, 30px);
+
+		a {
+			color: $color-white;
+			text-decoration: none;
+		}
+	}
+	
+	.views-field-view-node {
+		@include rem(font-size, 21px);
+		
+		a {
+			color: $color-white;
+			text-decoration: none;
+			display: inline-block;
+			position: relative;
+			@include rem(padding-right, 25px);
+			
+			&:after {
+				content: "";
+				@include get-sprite($icons-sprites, icon-arrow-circle);
+				position: absolute;
+				top: 4px;
+				right: 0;
+			}
+		}
+	}
+}
+
+.block--views-instagram-block-4, 
+.block--views-blurbs-block {
+
+	@include breakpoint($bp-tab) {
+		float: left;
+		width: 50%;
+	}
+
+	@include breakpoint($bp-full) {
+		width: 25%;
+		height: 322px;
+		overflow: hidden;
+	}
+}
+
+.block--views-instagram-block-5, 
+.block--views-blurbs-block-1 {
+
+	@include breakpoint($bp-tab) {
+		float: left;
+		width: 50%;
+	}
+
+	@include breakpoint($bp-full) {
+		width: 25%;
+		height: 322px;
+		overflow: hidden;
+	}
+}
+
+.block--views-tweets-block-1 {
+	position: relative;
+	clear: both;
+	background: $color-green;
+	padding: 5% 10%;
+	color: $color-white;
+	@include rem(font-size, 21px);
+	
+	@include breakpoint($bp-full) {
+		float: left;
+		width: 50%;
+		height: 322px;
+		clear: none;
+	}
+
+	h2 {
+		position: relative;
+		color: $color-white;
+		font-family: $QReg;
+		@include rem(font-size, 16px);
+		text-transform: uppercase;
+		@include rem(padding-left, 35px);
+		
+		@include breakpoint($bp-full) {
+			position: absolute;
+			top: 25px;
+			left: 30px;
+		}
+		
+		&:before {
+			display: block;
+			font-family: $fa;
+			content: "\f099";
+			text-indent: 0;
+			font-size: 25px;
+			position: absolute;
+			top: -5px;
+			left: 0;
+		}
+	}
+	
+	.views-slideshow-controls-top {
+		position: absolute;
+		
+	}
+}
+
 .block--bean-home-third {
 
 	@include breakpoint($bp-desk) {

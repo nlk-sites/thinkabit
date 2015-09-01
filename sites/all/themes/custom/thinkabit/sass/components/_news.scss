@@ -3,123 +3,123 @@ body.section-news {
 	.landing-header {
 		background-color: $color-orange;
 	}
-}
 
-.view-news {
-	padding: 5%;
+	.view-news {
+		padding: 5%;
 
-  @include breakpoint($bp-full) {
-		padding: 3% 6%;
-  }
+	  @include breakpoint($bp-full) {
+			padding: 3% 6%;
+	  }
 	
-	.views-row {
-		@include clearfix;
-		border-bottom: 1px solid $color-light-gray;
-		@include rem(padding-bottom, 50px);
-		@include rem(margin-bottom, 50px);
+		.views-row {
+			@include clearfix;
+			border-bottom: 1px solid $color-light-gray;
+			@include rem(padding-bottom, 50px);
+			@include rem(margin-bottom, 50px);
 		
-		&:last-child {
-			border-bottom: 0;
-		}
-	}
-	
-	.flexslider {
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-
-		@include breakpoint($bp-desk) {
-			float: right;
-			width: 40%;
-		}
-
-		@include breakpoint($bp-full) {
-			width: 50%;
-		}
-		
-		.flex-control-paging li a {
-			background: $color-default;
-			box-shadow: none;
-			
-			&.flex-active {
-				background: $color-white;
-				border: 1px solid $color-default;
+			&:last-child {
+				border-bottom: 0;
 			}
 		}
-	}
 	
-	.views-field-title {
+		.flexslider {
+	    border: 0;
+	    border-radius: 0;
+	    box-shadow: none;
 
-		@include breakpoint($bp-desk) {
-			float: left;
-			width: 50%;
-		}
+			@include breakpoint($bp-desk) {
+				float: right;
+				width: 40%;
+			}
 
-		@include breakpoint($bp-full) {
-			width: 40%;
-		}
+			@include breakpoint($bp-full) {
+				width: 50%;
+			}
 		
-		h4 {
-			text-transform: uppercase;
-			@include rem(margin-bottom, 10px);
+			.flex-control-paging li a {
+				background: $color-default;
+				box-shadow: none;
 			
-			a {
-				color: $color-default;
-				text-decoration: none;
-				
-				&:hover {
-					color: $color-green;
+				&.flex-active {
+					background: $color-white;
+					border: 1px solid $color-default;
 				}
 			}
 		}
-	}
 	
-	.field--date {
-		border-bottom: 1px solid $color-light-gray;
-		@include rem(font-size, 14px);
-		@include rem(padding-bottom, 20px);
-		@include rem(margin-bottom, 20px);
+		.views-field-title {
 
-		@include breakpoint($bp-desk) {
-			float: left;
-			width: 50%;
-		}
+			@include breakpoint($bp-desk) {
+				float: left;
+				width: 50%;
+			}
 
-		@include breakpoint($bp-full) {
-			width: 40%;
+			@include breakpoint($bp-full) {
+				width: 40%;
+			}
+		
+			h4 {
+				text-transform: uppercase;
+				@include rem(margin-bottom, 10px);
+			
+				a {
+					color: $color-default;
+					text-decoration: none;
+				
+					&:hover {
+						color: $color-green;
+					}
+				}
+			}
 		}
-	}
 	
-	.field--body {
-		@include rem(margin-bottom, 20px);
-		@include rem(line-height, 22px);
+		.field--date {
+			border-bottom: 1px solid $color-light-gray;
+			@include rem(font-size, 14px);
+			@include rem(padding-bottom, 20px);
+			@include rem(margin-bottom, 20px);
+
+			@include breakpoint($bp-desk) {
+				float: left;
+				width: 50%;
+			}
+
+			@include breakpoint($bp-full) {
+				width: 40%;
+			}
+		}
 	
-		@include breakpoint($bp-desk) {
-			@include rem(margin-bottom, 40px);
-			float: left;
-			width: 50%;
-		}
-
-		@include breakpoint($bp-full) {
-			width: 40%;
-			@include rem(margin-bottom, 80px);
-		}
-	}
+		.field--body {
+			@include rem(margin-bottom, 20px);
+			@include rem(line-height, 22px);
 	
-	.views-field-view-node {
-		clear: left;
+			@include breakpoint($bp-desk) {
+				@include rem(margin-bottom, 40px);
+				float: left;
+				width: 50%;
+			}
 
-		@include breakpoint($bp-desk) {
-			float: left;
-			width: 50%;
+			@include breakpoint($bp-full) {
+				width: 40%;
+				@include rem(margin-bottom, 80px);
+			}
 		}
+	
+		.views-field-view-node {
+			clear: left;
 
-		@include breakpoint($bp-full) {
-			width: 40%;
-		}
+			@include breakpoint($bp-desk) {
+				float: left;
+				width: 50%;
+			}
 
-		a {
-			@extend .button-style;
+			@include breakpoint($bp-full) {
+				width: 40%;
+			}
+
+			a {
+				@extend .button-style;
+			}
 		}
 	}
 }
