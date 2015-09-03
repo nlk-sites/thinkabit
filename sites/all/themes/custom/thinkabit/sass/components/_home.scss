@@ -335,29 +335,35 @@ body.front {
 	position: relative;
 	clear: both;
 	background: $color-green;
-	padding: 5% 10%;
+	padding: 20% 25%;
 	color: $color-white;
 	@include rem(font-size, 21px);
+	
+	@include breakpoint($bp-tab) {
+		padding: 10%;
+	}
 	
 	@include breakpoint($bp-full) {
 		float: left;
 		width: 50%;
 		height: 322px;
 		clear: none;
+		padding: 5% 10%;
 	}
 
 	h2 {
-		position: relative;
+		position: absolute;
+		top: 25px;
+		left: 30px;
 		color: $color-white;
 		font-family: $QReg;
-		@include rem(font-size, 16px);
+		@include rem(font-size, 14px);
 		text-transform: uppercase;
-		@include rem(padding-left, 35px);
+		@include rem(padding-left, 25px);
 		
-		@include breakpoint($bp-full) {
-			position: absolute;
-			top: 25px;
-			left: 30px;
+		@include breakpoint($bp-tab) {
+			@include rem(padding-left, 35px);
+			@include rem(font-size, 16px);
 		}
 		
 		&:before {
@@ -365,16 +371,74 @@ body.front {
 			font-family: $fa;
 			content: "\f099";
 			text-indent: 0;
-			font-size: 25px;
+			@include rem(font-size, 16px);
 			position: absolute;
 			top: -5px;
 			left: 0;
+		
+			@include breakpoint($bp-tab) {
+				top: -2px;
+				@include rem(font-size, 25px);
+			}
+		}
+	}
+	
+	.views-field-text {
+		
+		a {
+			color: $color-white;
 		}
 	}
 	
 	.views-slideshow-controls-top {
 		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 		
+		.views-slideshow-controls-text-pause {
+			display: none;
+		}
+		
+		.views-slideshow-controls-text-previous,
+		.views-slideshow-controls-text-next {
+			position: absolute;
+			top: 50%;
+			left: 25px;
+			
+			a {
+				color: $color-white;
+				text-indent: -9999px;
+				overflow: hidden;
+				display: inline-block;
+				position: relative;
+				text-decoration: none;
+				height: 18px;
+				width: 10px;
+		
+				&:before {
+					display: block;
+					font-family: $fa;
+					content: "\f053";
+					text-indent: 0;
+					@include rem(font-size, 16px);
+					text-indent: 0;
+				}
+			}
+		}
+		
+		.views-slideshow-controls-text-next {
+			left: auto;
+			right: 25px;
+			
+			a {
+
+				&:before {
+					content: "\f054";
+				}
+			}
+		}
 	}
 }
 
