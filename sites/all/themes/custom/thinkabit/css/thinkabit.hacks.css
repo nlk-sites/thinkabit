@@ -44,10 +44,12 @@
 		float: left;
 		width: 25%;
 	}
-	#block-views-instagram-block-4 {
+	#block-views-instagram-block-4,
+	#block-views-instagram-block-5 {
 		overflow: hidden;
 	}
-	#block-views-instagram-block-4 img {
+	#block-views-instagram-block-4 img,
+	#block-views-instagram-block-5 img {
 		height: 410px;
 		left: 50%;
 		margin-left: -205px;
