@@ -59,3 +59,26 @@
 		width: auto;
 	}
 }
+.view-blurbs .field--blurb-title {
+	font-size: 2.25rem;
+}
+.header-social {
+	position: fixed;
+}
+
+body.front .landing-header {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4d7dd+0,ebe8d9+100 */
+	background: #c4d7dd; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #c4d7dd 0%, #ebe8d9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#c4d7dd), color-stop(100%,#ebe8d9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg, #c4d7dd 0%,#ebe8d9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg, #c4d7dd 0%,#ebe8d9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #c4d7dd 0%,#ebe8d9 100%); /* IE10+ */
+	background: linear-gradient(45deg, #c4d7dd 0%,#ebe8d9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4d7dd', endColorstr='#ebe8d9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+body.front .landing-header .field--hero-image {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
