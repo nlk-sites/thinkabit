@@ -66,7 +66,7 @@
 	position: fixed;
 }
 
-body.front .landing-header {
+body.front .l-main article .node__content {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4d7dd+0,ebe8d9+100 */
 	background: #c4d7dd; /* Old browsers */
 	background: -moz-linear-gradient(45deg, #c4d7dd 0%, #ebe8d9 100%); /* FF3.6+ */
@@ -77,8 +77,14 @@ body.front .landing-header {
 	background: linear-gradient(45deg, #c4d7dd 0%,#ebe8d9 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4d7dd', endColorstr='#ebe8d9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-body.front .landing-header .field--hero-image {
-	position: absolute;
-	right: 0;
-	bottom: 0;
+body.front .landing-header {
+	width: 50%;
+	float: left;
+}
+body.front .field--hero-image {
+	width: 50%;
+	float: left;
+}
+body.front .landing-header .field--subtitle {
+	width: 60% !important;
 }
