@@ -78,6 +78,7 @@ body.front .l-main article .node__content {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4d7dd', endColorstr='#ebe8d9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 body.front .landing-header {
+	background-color: transparent;
 	width: 50%;
 	display: inline-block;
 }
