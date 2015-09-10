@@ -79,11 +79,11 @@ body.front .l-main article .node__content {
 }
 body.front .landing-header {
 	width: 50%;
-	float: left;
+	display: inline-block;
 }
 body.front .field--hero-image {
 	width: 50%;
-	float: left;
+	display: inline-block;
 }
 body.front .landing-header .field--subtitle {
 	width: 60% !important;
