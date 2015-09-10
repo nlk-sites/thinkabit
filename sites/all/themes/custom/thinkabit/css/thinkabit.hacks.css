@@ -14,7 +14,7 @@
 /* Home page <img typeof="foaf:Image" src="http://thinkabit.nlkdev.net/sites/default/files/img-home-3.jpg" width="1286" height="735"> */
 @media (min-width: 1220px) {
 	.block--bean-home-second .field--image img {
-		margin-left: 0;
+		margin-left: 0 !important;
 	}
 }
 
@@ -32,7 +32,8 @@
 }
 @media (min-width: 1025px) {
 	#block-views-news-block-1,
-	#block-views-tweets-block-1 { 
+	#block-views-tweets-block-1 {
+		clear: none;
 		float: left;
 		height: 410px;
 		width: 50%;
