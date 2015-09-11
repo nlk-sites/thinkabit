@@ -113,6 +113,9 @@ article[about="/leadership"] .field--hero-image img {
 .landing-header .field--subtitle {
 	width: 60% !important;
 }
+article[about="/projects"] .landing-header .field--subtitle {
+	width: 95% !important;
+}
 
 
 @media (min-width: 769px) and (max-width: 1365px) {
