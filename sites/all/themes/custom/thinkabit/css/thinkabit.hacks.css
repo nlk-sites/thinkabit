@@ -92,7 +92,7 @@
 	}
 	article[about="/blog"] .landing-header,
 	article[about="/news"] .landing-header  {
-		min-height: 560px;
+		min-height: 320px;
 		width: 100%;
 	}
 }
