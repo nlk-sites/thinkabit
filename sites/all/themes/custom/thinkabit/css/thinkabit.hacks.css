@@ -62,11 +62,28 @@
 .view-blurbs .field--blurb-title {
 	font-size: 2.25rem;
 }
-.header-social {
-	position: fixed;
+
+@media (min-width: 900px) {
+	.header-social {
+		position: fixed;
+		bottom: 40px;
+		right: auto;
+		left: 30px;
+		height: 70px;
+	}
+	.landing-header {
+		height: auto;
+		width: 50%;
+	}
+	.field--hero-image {
+		bottom: 0;
+		position: absolute;
+		width: 50%;
+	}
 }
 
 body.front .l-main article .node__content {
+	position: relative;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4d7dd+0,ebe8d9+100 */
 	background: #c4d7dd; /* Old browsers */
 	background: -moz-linear-gradient(45deg, #c4d7dd 0%, #ebe8d9 100%); /* FF3.6+ */
@@ -77,13 +94,9 @@ body.front .l-main article .node__content {
 	background: linear-gradient(45deg, #c4d7dd 0%,#ebe8d9 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4d7dd', endColorstr='#ebe8d9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-body.front .landing-header {
-	background-color: transparent;
-	width: 50%;
-	display: inline-block;
-}
+body.front .landing-header,
 body.front .field--hero-image {
-	width: 50%;
+	background-color: transparent;
 	display: inline-block;
 }
 body.front .landing-header .field--subtitle {
