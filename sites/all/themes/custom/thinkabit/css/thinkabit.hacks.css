@@ -87,9 +87,13 @@
 		position: absolute;
 		width: 60%;
 	}
+	article[about="/blog"] .landing-header,
+	article[about="/news"] .landing-header  {
+		width: 100%;
+	}
 }
 
-body.front .l-main article .node__content {
+body .l-main article .node__content {
 	position: relative;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4d7dd+0,ebe8d9+100 */
 	background: #c4d7dd; /* Old browsers */
@@ -101,11 +105,11 @@ body.front .l-main article .node__content {
 	background: linear-gradient(45deg, #c4d7dd 0%,#ebe8d9 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4d7dd', endColorstr='#ebe8d9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-body.front .landing-header,
-body.front .field--hero-image {
+body .landing-header,
+body .field--hero-image {
 	background-color: transparent;
 	display: inline-block;
 }
-body.front .landing-header .field--subtitle {
+body .landing-header .field--subtitle {
 	width: 60% !important;
 }
