@@ -62,9 +62,9 @@ var hm;
   var heightMatch;
   hm = heightMatch = {
     //variables
-    instaB = undefined,
-    instaH = undefined,
-    blurbB = undefined,
+    instaB : undefined,
+    instaH : undefined,
+    blurbB : undefined,
     //functions
     init : function(){
       //set variables
