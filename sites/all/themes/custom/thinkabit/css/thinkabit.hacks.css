@@ -150,5 +150,16 @@ article[about="/leadership"] .field--hero-image img {
 	#block-views-instagram-block,
 	#block-views-instagram-block-1,
 	#block-views-instagram-block-2,
-	#block-views-instagram-block-3 {}
+	#block-views-instagram-block-3 {
+		max-height: 375px;
+		overflow: hidden;
+	}
+	#block-views-instagram-block img,
+	#block-views-instagram-block-1 img,
+	#block-views-instagram-block-2 img,
+	#block-views-instagram-block-3 img {
+		margin-top: -15%;
+		min-height: 410px;
+		width: auto;
+	}
 }
