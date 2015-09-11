@@ -110,6 +110,9 @@ body .l-main article .node__content {
 	background-color: transparent !important;
 	display: inline-block !important;
 }
+.field--hero-image img {
+	width: 100%;
+}
 .landing-header .field--subtitle {
 	width: 60% !important;
 }
