@@ -97,11 +97,11 @@ body .l-main article[about="/news"] .node__content {
 	background: #f18a20;
 	background-color: #f18a20 !important;
 }
-body #block-bean-blog-header .node__content {
+body #block-bean-blog-header .block__content {
 	background: #93397f;
 	background-color: #93397f !important;
 }
-body #block-bean-news-header .node__content {
+body #block-bean-news-header .block__content {
 	background: #f18a20;
 	background-color: #f18a20 !important;
 }
