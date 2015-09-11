@@ -51,10 +51,16 @@
 		min-height: 660px;
 		width: 40%;
 	}
+	article[about="/leadership"] .landing-header {
+		width: 50%;
+	}
 	.field--hero-image {
 		bottom: 0;
 		position: absolute;
 		width: 60%;
+	}
+	article[about="/leadership"] .field--hero-image {
+		width: 50%;
 	}
 	article[about="/blog"] .landing-header,
 	article[about="/news"] .landing-header  {
@@ -122,7 +128,8 @@ article[about="/leadership"] .field--hero-image img {
 .landing-header .field--subtitle {
 	width: 60% !important;
 }
-article[about="/projects"] .landing-header .field--subtitle {
+article[about="/projects"] .landing-header .field--subtitle,
+article[about="/leadership"] .landing-header .field--subtitle {
 	width: 95% !important;
 }
 
