@@ -61,8 +61,8 @@
 		min-height: 320px;
 		width: 100%;
 	}
-	div[about^="/blog/"] .landing-header,
-	div[about^="/news/"] .landing-header  {
+	#block-bean-blog-header .landing-header,
+	#block-bean-news-header .landing-header  {
 		min-height: 320px;
 		width: 100%;
 	}
@@ -97,11 +97,11 @@ body .l-main article[about="/news"] .node__content {
 	background: #f18a20;
 	background-color: #f18a20 !important;
 }
-body .content-top div[about^="/blog/"] .node__content {
+body #block-bean-blog-header .node__content {
 	background: #93397f;
 	background-color: #93397f !important;
 }
-body .content-top div[about^="/news/"] .node__content {
+body #block-bean-news-header .node__content {
 	background: #f18a20;
 	background-color: #f18a20 !important;
 }
