@@ -105,11 +105,11 @@ body .l-main article .node__content {
 	background: linear-gradient(45deg, #c4d7dd 0%,#ebe8d9 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4d7dd', endColorstr='#ebe8d9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-body .landing-header,
-body .field--hero-image {
-	background-color: transparent;
-	display: inline-block;
+.landing-header,
+.field--hero-image {
+	background-color: transparent !important;
+	display: inline-block !important;
 }
-body .landing-header .field--subtitle {
+.landing-header .field--subtitle {
 	width: 60% !important;
 }
