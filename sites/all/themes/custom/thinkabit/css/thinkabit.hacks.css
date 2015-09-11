@@ -79,13 +79,13 @@
 	}
 	.landing-header {
 		height: auto !important;
-		min-height: 560px;
-		width: 50%;
+		min-height: 660px;
+		width: 40%;
 	}
 	.field--hero-image {
 		bottom: 0;
 		position: absolute;
-		width: 50%;
+		width: 60%;
 	}
 }
 
