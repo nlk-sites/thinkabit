@@ -136,3 +136,19 @@ article[about="/leadership"] .field--hero-image img {
 .landing-header .field--subtitle {
 	width: 60% !important;
 }
+
+
+@media (min-width: 769px) and (max-width: 1365px) {
+	#block-bean-lab-first,
+	#block-bean-lab-second,
+	#block-bean-lab-third {}
+	#block-bean-lab-slideshow {}
+	#block-views-blurbs-block-2,
+	#block-views-blurbs-block-3,
+	#block-views-blurbs-block-4,
+	#block-views-blurbs-block-5 {}
+	#block-views-instagram-block,
+	#block-views-instagram-block-1,
+	#block-views-instagram-block-2,
+	#block-views-instagram-block-3 {}
+}
