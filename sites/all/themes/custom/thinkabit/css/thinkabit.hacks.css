@@ -62,6 +62,7 @@
 		width: 100%;
 	}
 	#block-bean-blog-header .landing-header,
+	#block-bean-project-header .landing-header,
 	#block-bean-news-header .landing-header  {
 		min-height: 320px;
 		width: 100%;
@@ -100,6 +101,10 @@ body .l-main article[about="/news"] .node__content {
 body #block-bean-blog-header .block__content {
 	background: #93397f;
 	background-color: #93397f !important;
+}
+body #block-bean-project-header .block__content {
+	background: #22acbd;
+	background-color: #22acbd !important;
 }
 body #block-bean-news-header .block__content {
 	background: #f18a20;
