@@ -108,6 +108,15 @@ body .l-main article .node__content {
 body .l-main article[about="/projects"] .node__content {
 	background: #22acbd;
 }
+body .l-main article[about="/leadership"] .node__content {
+	background: #fcb614;
+}
+body .l-main article[about="/blog"] .node__content {
+	background: #93397f;
+}
+body .l-main article[about="/news"] .node__content {
+	background: #f18a20;
+}
 .landing-header,
 .field--hero-image {
 	background-color: transparent !important;
@@ -115,6 +124,9 @@ body .l-main article[about="/projects"] .node__content {
 }
 .field--hero-image img {
 	width: 100%;
+}
+article[about="/leadership"] .field--hero-image img {
+	width: 70%;
 }
 .landing-header .field--subtitle {
 	width: 60% !important;
