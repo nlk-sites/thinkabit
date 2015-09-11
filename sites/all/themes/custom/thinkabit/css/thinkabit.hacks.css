@@ -83,18 +83,22 @@ body .l-main article[about="/lab"] .node__content {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4d7dd', endColorstr='#ebe8d9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 body .l-main article[about="/projects"] .node__content {
+	position: relative;
 	background: #22acbd;
 	background-color: #22acbd !important;
 }
 body .l-main article[about="/leadership"] .node__content {
+	position: relative;
 	background: #fcb614;
 	background-color: #fcb614 !important;
 }
 body .l-main article[about="/blog"] .node__content {
+	position: relative;
 	background: #93397f;
 	background-color: #93397f !important;
 }
 body .l-main article[about="/news"] .node__content {
+	position: relative;
 	background: #f18a20;
 	background-color: #f18a20 !important;
 }
