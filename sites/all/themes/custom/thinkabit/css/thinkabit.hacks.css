@@ -89,6 +89,7 @@
 	}
 	article[about="/blog"] .landing-header,
 	article[about="/news"] .landing-header  {
+		min-height: 560px;
 		width: 100%;
 	}
 }
@@ -121,6 +122,9 @@ body .l-main article[about="/news"] .node__content {
 .field--hero-image {
 	background-color: transparent !important;
 	display: inline-block !important;
+}
+.field--hero-image {
+	text-align: center;
 }
 .field--hero-image img {
 	width: 100%;
