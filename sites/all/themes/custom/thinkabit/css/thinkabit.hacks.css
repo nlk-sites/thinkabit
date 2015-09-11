@@ -56,14 +56,20 @@
 		position: absolute;
 		width: 60%;
 	}
-	article[about^="/blog"] .landing-header,
-	article[about^="/news"] .landing-header  {
+	article[about="/blog"] .landing-header,
+	article[about="/news"] .landing-header  {
+		min-height: 320px;
+		width: 100%;
+	}
+	.content-top article[about^="/blog/"] .landing-header,
+	.content-top article[about^="/news/"] .landing-header  {
 		min-height: 320px;
 		width: 100%;
 	}
 }
 
-body .l-main article .node__content {
+body .l-main article[about="/home"] .node__content,
+body .l-main article[about="/lab"] .node__content {
 	position: relative;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4d7dd+0,ebe8d9+100 */
 	background: #c4d7dd; /* Old browsers */
@@ -83,17 +89,27 @@ body .l-main article[about="/leadership"] .node__content {
 	background: #fcb614;
 	background-color: #fcb614 !important;
 }
-body .l-main article[about^="/blog"] .node__content {
+body .l-main article[about="/blog"] .node__content {
 	background: #93397f;
 	background-color: #93397f !important;
 }
-body .l-main article[about^="/news"] .node__content {
+body .l-main article[about="/news"] .node__content {
 	background: #f18a20;
 	background-color: #f18a20 !important;
 }
+body .content-top article[about^="/blog/"] .node__content {
+	background: #93397f;
+	background-color: #93397f !important;
+}
+body .content-top article[about^="/news/"] .node__content {
+	background: #f18a20;
+	background-color: #f18a20 !important;
+}
+
 article[about="/leadership"] .field--hero-image img {
 	width: 70%;
 }
+
 .landing-header .field--subtitle {
 	width: 60% !important;
 }
