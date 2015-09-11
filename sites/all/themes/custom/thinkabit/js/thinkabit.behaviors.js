@@ -1,3 +1,5 @@
+var hm;
+
 (function($) {
 
   /**
@@ -57,7 +59,31 @@
     }
   };
 
+  var heightMatch;
+  hm = heightMatch = {
+    //variables
+    instaB = undefined,
+    instaH = undefined,
+    blurbB = undefined,
+    //functions
+    init : function(){
+      //set variables
+      hm.instaB = $('div[id^="block--views-instagram-block"]').first();
+      hm.instaH = hm.instaB.height();
+      hm.blurbB = $('div[class^="block-views-blurbs-block"]');
+      console.log( hm );
+      //do heightmatch
+      hm.hmatch( hm.instaH );
+    },
+    hmatch : function( h ){
+      //do match heights
+      hm.blurbB.each(function(){
+        $(this).height( h );
+      });
+    }
 
-  console.log( $('.block--views-instagram-block').first().height() );
+  }
+
+  $(window).load( heightMatch.init() );
 
 })(jQuery);
