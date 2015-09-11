@@ -67,6 +67,9 @@
 		height: auto !important;
 		width: 100%;
 	}
+	.field--hero-image {
+		width: 100%;
+	}
 }
 @media (min-width: 900px) {
 	.header-social {
