@@ -9,3 +9,208 @@
     margin-top: 0 !important; } }
 
 /*# sourceMappingURL=thinkabit.hacks.css.map */
+
+
+
+
+
+
+.landing-header,
+.field--hero-image {
+	background-color: transparent !important;
+	display: inline-block !important;
+	max-height: 660px;
+	overflow: hidden;
+}
+.field--hero-image {
+	text-align: center;
+}
+.field--hero-image img {
+	width: 100%;
+}
+@media (max-width: 899px) {
+	.landing-header {
+		height: auto !important;
+		width: 100%;
+	}
+	.field--hero-image {
+		width: 100%;
+	}
+}
+@media (min-width: 900px) {
+	.header-social {
+		bottom: 40px;
+		left: 30px;
+		height: 70px;
+		position: fixed !important;
+		right: auto;
+		top: auto !important;
+	}
+	.landing-header {
+		height: auto !important;
+		min-height: 660px;
+		width: 40%;
+	}
+	article[about="/leadership"] .landing-header {
+		min-height: 500px;
+		width: 50%;
+	}
+	.field--hero-image {
+		bottom: 0;
+		position: absolute;
+		width: 60%;
+	}
+	article[about="/leadership"] .field--hero-image {
+		width: 50%;
+	}
+	article[about="/blog"] .landing-header,
+	article[about="/news"] .landing-header  {
+		min-height: 320px;
+		width: 100%;
+	}
+	#block-bean-blog-header .landing-header,
+	#block-bean-project-header .landing-header,
+	#block-bean-news-header .landing-header  {
+		min-height: 320px;
+		width: 100%;
+	}
+}
+
+body .l-main article[about="/home"] .node__content,
+body .l-main article[about="/lab"] .node__content {
+	position: relative;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c4d7dd+0,ebe8d9+100 */
+	background: #c4d7dd; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #c4d7dd 0%, #ebe8d9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#c4d7dd), color-stop(100%,#ebe8d9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg, #c4d7dd 0%,#ebe8d9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg, #c4d7dd 0%,#ebe8d9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #c4d7dd 0%,#ebe8d9 100%); /* IE10+ */
+	background: linear-gradient(45deg, #c4d7dd 0%,#ebe8d9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4d7dd', endColorstr='#ebe8d9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+body .l-main article[about="/projects"] .node__content {
+	position: relative;
+	background: #22acbd;
+	background-color: #22acbd !important;
+}
+body .l-main article[about="/leadership"] .node__content {
+	position: relative;
+	background: #fcb614;
+	background-color: #fcb614 !important;
+}
+body .l-main article[about="/blog"] .node__content {
+	position: relative;
+	background: #93397f;
+	background-color: #93397f !important;
+}
+body .l-main article[about="/news"] .node__content {
+	position: relative;
+	background: #f18a20;
+	background-color: #f18a20 !important;
+}
+body #block-bean-blog-header .block__content {
+	background: #93397f;
+	background-color: #93397f !important;
+}
+body #block-bean-project-header .block__content {
+	background: #22acbd;
+	background-color: #22acbd !important;
+}
+body #block-bean-news-header .block__content {
+	background: #f18a20;
+	background-color: #f18a20 !important;
+}
+
+article[about="/leadership"] .field--hero-image img {
+	width: 70%;
+}
+
+.landing-header .field--subtitle {
+	width: 60% !important;
+}
+article[about="/projects"] .landing-header .field--subtitle,
+article[about="/leadership"] .landing-header .field--subtitle {
+	width: 95% !important;
+}
+
+
+@media (min-width: 769px) and (max-width: 1365px) {
+	#block-bean-lab-first,
+	#block-bean-lab-second,
+	#block-bean-lab-third {}
+	#block-bean-lab-slideshow {}
+	#block-views-blurbs-block-2,
+	#block-views-blurbs-block-3,
+	#block-views-blurbs-block-4,
+	#block-views-blurbs-block-5 {}
+	#block-views-instagram-block,
+	#block-views-instagram-block-1,
+	#block-views-instagram-block-2,
+	#block-views-instagram-block-3 {
+		max-height: 375px;
+		overflow: hidden;
+	}
+	#block-views-instagram-block img,
+	#block-views-instagram-block-1 img,
+	#block-views-instagram-block-2 img,
+	#block-views-instagram-block-3 img {
+		margin-top: -15%;
+		min-height: 410px;
+		width: auto;
+	}
+}
+
+
+
+/* Home page - <img typeof="foaf:Image" src="http://thinkabit.nlkdev.net/sites/default/files/img-home-3.jpg" width="1286" height="735"> */
+@media (min-width: 1220px) {
+	.block--bean-home-second .field--image img {
+		margin-left: 0 !important;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	#block-views-instagram-block-4,
+	#block-views-blurbs-block,
+	#block-views-instagram-block-5,
+	#block-views-blurbs-block-1 {
+		max-height: 410px;
+		overflow: hidden;
+	}
+	#block-views-instagram-block-5 {
+		float: right;
+	}
+}
+@media (min-width: 1025px) {
+	#block-views-news-block-1,
+	#block-views-tweets-block-1 {
+		clear: none;
+		float: left;
+		height: 410px;
+		width: 50%;
+	}
+	#block-views-instagram-block-4,
+	#block-views-blurbs-block,
+	#block-views-instagram-block-5,
+	#block-views-blurbs-block-1 {
+		float: left;
+		height: 410px;
+		width: 25%;
+	}
+	#block-views-instagram-block-4,
+	#block-views-instagram-block-5 {
+		overflow: hidden;
+	}
+	#block-views-instagram-block-4 img,
+	#block-views-instagram-block-5 img {
+		height: 410px;
+		left: 50%;
+		margin-left: -205px;
+		position: relative;
+		width: auto;
+	}
+}
+.view-blurbs .field--blurb-title {
+	font-size: 2.25rem;
+}
