@@ -167,11 +167,15 @@ function qtbl_content_types_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'path' => array(
+          'weight' => '30',
+        ),
+      ),
       'display' => array(
         'sharethis' => array(
           'default' => array(
-            'weight' => '1',
+            'weight' => '2',
             'visible' => FALSE,
           ),
         ),
@@ -342,7 +346,7 @@ function qtbl_content_types_strongarm() {
       'display' => array(
         'sharethis' => array(
           'default' => array(
-            'weight' => '6',
+            'weight' => '4',
             'visible' => TRUE,
           ),
         ),

@@ -575,6 +575,57 @@ function qtbl_content_types_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-landing-field_hero_image'
+  $field_instances['node-landing-field_hero_image'] = array(
+    'bundle' => 'landing',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_hero_image',
+    'label' => 'Hero Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 31,
+    ),
+  );
+
   // Exported field_instance: 'node-landing-field_pretitle'
   $field_instances['node-landing-field_pretitle'] = array(
     'bundle' => 'landing',
@@ -1277,7 +1328,7 @@ function qtbl_content_types_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1698,6 +1749,7 @@ function qtbl_content_types_field_default_field_instances() {
   t('Category');
   t('Date');
   t('Enter a comma-separated list of words to describe your content.');
+  t('Hero Image');
   t('Job Title');
   t('Leader Image');
   t('News Images');
