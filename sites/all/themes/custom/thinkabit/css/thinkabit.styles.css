@@ -3428,7 +3428,7 @@ input.form-text,
 textarea.form-textarea {
   border: 1px solid #919191;
   background: #f3f3f3;
-  padding: 5px;
+  padding: 11px;
   width: 100%; }
 
 /* line 1, ../sass/components/_header.scss */
@@ -4792,7 +4792,37 @@ body.section-news .view-news, body.section-news .view-taxonomy-term {
       /* line 108, ../sass/components/_news.scss */
       body.section-news .view-news .views-field-view-node, body.section-news .view-taxonomy-term .views-field-view-node {
         width: 40%; } }
-
+        
+/* line 86, ../sass/components/_lab.scss */
+.block--bean-press-contact {
+  position: relative;
+  clear: both;
+  padding: 30px;
+  border-top: 1px solid #ebebeb; }
+  @media (min-width: 900px) {
+    /* line 86, ../sass/components/_lab.scss */
+    .block--bean-press-contact {
+      padding: 60px 20px; } }
+  @media (min-width: 900px) {
+    /* line 95, ../sass/components/_lab.scss */
+    .block--bean-press-contact .field--body {
+      float: left;
+      width: 64%;
+      text-align: right; } }
+  /* line 103, ../sass/components/_lab.scss */
+  .block--bean-press-contact h5 {
+    font-family: "Qualcomm-Light", Arial, Sans-serif;
+    color: #0095a8; }
+    @media (min-width: 900px) {
+      /* line 103, ../sass/components/_lab.scss */
+      .block--bean-press-contact h5 {
+        margin-bottom: 0; } }
+  @media (min-width: 900px) {
+    /* line 112, ../sass/components/_lab.scss */
+    .block--bean-press-contact .field--cta {
+      float: right;
+      width: 30%; } }
+      
 /* line 10, ../sass/components/_project-detail.scss */
 .node--project .field--title-field h2 {
   color: #0095a8; }
@@ -4919,16 +4949,19 @@ body.page-user .l-main {
   padding: 120px 30px 50px; }
 
 /* line 3, ../sass/components/_visit.scss */
-body.section-schedule-visit .field--body {
+body.section-schedule-visit .field--body,
+body.section-contact .field--body {
   padding: 5%; }
   @media (min-width: 900px) {
     /* line 3, ../sass/components/_visit.scss */
-    body.section-schedule-visit .field--body {
+    body.section-schedule-visit .field--body,
+    body.section-contact .field--body {
       float: right;
       width: 30%;
       padding: 4% 6% 4% 0; } }
   /* line 12, ../sass/components/_visit.scss */
-  body.section-schedule-visit .field--body .text {
+  body.section-schedule-visit .field--body .text,
+  body.section-contact .field--body .text {
     font-size: 21px;
     font-size: 1.3125rem;
     line-height: 24px;
@@ -4936,27 +4969,34 @@ body.section-schedule-visit .field--body {
     margin-bottom: 20px;
     margin-bottom: 1.25rem; }
     /* line 17, ../sass/components/_visit.scss */
-    body.section-schedule-visit .field--body .text p {
+    body.section-schedule-visit .field--body .text p,
+    body.section-contact .field--body .text p {
       margin: 0; }
 /* line 23, ../sass/components/_visit.scss */
-body.section-schedule-visit .webform-client-form {
+body.section-schedule-visit .webform-client-form,
+body.section-contact .webform-client-form {
   padding: 0 5% 5%; }
   @media (min-width: 900px) {
     /* line 23, ../sass/components/_visit.scss */
-    body.section-schedule-visit .webform-client-form {
+    body.section-schedule-visit .webform-client-form,
+    body.section-contact .webform-client-form {
       float: left;
       width: 60%;
       padding: 3% 0 4% 9%; } }
   @media (min-width: 900px) {
     /* line 32, ../sass/components/_visit.scss */
-    body.section-schedule-visit .webform-client-form .webform-component {
+    body.section-schedule-visit .webform-client-form .webform-component,
+    body.section-contact .webform-client-form .webform-component {
       float: left;
-      width: 48%; }
+      width: 48%;
+      font-size: 21px; }
       /* line 38, ../sass/components/_visit.scss */
-      body.section-schedule-visit .webform-client-form .webform-component:nth-child(2n) {
+      body.section-schedule-visit .webform-client-form .webform-component:nth-child(2n+1),
+      body.section-contact .webform-client-form .webform-component:nth-child(2n+1) {
         float: right; } }
   /* line 43, ../sass/components/_visit.scss */
-  body.section-schedule-visit .webform-client-form .webform-component.webform-component--description {
+  body.section-schedule-visit .webform-client-form .webform-component.webform-component--description,
+  body.section-contact .webform-client-form .webform-component.webform-component--description {
     font-size: 21px;
     font-size: 1.3125rem;
     line-height: 24px;
@@ -4965,16 +5005,19 @@ body.section-schedule-visit .webform-client-form {
     margin-bottom: 3.125rem; }
     @media (min-width: 900px) {
       /* line 43, ../sass/components/_visit.scss */
-      body.section-schedule-visit .webform-client-form .webform-component.webform-component--description {
+      body.section-schedule-visit .webform-client-form .webform-component.webform-component--description,
+      body.section-contact .webform-client-form .webform-component.webform-component--description {
         float: none;
         width: 100%; } }
     /* line 53, ../sass/components/_visit.scss */
-    body.section-schedule-visit .webform-client-form .webform-component.webform-component--description h3 {
+    body.section-schedule-visit .webform-client-form .webform-component.webform-component--description h3,
+    body.section-contact .webform-client-form .webform-component.webform-component--description h3 {
       margin-bottom: 10px;
       margin-bottom: 0.625rem; }
   @media (min-width: 900px) {
     /* line 59, ../sass/components/_visit.scss */
-    body.section-schedule-visit .webform-client-form .webform-component.webform-component--message {
+    body.section-schedule-visit .webform-client-form .webform-component.webform-component--message,
+    body.section-contact .webform-client-form .webform-component.webform-component--message {
       float: none;
       width: 100%; } }
 
