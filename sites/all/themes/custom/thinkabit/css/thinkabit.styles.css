@@ -3302,7 +3302,7 @@ body.node-type-blurb .field--title-field {
     padding: 0 20%; }
 
 /* line 1, ../sass/components/_buttons.scss */
-.button-style, .view-blog .views-field-view-node a, .button a, .block--bean .field--cta a, .landing-header .field--cta a, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a, input.form-submit, body.section-news .view-news .views-field-view-node a, body.section-news .view-taxonomy-term .views-field-view-node a {
+.button-style, .view-blog .views-field-view-node a, .button a, .block--bean .field--cta a, .landing-header .field--cta a, input.form-submit, body.section-news .view-news .views-field-view-node a, body.section-news .view-taxonomy-term .views-field-view-node a {
   position: relative;
   display: inline-block;
   background: #0095a8;
@@ -3319,7 +3319,7 @@ body.node-type-blurb .field--title-field {
   transition: background-color 0.3s ease; }
   @media (min-width: 900px) {
     /* line 1, ../sass/components/_buttons.scss */
-    .button-style, .view-blog .views-field-view-node a, .button a, .block--bean .field--cta a, .landing-header .field--cta a, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a, input.form-submit, body.section-news .view-news .views-field-view-node a, body.section-news .view-taxonomy-term .views-field-view-node a {
+    .button-style, .view-blog .views-field-view-node a, .button a, .block--bean .field--cta a, .landing-header .field--cta a, input.form-submit, body.section-news .view-news .views-field-view-node a, body.section-news .view-taxonomy-term .views-field-view-node a {
       height: 52px;
       line-height: 52px;
       padding: 0 20px 0 25px;
@@ -3327,7 +3327,7 @@ body.node-type-blurb .field--title-field {
       font-size: 1.25rem;
       font-family: "Qualcomm-Regular", Arial, Sans-serif; } }
   /* line 24, ../sass/components/_buttons.scss */
-  .button-style:after, .view-blog .views-field-view-node a:after, .button a:after, .block--bean .field--cta a:after, .landing-header .field--cta a:after, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:after, input.form-submit:after, body.section-news .view-news .views-field-view-node a:after, body.section-news .view-taxonomy-term .views-field-view-node a:after {
+  .button-style:after, .view-blog .views-field-view-node a:after, .button a:after, .block--bean .field--cta a:after, .landing-header .field--cta a:after, input.form-submit:after, body.section-news .view-news .views-field-view-node a:after, body.section-news .view-taxonomy-term .views-field-view-node a:after {
     background: url('../images/generated/icons-sa57b30c793.png') 0 -42px no-repeat;
     width: 20px;
     height: 13px;
@@ -3337,7 +3337,7 @@ body.node-type-blurb .field--title-field {
     margin-left: 0.9375rem; }
     @media (min-width: 900px) {
       /* line 24, ../sass/components/_buttons.scss */
-      .button-style:after, .view-blog .views-field-view-node a:after, .button a:after, .block--bean .field--cta a:after, .landing-header .field--cta a:after, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:after, input.form-submit:after, body.section-news .view-news .views-field-view-node a:after, body.section-news .view-taxonomy-term .views-field-view-node a:after {
+      .button-style:after, .view-blog .views-field-view-node a:after, .button a:after, .block--bean .field--cta a:after, .landing-header .field--cta a:after, input.form-submit:after, body.section-news .view-news .views-field-view-node a:after, body.section-news .view-taxonomy-term .views-field-view-node a:after {
         background: url('../images/generated/icons-sa57b30c793.png') 0 -55px no-repeat;
         width: 26px;
         height: 17px;
@@ -3346,7 +3346,7 @@ body.node-type-blurb .field--title-field {
         margin-left: 25px;
         margin-left: 1.5625rem; } }
   /* line 34, ../sass/components/_buttons.scss */
-  .button-style:hover, .view-blog .views-field-view-node a:hover, .button a:hover, .block--bean .field--cta a:hover, .landing-header .field--cta a:hover, .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a:hover, input.form-submit:hover, body.section-news .view-news .views-field-view-node a:hover, body.section-news .view-taxonomy-term .views-field-view-node a:hover {
+  .button-style:hover, .view-blog .views-field-view-node a:hover, .button a:hover, .block--bean .field--cta a:hover, .landing-header .field--cta a:hover, input.form-submit:hover, body.section-news .view-news .views-field-view-node a:hover, body.section-news .view-taxonomy-term .views-field-view-node a:hover {
     background: #93397f; }
 
 /* line 3, ../sass/components/_colorbox.scss */
@@ -4646,7 +4646,8 @@ body.section-leadership .landing-header {
     display: block;
     padding: 8px 10px; }
     /* line 168, ../sass/components/_menu.scss */
-    .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li a.active-trail {
+    .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li a.active-trail,
+    .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li a.active {
       color: #0095a8; }
   @media (min-width: 900px) {
     /* line 177, ../sass/components/_menu.scss */
@@ -4659,17 +4660,6 @@ body.section-leadership .landing-header {
       position: absolute;
       left: 0;
       top: -80px; } }
-  /* line 186, ../sass/components/_menu.scss */
-  .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child {
-    padding-top: 60px;
-    margin-left: -10px; }
-    @media (min-width: 900px) {
-      /* line 186, ../sass/components/_menu.scss */
-      .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child {
-        margin-left: 0px; } }
-    /* line 195, ../sass/components/_menu.scss */
-    .responsive-menus.responsified.responsive-toggled .responsive-menus-simple li:last-child a {
-      text-transform: none; }
 
 /* line 10, ../sass/components/_news-detail.scss */
 .node--news .field--title-field h2 {

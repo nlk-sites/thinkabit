@@ -165,7 +165,8 @@
 						display: block;
 						padding: 8px 10px;
 						
-						&.active-trail {
+						&.active-trail,
+						&.active {
 							color: $color-green;
 						}
 					}
