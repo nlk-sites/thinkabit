@@ -351,25 +351,26 @@ function qtbl_strongarm_strongarm() {
   $strongarm->name = 'features_codecache';
   $strongarm->value = array(
     'qtbl_content_types' => array(
-      'node' => '333ad0e91d8b62be9629432c5790f8d1',
-      'field_base' => '3378c165c0bf2a79c43d12cc4637422e',
-      'field_instance' => '3a43b4cf4af098e2716c85d81617ba63',
+      'node' => '190b4d2cf2be2f435952689b0fe7996e',
+      'field_base' => '8cbb49357578e5f6fb406261a14b4660',
+      'field_instance' => 'b392de77a394cc1ddec0bda43c8d34f3',
       'taxonomy' => '7d5941960d6fb84ff8ed47f766670500',
-      'dependencies' => 'b3b3b88042a5a968be6308a9690e2c16',
-      'field_group' => 'b2c1f9042f97034ab047194965b98eeb',
-      'variable' => 'f84d2821d8002492c9624bd84d81d4cf',
+      'dependencies' => 'e27a4e824c7e81265ac8e7fda50df7e9',
+      'field_group' => 'ac2fb736d2ecc323fcc9995832deee72',
+      'variable' => 'ae9bc3f7133dacbb5add9d4a7c9587a8',
+      'formatters' => '4fa80304393bb099dc4607a8f5291396',
     ),
     'qtbl_views' => array(
       'dependencies' => '8557cb70f918583a894ddde2f69e23c5',
-      'views_view' => '91988e6e723d932d61bf26bf82be1df5',
+      'views_view' => 'e635893af00bc98027c5a3797b2d4760',
     ),
     'qtbl_menus' => array(
       'menu_custom' => 'cdcb6a018b19147521fbee12fcd1c17c',
       'dependencies' => 'ce43b2cc540f90d9ef38740c8f0b0f83',
     ),
     'qtbl_context' => array(
-      'dependencies' => '14d05821afd3976e240353d24f27301c',
-      'context' => 'd072f4192d41a047310286840959a622',
+      'dependencies' => '019f62f5ca1e010269f7884f7d49faa8',
+      'context' => 'da3ce9c742c74dd39750abc6d6f1a58c',
       'field_base' => 'ec34ce26d4d827cf3b0110bdef644804',
       'field_group' => '1bf9f3b8dc8d147de8eac8d939e21a18',
       'field_instance' => '83219896a8947879e444f0318d115366',
@@ -381,7 +382,7 @@ function qtbl_strongarm_strongarm() {
       'fe_block_boxes' => '6dfa9fffe6bf56e004c5763d8a28a115',
     ),
     'qtbl_strongarm' => array(
-      'variable' => '9dc2ebaed94822f3fcb29a4ee579f231',
+      'variable' => 'e4f21b622691f43308093d13e2c6653e',
       'dependencies' => 'e410ca96d90029817c7bb9c7cb1f7ea4',
     ),
     'qtbl_text_formats' => array(
@@ -391,19 +392,19 @@ function qtbl_strongarm_strongarm() {
     ),
     'qtbl_bean' => array(
       'fe_block_settings' => 'f2795ea5bdce44e63153d4b0e2a062f4',
-      'field_base' => '9689988fa01c5852d192014775e05561',
-      'field_instance' => '0273f9d26beb9987766fec3aecd8c419',
+      'field_base' => '855aa14c7ccc3be810c84d0273458849',
+      'field_instance' => '3a205729258e50d1b04f8c801bbb3cb1',
       'dependencies' => '4f8c75c50277d4c151c3bc133ac53d0a',
-      'bean_type' => 'fd09ed5e8965b4c1ea32eae9d812f6fb',
-      'uuid_bean' => '93a9c813f6149f94c0b02ecb78e30c78',
+      'bean_type' => 'a44e02d3d1953e581da196892f2fb769',
+      'uuid_bean' => '9ce1d6c571443a6eb09eac5513d922e8',
     ),
     'qtbl_date' => array(
-      'variable' => '37f39f5d22f8f9e48fa2533c42bb9a9a',
+      'variable' => 'b402b081fb28ee1ce73c62ca48d32366',
       'dependencies' => 'e410ca96d90029817c7bb9c7cb1f7ea4',
     ),
     'qtbl_image_styles' => array(
       'dependencies' => 'b5cc61d4a303d79dab8a8515c295c0c2',
-      'image' => 'e978c27be7094c20cd4af42f5607913d',
+      'image' => 'afd528c7dff20f57d466377e5ea45077',
     ),
     'qtbl_nodequeues' => array(
       'fe_nodequeue' => '19478bd4b8271dd99b6df521d59ff609',
