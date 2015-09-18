@@ -425,6 +425,12 @@ function qtbl_context_context_default_contexts() {
           'region' => 'content_bottom',
           'weight' => '-10',
         ),
+        'bean-press-contact' => array(
+          'module' => 'bean',
+          'delta' => 'press-contact',
+          'region' => 'content_bottom',
+          'weight' => '-9',
+        ),
       ),
     ),
   );
