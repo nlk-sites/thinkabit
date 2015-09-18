@@ -380,8 +380,8 @@ function qtbl_bean_uuid_features_default_beans() {
     'field_cta' => array(
       'und' => array(
         0 => array(
-          'url' => 'schedule-visit',
-          'title' => 'Schedule a Visit',
+          'url' => 'contact',
+          'title' => 'Get Connected',
           'attributes' => array(),
         ),
       ),
@@ -390,7 +390,7 @@ function qtbl_bean_uuid_features_default_beans() {
     'title_field' => array(
       'und' => array(
         0 => array(
-          'value' => '',
+          'value' => NULL,
           'format' => NULL,
           'safe_value' => '',
         ),
