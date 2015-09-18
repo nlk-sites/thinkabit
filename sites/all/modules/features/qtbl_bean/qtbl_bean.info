@@ -51,6 +51,7 @@ features[uuid_bean][] = 8eeb7329-715f-4e75-a20b-f020f9847ecd
 features[uuid_bean][] = b6c83af4-e220-487a-af8a-83e113a7bd74
 features[uuid_bean][] = cc4107ed-4a4e-4872-931d-3ec6c4739468
 features[uuid_bean][] = e58dfb9e-71c5-4e1c-b043-2b971bef3c62
+features[uuid_bean][] = e8cf9e53-0d35-4e0e-8601-43584df2dc83
 features[uuid_bean][] = efe24434-bbf4-4888-b1bd-5d252a165e76
 features_exclude[dependencies][qtbl_content_types] = qtbl_content_types
 features_exclude[dependencies][flexslider_fields] = flexslider_fields
