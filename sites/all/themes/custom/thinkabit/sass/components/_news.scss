@@ -123,3 +123,39 @@ body.section-news {
 		}
 	}
 }
+
+.block--bean-press-contact {
+	position: relative;
+	clear: both;
+	padding: 30px;
+  border-top: 1px solid #ebebeb;
+
+  @include breakpoint($bp-desk) {
+		padding: 60px 20px;
+  }
+	
+	.field--body {
+		
+		@include breakpoint($bp-desk) {
+			float: left;
+			width: 64%;
+			text-align: right;
+		}
+	}
+	h5 {
+		font-family: $QLight;
+		color: $color-green;
+
+		@include breakpoint($bp-desk) {
+			margin-bottom: 0;
+		}
+	}
+	
+	.field--cta {
+				
+		@include breakpoint($bp-desk) {
+			float: right;
+			width: 30%;
+		}
+	}
+}
