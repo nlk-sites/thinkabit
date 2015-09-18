@@ -1,4 +1,5 @@
-body.section-schedule-visit {
+body.section-schedule-visit,
+body.section-contact {
 	
 	.field--body {
 		padding: 5%;
@@ -34,8 +35,9 @@ body.section-schedule-visit {
 		  @include breakpoint($bp-desk) {
 				float: left;
 				width: 48%;
-				
-				&:nth-child(2n) {
+				font-size: 21px;
+        
+				&:nth-child(2n+1) {
 					float: right;
 				}
 		  }
