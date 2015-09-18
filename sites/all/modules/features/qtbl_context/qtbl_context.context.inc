@@ -37,6 +37,9 @@ function qtbl_context_context_default_contexts() {
         ),
       ),
     ),
+    'menu' => array(
+      0 => 'main-menu:node/4',
+    ),
   );
   $context->condition_mode = 0;
 
@@ -308,12 +311,6 @@ function qtbl_context_context_default_contexts() {
           'region' => 'content_bottom',
           'weight' => '-20',
         ),
-        'bean-lab-third' => array(
-          'module' => 'bean',
-          'delta' => 'lab-third',
-          'region' => 'content_bottom',
-          'weight' => '-19',
-        ),
       ),
     ),
   );
@@ -395,6 +392,9 @@ function qtbl_context_context_default_contexts() {
         ),
       ),
     ),
+    'menu' => array(
+      0 => 'main-menu:node/6',
+    ),
   );
   $context->condition_mode = 0;
 
@@ -467,6 +467,9 @@ function qtbl_context_context_default_contexts() {
           'weight' => '-10',
         ),
       ),
+    ),
+    'menu' => array(
+      0 => 'main-menu:node/3',
     ),
   );
   $context->condition_mode = 0;
