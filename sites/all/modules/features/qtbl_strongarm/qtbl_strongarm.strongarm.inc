@@ -352,12 +352,12 @@ function qtbl_strongarm_strongarm() {
   $strongarm->value = array(
     'qtbl_content_types' => array(
       'node' => '190b4d2cf2be2f435952689b0fe7996e',
-      'field_base' => '8cbb49357578e5f6fb406261a14b4660',
-      'field_instance' => 'b392de77a394cc1ddec0bda43c8d34f3',
+      'field_base' => '0c176e9a5dd6395d53356550d34866e0',
+      'field_instance' => 'ac7fbcb3ab3c14df6a1e4e68184e8017',
       'taxonomy' => '7d5941960d6fb84ff8ed47f766670500',
-      'dependencies' => 'e27a4e824c7e81265ac8e7fda50df7e9',
-      'field_group' => 'ac2fb736d2ecc323fcc9995832deee72',
-      'variable' => 'ae9bc3f7133dacbb5add9d4a7c9587a8',
+      'dependencies' => 'e36ead04f8c6d6a68603e02b1514afa5',
+      'field_group' => 'ae74006498470eccd581ea5cf09acb3c',
+      'variable' => '708f7cd8775f8f5998adfdfb0f6430e9',
       'formatters' => '4fa80304393bb099dc4607a8f5291396',
     ),
     'qtbl_views' => array(
@@ -369,8 +369,8 @@ function qtbl_strongarm_strongarm() {
       'dependencies' => 'ce43b2cc540f90d9ef38740c8f0b0f83',
     ),
     'qtbl_context' => array(
-      'dependencies' => '019f62f5ca1e010269f7884f7d49faa8',
-      'context' => 'da3ce9c742c74dd39750abc6d6f1a58c',
+      'dependencies' => '1d2818a37bcef8dd8b8fb39c20fd2ecb',
+      'context' => '62e4638c2e8e405ba80032cdd33a1d6e',
       'field_base' => 'ec34ce26d4d827cf3b0110bdef644804',
       'field_group' => '1bf9f3b8dc8d147de8eac8d939e21a18',
       'field_instance' => '83219896a8947879e444f0318d115366',
@@ -382,7 +382,7 @@ function qtbl_strongarm_strongarm() {
       'fe_block_boxes' => '6dfa9fffe6bf56e004c5763d8a28a115',
     ),
     'qtbl_strongarm' => array(
-      'variable' => 'e4f21b622691f43308093d13e2c6653e',
+      'variable' => 'e2abe30cdc1876cf656c66244b142e0d',
       'dependencies' => 'e410ca96d90029817c7bb9c7cb1f7ea4',
     ),
     'qtbl_text_formats' => array(
