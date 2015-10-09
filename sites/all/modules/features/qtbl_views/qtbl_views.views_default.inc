@@ -695,6 +695,21 @@ function qtbl_views_views_default_views() {
   );
   $handler->display->display_options['fields']['field_news_images']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_news_images']['field_api_classes'] = TRUE;
+  /* Field: Content: Video */
+  $handler->display->display_options['fields']['field_news_video']['id'] = 'field_news_video';
+  $handler->display->display_options['fields']['field_news_video']['table'] = 'field_data_field_news_video';
+  $handler->display->display_options['fields']['field_news_video']['field'] = 'field_news_video';
+  $handler->display->display_options['fields']['field_news_video']['label'] = '';
+  $handler->display->display_options['fields']['field_news_video']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_news_video']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_news_video']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_news_video']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_news_video']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_news_video']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_news_video']['settings'] = array(
+    'file_view_mode' => 'default',
+  );
+  $handler->display->display_options['fields']['field_news_video']['field_api_classes'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
