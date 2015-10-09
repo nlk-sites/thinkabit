@@ -38,7 +38,7 @@ function qtbl_content_types_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'path' => array(
-          'weight' => '5',
+          'weight' => '6',
         ),
       ),
       'display' => array(
@@ -258,7 +258,7 @@ function qtbl_content_types_strongarm() {
           'weight' => '-5',
         ),
         'path' => array(
-          'weight' => '5',
+          'weight' => '6',
         ),
       ),
       'display' => array(

@@ -50,6 +50,21 @@ function qtbl_views_views_default_views() {
   );
   $handler->display->display_options['fields']['field_blog_images']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_blog_images']['field_api_classes'] = TRUE;
+  /* Field: Content: Video */
+  $handler->display->display_options['fields']['field_blog_video']['id'] = 'field_blog_video';
+  $handler->display->display_options['fields']['field_blog_video']['table'] = 'field_data_field_blog_video';
+  $handler->display->display_options['fields']['field_blog_video']['field'] = 'field_blog_video';
+  $handler->display->display_options['fields']['field_blog_video']['label'] = '';
+  $handler->display->display_options['fields']['field_blog_video']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_blog_video']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_blog_video']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_blog_video']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_blog_video']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_blog_video']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_blog_video']['settings'] = array(
+    'file_view_mode' => 'teaser',
+  );
+  $handler->display->display_options['fields']['field_blog_video']['field_api_classes'] = TRUE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';

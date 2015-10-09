@@ -25,6 +25,7 @@ function qtbl_content_types_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_blog_images',
+      2 => 'field_blog_video',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -58,6 +59,7 @@ function qtbl_content_types_field_group_info() {
     'children' => array(
       0 => 'body',
       1 => 'field_news_images',
+      2 => 'field_news_video',
     ),
     'format_type' => 'div',
     'format_settings' => array(
